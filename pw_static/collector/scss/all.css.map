@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "all.css",
+	"sources": [
+		"all.scss",
+		"_basics.scss",
+		"_collector.scss",
+		"_layout.scss"
+	],
+	"names": [],
+	"mappings": "ACMA,AAAA,IAAI,CAAA;EACF,UAAU,EALM,OAAO;EAMvB,KAAK,EALM,OAAO,GAMnB"
+}
