@@ -3,4 +3,4 @@
 *.sqlite3
 !/.gitignore
 pw_static/
-collectore/static/collector/creds.json
+**/creds.json
