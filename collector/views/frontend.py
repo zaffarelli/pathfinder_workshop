@@ -1,9 +1,14 @@
 from django.shortcuts import render, redirect
 from collector.utils.pathfinder_tools import FONTSET
+from collector.models.pathfinder_character import PathfinderCharacter
 
 
 def index(request):
     if not request.user.is_authenticated:
         return redirect('accounts/login/')
-    context = {'fontset': FONTSET}
+    characters = PathfinderCharacter.objects.order_by('name')
+    ch = []
+    for c in characters:
+        ch.append({'name': c.name, 'object': c.to_json(), 'roster': c.roster})
+    context = {'fontset': FONTSET, 'characters': ch}
     return render(request, 'collector/index.html', context=context)

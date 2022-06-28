@@ -18,7 +18,15 @@
     <link rel='stylesheet' type='text/css' href='{% sass_src "collector/scss/all.scss" %}'/>
 </head>
 <body>
-{% block main %}
-{% endblock main %}
+<div class="main">
+    <div class="menu">
+        {% block menu %}
+        {% endblock menu %}
+    </div>
+    <div class="details">
+        {% block details %}
+        {% endblock details %}
+    </div>
+</div>
 </body>
 </html>

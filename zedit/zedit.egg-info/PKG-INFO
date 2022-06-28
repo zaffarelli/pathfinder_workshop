@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: zedit
+Version: 0.1
+Summary: An interface to create secure forms for Django models
+Home-page: https://github.com/zaffarelli
+Author: Zaffarelli
+Author-email: zaffarelli@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+UNKNOWN
+

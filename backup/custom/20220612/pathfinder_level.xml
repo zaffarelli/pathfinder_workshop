@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0"><object model="collector.pathfinderlevel" pk="3"><field name="character" rel="ManyToOneRel" to="collector.pathfindercharacter">1</field><field name="character_class" rel="ManyToOneRel" to="collector.pathfinderclass">69</field><field name="level" type="PositiveIntegerField">5</field><field name="is_favorite" type="BooleanField">False</field></object></django-objects>

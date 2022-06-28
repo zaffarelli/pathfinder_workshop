@@ -5,10 +5,11 @@ class Pmodel(models.Model):
     class Meta:
         abstract = True
 
-    @property
     def to_json(self):
-        str = ''
-        return str
+        import json
+        from collector.utils.pathfinder_tools import json_default
+        jstr = json.dumps(self, default=json_default, sort_keys=True, indent=4)
+        return jstr
 
     def fix(self):
         pass

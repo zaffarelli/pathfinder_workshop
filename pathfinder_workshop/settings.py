@@ -81,10 +81,22 @@ WSGI_APPLICATION = 'pathfinder_workshop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'pathfinder_workshop',
+        'USER': 'pwu',
+        'PASSWORD': 'pwu',
+        'HOST': '',
+        'PORT': '',
+        'CONN_MAX_AGE': None,
+        },
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation

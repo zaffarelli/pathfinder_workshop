@@ -1,0 +1,72 @@
+
+body {
+  padding: 0;
+  margin: 0;
+
+  & .main {
+    padding: 8px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    & .menu {
+
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: stretch;
+      align-content: stretch;
+      align-items: flex-start;
+
+
+      background: transparent;
+      gap: 5px 3px;
+      width: calc(28ex - 10px);
+
+      & .menu_item {
+        width: calc(28ex);
+        border: 1px solid black;
+        padding: 3px;
+
+        text-align: center;
+        background: #202020;
+        color: #E0E0E0;
+        font-variant: small-caps;
+      }
+
+    }
+
+    & .details {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-content: flex-start;
+      align-items: flex-start;
+
+      background: transparent;
+      //border:1px solid black;
+      gap: 5px;
+      width: calc(100% - 28ex - 15px);
+      height: auto;
+
+      & .roster {
+        width: 300px;
+        min-width: 400px;
+
+        & .text{
+          text-align:justify;
+        }
+
+      }
+
+
+
+    }
+  }
+}

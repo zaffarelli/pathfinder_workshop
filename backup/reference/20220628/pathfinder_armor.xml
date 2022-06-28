@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0"><object model="collector.pathfinderarmor" pk="1"><field name="AC_bonus" type="IntegerField">6</field><field name="max_dex_bonus" type="IntegerField">0</field><field name="armor_check_penalty" type="IntegerField">0</field><field name="arcane_spell_failure" type="IntegerField">0</field></object></django-objects>

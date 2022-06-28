@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
-{% block main %}
 
-{% endblock main %}
+{% block menu %}
+{% for c in characters %}
+<div class="menu_item action" action="toggle" param="{{c.rid}}">{{ c.name|safe }}</div>
+{% endfor %}
+{% endblock menu %}
+
+{% block details %}
+{% for c in characters %}
+{{ c.roster|safe }}
+{% endfor %}
+{% endblock details %}

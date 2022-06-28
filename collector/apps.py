@@ -7,3 +7,4 @@ class CollectorConfig(AppConfig):
 
     def ready(self):
         import collector.signals.pathfinder_character
+        import collector.signals.pathfinder_gear

@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.py
+zedit/__init__.py
+zedit/zedit_model.py
+zedit.egg-info/PKG-INFO
+zedit.egg-info/SOURCES.txt
+zedit.egg-info/dependency_links.txt
+zedit.egg-info/not-zip-safe
+zedit.egg-info/top_level.txt
