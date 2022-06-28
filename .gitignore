@@ -1,5 +1,6 @@
-creds.json
 **/__pycache__/
 .*
-db.sqlite3
+*.sqlite3
 !/.gitignore
+pw_static/
+collectore/static/collector/creds.json
