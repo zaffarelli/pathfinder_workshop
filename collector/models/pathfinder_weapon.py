@@ -24,6 +24,10 @@ class PathfinderWeapon(PathfinderGear):
         else:
             return f'{self.name}'
 
+
+
+
+
 class PathfinderWeaponAdmin(PathfinderGearAdmin):
     ordering = ['weapon_class', 'weapon_type', 'name']
     list_display = ['name', 'qualifier', 'DMG_small', 'DMG_medium', 'critical', 'weapon_type', 'attack_bonus', 'DMG_bonus',

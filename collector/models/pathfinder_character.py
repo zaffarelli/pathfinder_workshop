@@ -273,6 +273,18 @@ class PathfinderCharacter(Character):
         str += "<br/><b>Languages </b>"
         str += "<br/><b>SQ </b>"
         str += "<br/><b>Gear </b>"
+
+        from collector.models.pathfinder_weapon import PathfinderWeapon
+        from collector.models.pathfinder_armor import PathfinderArmor
+        for equipment in self.pathfinderequipment_set.all():
+            note = ''
+
+            if equipment.gear.is_armor:
+                note = "armor"
+            if equipment.gear.is_weapon:
+                note = "weapon"
+            str += f"<br>{equipment.gear} {note}"
+
         str += f"<div class='text'>{self.base_height * 2.54} / {self.base_weight / 2} <br/>{self.presentation}</div>"
         str += "</div>"
         return str

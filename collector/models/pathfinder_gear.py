@@ -22,6 +22,9 @@ class PathfinderGear(models.Model):
 
     qualifier = models.CharField(max_length=64, default='', blank=True)
 
+    is_weapon = models.BooleanField(default=False, blank=True)
+    is_armor = models.BooleanField(default=False, blank=True)
+
     def fix(self):
         if self.gp_value == 0:
             self.gp_value = self.pp_price*10 + self.gp_price + self.sp_price/10 + self.cp_price/100
@@ -32,4 +35,4 @@ class PathfinderGear(models.Model):
 
 class PathfinderGearAdmin(admin.ModelAdmin):
     ordering = ["name"]
-    list_display = ['name', 'gp_value', 'lbs_weight']
+    list_display = ['name', 'gp_value', 'lbs_weight', 'is_weapon', 'is_armor']
