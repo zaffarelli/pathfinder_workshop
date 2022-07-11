@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'/>
     <meta name='viewport' content='width=device-width, initial-scale=1'/>
-    <TITLE>Pathfinder</TITLE>
+    <TITLE>Pathfinder Workshop</TITLE>
     {% load static %}
     {% load sass_tags %}
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
@@ -11,22 +11,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-    <script src='{% static "js/pathfinder_workshop.es6" %}'></script>
+    <script type="text/javascript" src='{% static "js/pathfinder_workshop.es6" %}'></script>
     {% for font in fontset %}
-    <link rel='stylesheet' href="https://fonts.googleapis.com/css2?family={{font}}">
+        <link rel='stylesheet' href="https://fonts.googleapis.com/css2?family={{font}}">
     {% endfor %}
     <link rel='stylesheet' type='text/css' href='{% sass_src "collector/scss/all.scss" %}'/>
 </head>
 <body>
 <div class="main">
-    <div class="menu">
+    <div class="menuzone hidden">
         {% block menu %}
         {% endblock menu %}
     </div>
-    <div class="details">
+    <div class="details hidden">
         {% block details %}
         {% endblock details %}
     </div>
 </div>
+
+{% block javascript %}
+{% endblock javascript %}
+
+{% block custom_js %}
+{% endblock custom_js %}
 </body>
 </html>

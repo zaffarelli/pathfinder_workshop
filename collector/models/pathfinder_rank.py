@@ -13,7 +13,8 @@ class PathfinderRank(models.Model):
     skill = models.ForeignKey(PathfinderSkill, on_delete=models.CASCADE, blank=True, null=True)
     rank = models.IntegerField(default=0, blank=True)
     max = models.IntegerField(default=1, blank=True)
-    total = models.IntegerField(default=0, blank=True)
+    # total = models.IntegerField(default=0, blank=True)
+    ability_modifier = models.IntegerField(default=0, blank=True)
     racial_modifier = models.IntegerField(default=0, blank=True)
     other_modifier = models.IntegerField(default=0, blank=True)
     wildcard = models.CharField(default='', max_length=64, blank=True)
@@ -22,6 +23,33 @@ class PathfinderRank(models.Model):
 
     def __str__(self):
         return f'{self.character.name} {self.skill.name} {self.rank}'
+
+    def fix_racial_modifier(self):
+        pass
+
+    def fix_class_modifier(self):
+        pass
+
+    def fix(self):
+        self.fix_racial_modifier()
+        self.fix_class_modifier()
+
+    @property
+    def total_score(self):
+        x = self.rank + self.ability_modifier
+        x += self.racial_modifier
+        x += self.other_modifier
+        if self.class_skill_as:
+            x += 3
+        return x
+
+    @property
+    def if_wildcard(self):
+        str = ""
+        if self.wildcard:
+            str = f' ({self.wildcard})'
+        return str
+
 
 
 class PathfinderRankInline(admin.TabularInline):

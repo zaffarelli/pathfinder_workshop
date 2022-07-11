@@ -149,4 +149,4 @@ STATICFILES_FINDERS = [
     'sass_processor.finders.CssFinder',
 ]
 
-RELEASE = '0.1.0'
+RELEASE = '0.3.0'

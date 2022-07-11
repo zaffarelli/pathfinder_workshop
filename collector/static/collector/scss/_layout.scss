@@ -26,8 +26,9 @@ body {
 
 
       background: transparent;
+
       gap: 5px 3px;
-      width: calc(28ex - 10px);
+      width: calc(28ex + 10px);
 
       & .menu_item {
         width: calc(28ex);
@@ -69,4 +70,8 @@ body {
 
     }
   }
+}
+
+.hidden{
+  display:none;
 }

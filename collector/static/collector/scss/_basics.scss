@@ -8,11 +8,12 @@ $txt_font: Neuton;
 body {
   font-family: $base_font;
   font-size: 10pt;
-  background: $base_background;
+
   color: $base_color;
+  background: transparent url("/static/collector/paper.png") repeat;
 
   & .main {
-    background: transparent url("/static/collector/paper.png") repeat;
+
 
     & .roster {
 
@@ -25,13 +26,20 @@ body {
       border-radius: 5px;
       box-shadow: 2px 2px 5px black;
       line-height: 1.45em;
-      & b{
+
+      & b {
         font-weight: 800;
-        color:maroon;
+        color: black;
       }
 
       & .name {
         background: black;
+        &.player{
+          background: blue;
+        }
+        &.dm_npc{
+          background: purple;
+        }
         color: white;
         width: calc(100% - 10px);
         padding: 5px;
@@ -48,7 +56,6 @@ body {
           order: 1;
           flex-grow: 2;
           width: calc(100% - 50px);
-          //background:red;
           font-weight: 900;
         }
 
@@ -57,7 +64,6 @@ body {
           flex-grow: 0;
           width: 50px;
           text-align: right;
-          //background:green;
           font-weight: 900;
         }
       }
@@ -75,11 +81,10 @@ body {
         font-variant: small-caps;
       }
 
-      & .text{
+      & .text {
         font-family: $txt_font;
-        font-size:14pt;
+        font-size: 14pt;
       }
-
     }
   }
 }

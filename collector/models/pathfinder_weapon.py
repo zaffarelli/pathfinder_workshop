@@ -19,10 +19,13 @@ class PathfinderWeapon(PathfinderGear):
     category = models.CharField(default='', max_length=256, blank=True)
 
     def __str__(self):
+
         if self.qualifier:
             return f'{self.qualifier} {self.name}'
         else:
             return f'{self.name}'
+
+
 
 
 

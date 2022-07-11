@@ -82,6 +82,8 @@ class PathfinderCharacter(Character):
     base_height = models.IntegerField(default=0, blank=True)
     base_weight = models.IntegerField(default=0, blank=True)
 
+    ranked_skills = models.TextField(default="", max_length=1024, blank=True)
+
     @property
     def alignment(self):
         LtoC = 'LNC'
@@ -96,7 +98,7 @@ class PathfinderCharacter(Character):
     #     return math.floor((ability - 10) / 2)
 
     def make_abilities(self):
-        from collector.utils.pathfinder_tools import choose_ability,get_modifier
+        from collector.utils.pathfinder_tools import choose_ability, get_modifier
         if self.race.CHOICE_racial_mod == 0:
             self.STR = self.base_STR + self.race.STR_racial_mod
             self.DEX = self.base_DEX + self.race.DEX_racial_mod
@@ -144,19 +146,8 @@ class PathfinderCharacter(Character):
         self.hp_formula = str
 
     def make_ac(self):
-        from collector.utils.pathfinder_tools import get_modifier
-        SIZE_MODIFIER = {
-            'fine': 8,
-            'diminutive': 4,
-            'tiny': 2,
-            'small': 1,
-            'medium': 0,
-            'large': -1,
-            'huge': -2,
-            'gargantuan': -4,
-            'colossal': -8,
-        }
-        self.AC_size_modifier = SIZE_MODIFIER[self.race.size.lower()]
+        from collector.utils.pathfinder_tools import get_modifier, AC_SIZE_MODIFIER
+        self.AC_size_modifier = AC_SIZE_MODIFIER[self.race.size.lower()]
         self.AC = 10 + self.AC_armor_bonus + self.AC_shield_bonus + get_modifier(
             self.DEX) + self.AC_size_modifier + self.AC_natural_armor + self.AC_deflection_modifier + self.AC_misc_modifier
         self.touch_AC = 10 + self.AC_shield_bonus + get_modifier(
@@ -171,6 +162,7 @@ class PathfinderCharacter(Character):
             self.will += level.willpower_bonus()
 
     def make_ranks(self):
+        ranked_skills_list = []
         for rank in self.pathfinderrank_set.all():
             rank.class_skill_as = None
             highest_level = 0
@@ -178,10 +170,12 @@ class PathfinderCharacter(Character):
                 pathfinder_class = level.character_class
                 class_skills_list = pathfinder_class.class_skills.split(', ')
                 if rank.skill.name in class_skills_list:
+                    ranked_skills_list.append(f'{rank.skill.name}{rank.if_wildcard}')
                     if level.level > highest_level:
                         highest_level = level.level
                         rank.class_skill_as = level
                         rank.max = level.level
+        self.ranked_skills = ", ".join(ranked_skills_list)
 
     def make_misc(self):
         from collector.utils.pathfinder_core import table7_3
@@ -194,7 +188,7 @@ class PathfinderCharacter(Character):
         bestbab = 0
         for level in self.pathfinderlevel_set.all():
             bestbab += level.base_attack_bonus
-        print("monk",bestbab)
+        print("monk", bestbab)
         self.BAB = bestbab
         CMB_SIZE_MODIFIER = {
             'fine': -8,
@@ -225,11 +219,37 @@ class PathfinderCharacter(Character):
             self.need_fix = False
 
     @property
+    def equipped_weapons(self):
+        from collector.models.pathfinder_weapon import PathfinderWeapon
+        equipped_weapons = []
+        for equipment in self.pathfinderequipment_set.all():
+            if equipment.gear.is_weapon:
+                x = equipment.gear.as_weapon
+                equipped_weapons.append({'gear': equipment.gear, 'weapon': x})
+        return equipped_weapons
+
+    @property
+    def equipped_armors(self):
+        from collector.models.pathfinder_armor import PathfinderArmor
+        equipped_armors = []
+        for equipment in self.pathfinderequipment_set.all():
+            if equipment.gear.is_armor:
+                x = equipment.gear.as_armor
+                equipped_armors.append({'gear': equipment.gear, 'armor': x})
+        return equipped_armors
+
+    @property
     def roster(self):
+        from collector.utils.pathfinder_tools import get_modifier, as_modifier
         import math
         str = ""
         str += f"<div class='roster' id='roster_{self.rid}'>"
-        str += f"<div class='name'><div class='lefty'>{self.name.upper()}</div><div class='righty'>CR {self.CR}</div></div>"
+        display_special = ''
+        if self.player:
+            display_special = "player"
+            if self.player == 'Dungeonmaster NPC':
+                display_special = "dm_npc"
+        str += f"<div class='name {display_special}'><div class='lefty'>{self.name.upper()}</div><div class='righty'>CR {self.CR}</div></div>"
         if self.player:
             str += f"aka <i>{self.player.title()}</i>"
         else:
@@ -253,7 +273,12 @@ class PathfinderCharacter(Character):
 
         str += f"<div class='block'>Offense</div>"
         str += f"<b>Speed</b> {self.speed} ft"
-        str += f"<br/><b>Melee</b>  "
+        weapons_info = []
+        for x in self.equipped_weapons:
+            weapons_info.append(
+                f"{x['gear'].name} {as_modifier(x['weapon'].attack_bonus + self.BAB + get_modifier(self.STR))} {x['weapon'].DMG_medium} + {x['weapon'].DMG_bonus}")
+            print(x)
+        str += f"<br/><b>Melee</b> <br/> {'<br/>'.join(weapons_info)}"
         str += f"<br/><b>Ranged</b>  "
         str += f"<br/><b>Special Attacks</b> "
 
@@ -266,10 +291,10 @@ class PathfinderCharacter(Character):
         str += f"<br/><b>Base Atk</b> {as_modifier(self.BAB)}; <b>CMB</b> {as_modifier(self.CMB)}; <b>CMD</b> {self.CMD}"
         str += "<br/><b>Feats </b>"
         str += "<br/><b>Skills</b> "
-        skills = []
-        for rank in self.pathfinderrank_set.order_by('skill'):
-            skills.append(f"{rank.skill.name} {rank.rank}")
-        str += ", ".join(skills) + "."
+        # skills = []
+        # for rank in self.pathfinderrank_set.order_by('skill'):
+        #     skills.append(f"{rank.skill.name} {rank.rank}")
+        str += self.roster_skills + "."
         str += "<br/><b>Languages </b>"
         str += "<br/><b>SQ </b>"
         str += "<br/><b>Gear </b>"
@@ -288,6 +313,20 @@ class PathfinderCharacter(Character):
         str += f"<div class='text'>{self.base_height * 2.54} / {self.base_weight / 2} <br/>{self.presentation}</div>"
         str += "</div>"
         return str
+
+    @property
+    def roster_skills(self):
+        from collector.models.pathfinder_skill import PathfinderSkill
+        list = []
+        ranks = self.pathfinderrank_set.order_by('skill').values_list('skill__name', flat=True, named=False)
+        print(ranks)
+        for skill in PathfinderSkill.objects.all():
+            if skill.name in ranks:
+                for rank in self.pathfinderrank_set.order_by('skill'):
+                    list.append(f"{rank.skill.name} {rank.rank}")
+            # else:
+            #     list.append(f"{skill.name} (untrained)")
+        return ", ".join(list)
 
 
 def roll_standard_abilities(modeladmin, request, queryset):

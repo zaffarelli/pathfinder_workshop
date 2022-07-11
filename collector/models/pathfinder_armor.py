@@ -11,8 +11,9 @@ class PathfinderArmor(PathfinderGear):
     max_dex_bonus = models.IntegerField(default=0, blank=True)
     armor_check_penalty = models.IntegerField(default=0, blank=True)
     arcane_spell_failure = models.IntegerField(default=0, blank=True)
-
+    category = models.CharField(default='', max_length=256, blank=True)
 
 
 class PathfinderArmorAdmin(PathfinderGearAdmin):
-    list_display = ['name','AC_bonus', 'max_dex_bonus', 'armor_check_penalty', 'arcane_spell_failure']
+    list_display = ['name', 'AC_bonus', 'max_dex_bonus', 'armor_check_penalty', 'arcane_spell_failure']
+    list_filter = ['category']

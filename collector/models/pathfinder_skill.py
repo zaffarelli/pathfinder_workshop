@@ -9,6 +9,7 @@ class PathfinderSkill(models.Model):
     name = models.CharField(max_length=64, default='', blank=True)
     is_trained_only = models.BooleanField(default=False)
     is_wildcard = models.BooleanField(default=False)
+    is_wildcard = models.BooleanField(default=False)
     ability = models.CharField(max_length=3, default='INT', choices=ABILITIES_CHOICES, blank=True)
 
     def __str__(self):

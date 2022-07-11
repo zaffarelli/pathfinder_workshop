@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{%  load static %}
 
 {% block menu %}
 {% for c in characters %}
@@ -12,3 +12,14 @@
 {{ c.roster|safe }}
 {% endfor %}
 {% endblock details %}
+
+
+{% block custom_js %}
+<script>
+    _.defer(function () {
+        let co = new PathfinderWorkshop()
+        co.perform();
+        co.revealUI();
+    });
+</script>
+{% endblock custom_js %}
