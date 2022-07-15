@@ -17,7 +17,9 @@ class PathfinderRank(models.Model):
     ability_modifier = models.IntegerField(default=0, blank=True)
     racial_modifier = models.IntegerField(default=0, blank=True)
     other_modifier = models.IntegerField(default=0, blank=True)
+    class_skill_bonus = models.PositiveIntegerField(default=0, blank=True)
     wildcard = models.CharField(default='', max_length=64, blank=True)
+    details = models.CharField(default='', max_length=64, blank=True)
 
     class_skill_as = models.ForeignKey(PathfinderLevel, on_delete=models.CASCADE, blank=True, null=True)
 
@@ -33,14 +35,16 @@ class PathfinderRank(models.Model):
     def fix(self):
         self.fix_racial_modifier()
         self.fix_class_modifier()
+        self.details = ""# f"[Rk:{self.rank}+Ab:{self.ability_modifier}+Ra:{self.racial_modifier}+CS:{self.class_skill_bonus}+Oth:{self.other_modifier}]"
 
     @property
     def total_score(self):
-        x = self.rank + self.ability_modifier
+        x = self.rank
+        x += self.ability_modifier
         x += self.racial_modifier
         x += self.other_modifier
-        if self.class_skill_as:
-            x += 3
+        if self.rank > 0:
+            x += self.class_skill_bonus
         return x
 
     @property
@@ -55,9 +59,9 @@ class PathfinderRank(models.Model):
 class PathfinderRankInline(admin.TabularInline):
     model = PathfinderRank
     extras = 1
-    ordering = ('skill', 'rank')
+    ordering = ['-rank', 'skill']
 
 
 class PathfinderRankAdmin(admin.ModelAdmin):
     ordering = ["character", 'rank', 'skill', 'wildcard']
-    list_display = ["character", 'skill', 'wildcard', 'rank']
+    list_display = ["character", 'skill', 'wildcard', 'rank', 'total_score']

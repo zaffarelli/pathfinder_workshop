@@ -11,7 +11,8 @@ class PathfinderWeapon(PathfinderGear):
     DMG_medium = models.CharField(default='1', max_length=24, blank=True)
 
     critical = models.CharField(default='x2', max_length=12, blank=True)
-
+    range = models.PositiveIntegerField(default=0, blank=True)
+    reach = models.PositiveIntegerField(default=0, blank=True)
     attack_bonus = models.IntegerField(default=0, blank=True)
     DMG_bonus = models.IntegerField(default=0, blank=True)
     weapon_type = models.CharField(default='B', max_length=3, blank=True)
@@ -19,7 +20,6 @@ class PathfinderWeapon(PathfinderGear):
     category = models.CharField(default='', max_length=256, blank=True)
 
     def __str__(self):
-
         if self.qualifier:
             return f'{self.qualifier} {self.name}'
         else:

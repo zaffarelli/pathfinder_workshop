@@ -2,7 +2,7 @@ $base_background: #F0F0F0;
 $base_color: #101010;
 
 $base_font: Roboto;
-$roster_font: Ubuntu;
+$roster_font: Raleway;
 $txt_font: Neuton;
 
 body {
@@ -14,31 +14,42 @@ body {
 
   & .main {
 
+    & .menuzone{
+        background: transparent;
+        & .menu_item {
+          color: #E0E0E0;
+          background: black;
+          font-variant: small-caps;
+          text-align:left;
+        }
+    }
 
     & .roster {
 
       display: inline-block;
       font-family: $roster_font;
+      font-weight: 500;
       font-size: 11pt;
       padding: 5px;
-      background: white;
+      background: lightgoldenrodyellow;
       color: black;
       border-radius: 5px;
       box-shadow: 2px 2px 5px black;
       line-height: 1.45em;
 
       & b {
+        font-family: $roster_font;
         font-weight: 800;
-        color: black;
       }
 
       & .name {
         background: black;
+        border-bottom: 5px solid black;
         &.player{
-          background: blue;
+          border-color:rebeccapurple;
         }
         &.dm_npc{
-          background: purple;
+          border-color:darkslategrey;
         }
         color: white;
         width: calc(100% - 10px);
@@ -49,7 +60,7 @@ body {
         justify-items: stretch;
         align-content: stretch;
         align-items: stretch;
-        border-radius: 5px 3px;
+        border-radius: 7px 7px 1px 1px;
         font-variant: small-caps;
 
         & .lefty {

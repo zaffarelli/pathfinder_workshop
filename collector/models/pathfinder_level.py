@@ -14,6 +14,10 @@ class PathfinderLevel(models.Model):
     level = models.PositiveIntegerField(default=0)
     is_favorite = models.BooleanField(default=False)
     is_giving_skill_points = models.BooleanField(default=False)
+    favored_skill_points = models.PositiveIntegerField(default=0)
+    favored_hit_points = models.PositiveIntegerField(default=0)
+    deity = models.CharField(default='', max_length=128, blank=True)
+    domains = models.CharField(default='', max_length=128, blank=True)
 
     def __str__(self):
         return f'({self.character.name}) {self.character_class} level {self.level} '
@@ -56,6 +60,8 @@ class PathfinderLevel(models.Model):
         elif self.character_class.will_rate == 'BSAVE':
             score = math.floor(self.level / 3)
         return score
+
+
 
 
 class PathfinderLevelInline(admin.TabularInline):

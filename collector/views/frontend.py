@@ -6,7 +6,7 @@ from collector.models.pathfinder_character import PathfinderCharacter
 def index(request):
     if not request.user.is_authenticated:
         return redirect('accounts/login/')
-    characters = PathfinderCharacter.objects.order_by('name')
+    characters = PathfinderCharacter.objects.order_by('-current_xp', 'name')
     ch = []
     for c in characters:
         ch.append({'name': c.name, 'object': c.to_json(), 'roster': c.roster})

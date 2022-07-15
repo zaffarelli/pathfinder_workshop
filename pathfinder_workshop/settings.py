@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'sass_processor',
     'colorfield',
+    'fontawesomefree',
 ]
 
 MIDDLEWARE = [
@@ -149,4 +150,4 @@ STATICFILES_FINDERS = [
     'sass_processor.finders.CssFinder',
 ]
 
-RELEASE = '0.3.0'
+RELEASE = '0.4.0'

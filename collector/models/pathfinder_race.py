@@ -35,7 +35,17 @@ class PathfinderRace(models.Model):
     def abilities(self):
         # from collector.models.pathfinder_special_ability import PathfinderSpecialAbility
         list = self.special_abilities.all().values_list('name', flat=True)
-        return ", ".join(list)+"."
+        return ", ".join(list) + "."
+
+    @property
+    def senses(self):
+        senses = self.special_abilities.filter(is_senses=True).values_list('name', flat=True)
+        return ",".join(senses)
+
+    @property
+    def racial_modifiers(self):
+        senses = self.special_abilities.filter(is_skill_related=True).values_list('formula', flat=True)
+        return ";".join(senses)
 
     def __str__(self):
         return f'{self.category} ({self.name})'
@@ -64,5 +74,6 @@ class PathfinderRace(models.Model):
 
 class PathfinderRaceAdmin(admin.ModelAdmin):
     ordering = ['name']
-    list_display = ['name', 'abilities', 'STR_racial_mod', 'DEX_racial_mod', 'CON_racial_mod', 'INT_racial_mod', 'WIS_racial_mod',
+    list_display = ['name', 'abilities', 'STR_racial_mod', 'DEX_racial_mod', 'CON_racial_mod', 'INT_racial_mod',
+                    'WIS_racial_mod',
                     'CHA_racial_mod']

@@ -1,4 +1,4 @@
-FONTSET = ['Roboto', 'Ubuntu', 'Neuton']
+FONTSET = ['Roboto', 'Ubuntu', 'Neuton', 'Raleway:wght@300;500;800&display=swap']
 
 HITDICE_TYPE = (
     ("4", "d4"),
@@ -126,3 +126,26 @@ AC_SIZE_MODIFIER = {
     'gargantuan': -4,
     'colossal': -8,
 }
+
+TABLE_3_1 = [
+    {'level': 1, 'slow': 0, 'medium': 0, 'fast': 0, 'feats': 1, 'ability_score': 0},
+    {'level': 2, 'slow': 3000, 'medium': 2000, 'fast': 1300, 'feats': 1, 'ability_score': 0},
+    {'level': 3, 'slow': 7500, 'medium': 5000, 'fast': 3300, 'feats': 2, 'ability_score': 0},
+    {'level': 4, 'slow': 14000, 'medium': 9000, 'fast': 6000, 'feats': 2, 'ability_score': 1},
+    {'level': 5, 'slow': 23000, 'medium': 15000, 'fast': 10000, 'feats': 3, 'ability_score': 1},
+    {'level': 6, 'slow': 35000, 'medium': 23000, 'fast': 15000, 'feats': 3, 'ability_score': 1},
+    {'level': 7, 'slow': 53000, 'medium': 35000, 'fast': 23000, 'feats': 4, 'ability_score': 1},
+    {'level': 8, 'slow': 77000, 'medium': 51000, 'fast': 34000, 'feats': 4, 'ability_score': 2},
+    {'level': 9, 'slow': 115000, 'medium': 75000, 'fast': 50000, 'feats': 5, 'ability_score': 2},
+    {'level': 10, 'slow': 160000, 'medium': 105000, 'fast': 71000, 'feats': 5, 'ability_score': 2},
+    {'level': 11, 'slow': 235000, 'medium': 155000, 'fast': 105000, 'feats': 6, 'ability_score': 2},
+    {'level': 12, 'slow': 333000, 'medium': 220000, 'fast': 145000, 'feats': 6, 'ability_score': 3},
+    {'level': 13, 'slow': 475000, 'medium': 315000, 'fast': 210000, 'feats': 7, 'ability_score': 3},
+    {'level': 14, 'slow': 665000, 'medium': 445000, 'fast': 295000, 'feats': 7, 'ability_score': 3},
+    {'level': 15, 'slow': 955000, 'medium': 635000, 'fast': 425000, 'feats': 8, 'ability_score': 3},
+    {'level': 16, 'slow': 1350000, 'medium': 890000, 'fast': 600000, 'feats': 8, 'ability_score': 4},
+    {'level': 17, 'slow': 1900000, 'medium': 1300000, 'fast': 850000, 'feats': 9, 'ability_score': 4},
+    {'level': 18, 'slow': 2700000, 'medium': 1800000, 'fast': 1200000, 'feats': 9, 'ability_score': 4},
+    {'level': 19, 'slow': 3850000, 'medium': 2550000, 'fast': 1700000, 'feats': 10, 'ability_score': 4},
+    {'level': 20, 'slow': 5350000, 'medium': 3600000, 'fast': 2400000, 'feats': 10, 'ability_score': 5}
+]

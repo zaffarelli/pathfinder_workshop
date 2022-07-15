@@ -15,5 +15,6 @@ class PathfinderArmor(PathfinderGear):
 
 
 class PathfinderArmorAdmin(PathfinderGearAdmin):
-    list_display = ['name', 'AC_bonus', 'max_dex_bonus', 'armor_check_penalty', 'arcane_spell_failure']
+    ordering = ['category', 'AC_bonus', 'name']
+    list_display = ['name', 'category', 'gp_value', 'AC_bonus', 'lbs_weight', 'armor_check_penalty']
     list_filter = ['category']

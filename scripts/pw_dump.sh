@@ -19,6 +19,9 @@ python manage.py dumpdata collector.PathfinderRace --format xml --output backup/
 python manage.py dumpdata collector.PathfinderClass --format xml --output backup/reference/$1/pathfinder_class.xml
 python manage.py dumpdata collector.PathfinderSpell --format xml --output backup/reference/$1/pathfinder_spell.xml
 python manage.py dumpdata collector.PathfinderSpecialAbility --format xml --output backup/reference/$1/pathfinder_special_ability.xml
+python manage.py dumpdata collector.PathfinderClassFeature --format xml --output backup/reference/$1/pathfinder_class_feature.xml
+python manage.py dumpdata collector.PathfinderClassAdvancement --format xml --output backup/reference/$1/pathfinder_class_advancement.xml
+
 
 
 echo -e "\e[1;35mCOLLECTOR CUSTOM...\e[0;m"
