@@ -1,6 +1,6 @@
-$base_background: #F0F0F0;
-$base_color: #101010;
-
+$base_background: #102030;
+$base_color: #F0F0F0;
+$website_background_image: "/static/collector/paper.png";
 $base_font: Roboto;
 $roster_font: Raleway;
 $txt_font: Neuton;
@@ -10,18 +10,51 @@ body {
   font-size: 10pt;
 
   color: $base_color;
-  background: transparent url("/static/collector/paper.png") repeat;
+  background: transparent url($website_background_image) repeat;
+
+  & .header {
+      width: calc(100% - 30px);
+      height: 50px;
+      background: $base_background;
+      color: $base_color;
+      padding: 5px;
+      text-align:right;
+  }
+
+  & .footer{
+
+      background: $base_background;
+      color: $base_color;
+
+  }
 
   & .main {
 
-    & .menuzone{
-        background: transparent;
-        & .menu_item {
-          color: #E0E0E0;
-          background: black;
-          font-variant: small-caps;
-          text-align:left;
+
+
+
+    & .menuzone {
+      background: transparent;
+
+      & .menu_item {
+        background: $base_background;
+        color: $base_color;
+
+        font-variant: small-caps;
+        text-align: left;
+
+        & .lefty {
+          font-weight: 900;
         }
+
+        & .righty {
+          font-weight: 900;
+        }
+      }
+    }
+
+    & .details{
+      background:transparent;
     }
 
     & .roster {
@@ -45,12 +78,15 @@ body {
       & .name {
         background: black;
         border-bottom: 5px solid black;
-        &.player{
-          border-color:rebeccapurple;
+
+        &.player {
+          border-color: rebeccapurple;
         }
-        &.dm_npc{
-          border-color:darkslategrey;
+
+        &.dm_npc {
+          border-color: darkslategrey;
         }
+
         color: white;
         width: calc(100% - 10px);
         padding: 5px;
@@ -98,4 +134,8 @@ body {
       }
     }
   }
+}
+
+.toggle, .action {
+  cursor: pointer;
 }

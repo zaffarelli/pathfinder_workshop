@@ -4,6 +4,7 @@ from collector.utils.pathfinder_tools import as_modifier, ABILITIES_CHOICES, get
 from collector.models.pathfinder_race import PathfinderRace
 from collector.models.pathfinder_feat import PathfinderFeat
 from django.contrib import admin
+import math
 
 
 class PathfinderCharacter(Character):
@@ -28,6 +29,7 @@ class PathfinderCharacter(Character):
     volatile_hp = models.IntegerField(default=0, blank=True)
     volatile_choice_racial_mod = models.CharField(max_length=3, default='---', choices=ABILITIES_CHOICES, blank=True)
     volatile_hwmod = models.IntegerField(default=0, blank=True)
+    volatile_money = models.IntegerField(default=0, blank=True)
 
     race = models.ForeignKey(PathfinderRace, on_delete=models.SET_NULL, null=True, blank=True)
     gender = models.CharField(default='m', max_length=1, choices=(('m', 'Male'), ('f', 'Female')), blank=True)
@@ -56,6 +58,8 @@ class PathfinderCharacter(Character):
 
     init = models.IntegerField(default=0, blank=True)
     senses = models.TextField(default='', max_length=128, blank=True)
+
+    tcl = models.IntegerField(default=0, blank=True)
 
     total_skill_points = models.IntegerField(default=0, blank=True)
 
@@ -92,10 +96,6 @@ class PathfinderCharacter(Character):
             str = 'N'
         return str
 
-    # def bonus(self, ability):
-    #     import math
-    #     return math.floor((ability - 10) / 2)
-
     def make_abilities(self):
         from collector.utils.pathfinder_tools import choose_ability, get_modifier
         if self.race.CHOICE_racial_mod == 0:
@@ -131,9 +131,9 @@ class PathfinderCharacter(Character):
             if self.volatile_hp == 0:
                 self.hp += dice(level.level, die)
             if level.is_favorite:
-                if not level.is_giving_skill_points:
-                    self.hp += level.level
-                    hp_formula.append(f'{level.level}')
+                if level.favored_hit_points:
+                    self.hp += level.favored_hit_points
+                    hp_formula.append(f'{level.favored_hit_points}')
             total_level += level.level
         self.hp += total_level * get_modifier(self.CON) + self.volatile_hp
         hp_formula.append(f'{total_level * get_modifier(self.CON)}')
@@ -144,6 +144,7 @@ class PathfinderCharacter(Character):
     def make_ac(self):
         from collector.utils.pathfinder_tools import get_modifier, AC_SIZE_MODIFIER
         self.AC_size_modifier = AC_SIZE_MODIFIER[self.race.size.lower()]
+
         self.AC = 10 + self.AC_armor_bonus + self.AC_shield_bonus + get_modifier(
             self.DEX) + self.AC_size_modifier + self.AC_natural_armor + self.AC_deflection_modifier + self.AC_misc_modifier
         self.touch_AC = 10 + self.AC_shield_bonus + get_modifier(
@@ -231,20 +232,47 @@ class PathfinderCharacter(Character):
         self.CMB = self.BAB + get_modifier(self.STR) + CMB_size_modifier
         self.CMD = self.CMB + get_modifier(self.DEX) + 10 + self.AC_misc_modifier
 
+    def fix_defense(self):
+        armors = []
+        self.AC_armor_bonus = 0
+        for a in self.equipped_armors():
+            armors.append(f'{as_modifier(a["armor"].AC_bonus)} {a["gear"].name.lower()}')
+            self.AC_armor_bonus += a["armor"].AC_bonus
+        self.AC_details = ",  ".join(armors)
+        self.make_ac()
+
+    def update_tcl(self):
+        self.tcl = 0
+        for level in self.pathfinderlevel_set.all():
+            self.tcl += level.level
+        self.CR = self.tcl + 1
+
+    def fix_statistics(self):
+        pass
+
+    def fix_spells(self):
+        pass
+
+    def fix_gear(self):
+        pass
+
     def fix(self):
         super().fix()
+        self.update_tcl()
         if self.need_fix:
             # self.race.propagate(self)
             self.fix_offense()
+            self.fix_defense()
+            self.fix_statistics()
+            self.fix_spells()
+            self.fix_gear()
             self.make_misc()
             self.make_abilities()
             self.make_hp()
-            self.make_ac()
 
             self.make_ranks()
             self.need_fix = False
 
-    @property
     def equipped_weapons(self):
         from collector.models.pathfinder_weapon import PathfinderWeapon
         equipped_weapons = []
@@ -254,11 +282,14 @@ class PathfinderCharacter(Character):
                 equipped_weapons.append({'gear': equipment.gear, 'weapon': x})
         return equipped_weapons
 
-    @property
-    def equipped_armors(self):
+    def equipped_armors(self, equipped=True):
         from collector.models.pathfinder_armor import PathfinderArmor
         equipped_armors = []
-        for equipment in self.pathfinderequipment_set.all():
+        if equipped:
+            current_set = self.pathfinderequipment_set.filter(equipped=True)
+        else:
+            current_set = self.pathfinderequipment_set.all()
+        for equipment in current_set:
             if equipment.gear.is_armor:
                 x = equipment.gear.as_armor
                 equipped_armors.append({'gear': equipment.gear, 'armor': x})
@@ -271,11 +302,15 @@ class PathfinderCharacter(Character):
         return False
 
     @property
+    def total_feats(self):
+        x = math.floor((self.tcl + 1) / 2)
+        return x
+
+    @property
     def roster(self):
         from collector.utils.pathfinder_tools import get_modifier, as_modifier
-        import math
         str = ""
-        str += f"<div class='roster' id='roster_{self.rid}'>"
+        str += f"<div class='roster hidden' id='roster__{self.rid}'>"
         display_special = ''
         if self.player:
             display_special = "player"
@@ -292,7 +327,7 @@ class PathfinderCharacter(Character):
         for level in self.pathfinderlevel_set.all():
             if level.base_attack_bonus > bestbab:
                 bestbab = level.base_attack_bonus
-            cls.append(level.class_level)
+            cls.append(level.class_level.lower())
         cls_str = "/".join(cls)
         str += " " + cls_str
         str += f"<br/>{self.alignment.upper()} {self.race.size.title()} {self.race} ({math.floor(self.height / 12)} ft. {self.height - math.floor(self.height / 12) * 12}in. / {self.weight} lbs)"
@@ -309,7 +344,7 @@ class PathfinderCharacter(Character):
         str += f"<b>Speed</b> {self.speed} ft"
         weapons_contact = []
         weapons_ranged = []
-        for x in self.equipped_weapons:
+        for x in self.equipped_weapons():
             sized_dmg = x['weapon'].DMG_medium
             if self.is_small:
                 sized_dmg = x['weapon'].DMG_small
@@ -345,17 +380,18 @@ class PathfinderCharacter(Character):
         str += f"<div class='block'>Spells</div>"
         str += f"{self.roster_spells}"
         str += f"<div class='block'>Gear</div>"
-        str += "<br/><b>Gear </b>"
+        stuff = []
         for equipment in self.pathfinderequipment_set.all():
             note = ''
             if equipment.gear.is_armor:
                 note = "(armor)"
             if equipment.gear.is_weapon:
                 note = "(weapon)"
-            str += f"<br>{equipment.gear} {note}"
+            stuff.append(f"{equipment.gear} {note}")
+        str += f"{', '.join(stuff)}."
         str += f"<div class='block'>Notes</div>"
         str += f"<b>XP</b> {self.current_xp}"
-        str += f"<div class='text'>{self.height * 2.54} / {self.weight / 2} <br/>{self.presentation}</div>"
+        str += f"<div class='text'>{self.height * 2.54} / {self.weight / 2} <br/>Total feats: {self.total_feats}<br/>{self.presentation}</div>"
         str += "</div>"
         return str
 
@@ -374,16 +410,30 @@ class PathfinderCharacter(Character):
 
     @property
     def roster_spells(self):
+        from collector.models.pathfinder_spell import PathfinderSpell
         list = []
         languages = self.race.languages.split(";")
         for level in self.pathfinderlevel_set.all():
             if level.character_class.is_spellcasting_class:
                 cl, ms, cc = level.character_class.current_caster_level(level.level)
+                spell_level = -1
                 if cl:
-                    list.append(f'<i>{cl.label}</i> (Max spell level {ms}) {cc}<ul>')
+                    # Todo: set dynamic filter here
+                    list.append(f'<i>{cl.label}</i><ul>')
+                    for spell in PathfinderSpell.objects.filter(source="PFRPG Core", druid__lte=level.level).order_by(
+                            'druid', 'name'):
+                        if spell_level != spell.SLA_Level:
+                            if spell_level != -1:
+                                list.append(", ".join(level_list))
+                                list.append(f".</li>")
+                            level_list = []
+                            spell_level = spell.SLA_Level
+                            list.append(f"<li><em>Level {spell.SLA_Level}:</em> ")
+                        level_list.append(f"{spell.name}")
+                    list.append(", ".join(level_list))
+                    list.append(f".</li>")
                     list.append(f'</ul>')
-        return ", ".join(list) + "."
-
+        return "".join(list) + "."
 
     @property
     def roster_feats(self):
@@ -463,6 +513,7 @@ class PathfinderCharacterAdmin(admin.ModelAdmin):
     from collector.models.pathfinder_rank import PathfinderRankInline
     from collector.models.pathfinder_equipment import PathfinderEquipmentInline
     from collector.models.pathfinder_character_feat import PathfinderCharacterFeatInline
-    list_display = ['name', 'player', 'hp', 'STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA', 'dm_notes']
+    ordering = ['-player', '-tcl']
+    list_display = ['name', 'player', 'tcl', 'hp', 'STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA', 'dm_notes']
     actions = [roll_standard_abilities, roll_classic_abilities, refix]
     inlines = [PathfinderLevelInline, PathfinderRankInline, PathfinderEquipmentInline, PathfinderCharacterFeatInline]

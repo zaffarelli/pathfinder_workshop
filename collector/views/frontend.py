@@ -9,6 +9,6 @@ def index(request):
     characters = PathfinderCharacter.objects.order_by('-current_xp', 'name')
     ch = []
     for c in characters:
-        ch.append({'name': c.name, 'object': c.to_json(), 'roster': c.roster})
+        ch.append({'name': c.name,'rid':c.rid, 'object': c.to_json(), 'roster': c.roster})
     context = {'fontset': FONTSET, 'characters': ch}
     return render(request, 'collector/index.html', context=context)

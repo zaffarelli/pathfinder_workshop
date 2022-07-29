@@ -2,21 +2,27 @@
 {%  load static %}
 
 {% block menu %}
-{% for c in characters %}
-<div class="menu_item action" action="toggle" param="{{c.rid}}">{{ c.name|safe }}</div>
-{% endfor %}
+    {% for c in characters %}
+        {% include "collector/menu_item.html" with c=c%}
+    {% endfor %}
 {% endblock menu %}
 
 {% block details %}
-{% for c in characters %}
-{{ c.roster|safe }}
-{% endfor %}
+    {% for c in characters %}
+        {{ c.roster|safe }}
+    {% endfor %}
 {% endblock details %}
+
+{% block header %}
+{% include "collector/pathfinder.svg"%}
+{% endblock header %}
 
 
 {% block custom_js %}
 <script>
+    console.log("Defer...")
     _.defer(function () {
+        console.log("Deferred")
         let co = new PathfinderWorkshop()
         co.perform();
         co.revealUI();

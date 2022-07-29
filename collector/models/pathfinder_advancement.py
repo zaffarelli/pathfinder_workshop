@@ -47,3 +47,4 @@ class PathfinderClassAdvancementAdmin(admin.ModelAdmin):
     ordering = ['pathfinder_class', 'level']
     list_display = ['label', 'level', 'spd_0', 'spd_1', 'spd_2', 'spd_3', 'spd_4', 'spd_5', 'spd_6', 'spd_7',
                     'spd_8', 'spd_9', 'features_list']
+    list_filter = ['pathfinder_class', 'level']

@@ -14,11 +14,15 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script type="text/javascript" src='{% static "js/pathfinder_workshop.es6" %}'></script>
     {% for font in fontset %}
-        <link rel='stylesheet' href="https://fonts.googleapis.com/css2?family={{font}}">
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css2?family={{font}}">
     {% endfor %}
     <link rel='stylesheet' type='text/css' href='{% sass_src "collector/scss/all.scss" %}'/>
 </head>
 <body>
+<div class="header">
+    {% block header %}
+    {% endblock header %}
+</div>
 <div class="main">
     <div class="menuzone hidden">
         {% block menu %}
@@ -35,5 +39,9 @@
 
 {% block custom_js %}
 {% endblock custom_js %}
+<div class="footer">
+    {% block footer %}
+    {% endblock footer %}
+</div>
 </body>
 </html>

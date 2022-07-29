@@ -3,14 +3,32 @@ body {
   padding: 0;
   margin: 0;
 
+  & .header {
+    position: fixed;
+    width: 100%;
+    z-index:100;
+  }
+
+  & .footer {
+    position: fixed;
+    height: 25px;
+    padding: 5px;
+    width: 100%;
+    top:auto;
+    bottom:0;
+    z-index:100;
+  }
+
+
   & .main {
-    padding: 8px;
+    z-index:50;
+    padding: 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
-
+    margin-top:70px;
     gap: 5px;
     width: 100%;
     height: 100%;
@@ -23,14 +41,38 @@ body {
       justify-content: stretch;
       align-content: stretch;
       align-items: flex-start;
-      gap: 5px 3px;
-      width: calc(28ex + 10px);
+      gap: 5px 0px;
+      width: 50ex;
 
       & .menu_item {
-        width: calc(28ex);
+        width: calc(100% - 2px - 6px); // parentwidth - item.border - item.padding
         border: 1px solid black;
         padding: 3px;
-        display:inline-block;
+        display: flex;
+        flex-flow: row wrap;
+        justify-items: stretch;
+        align-content: stretch;
+        align-items: stretch;
+
+        & .lefty {
+          order: 1;
+          flex-grow: 2;
+          width: calc(100% - 72px);
+          font-weight: 900;
+
+          display: inline-block;
+        }
+
+        & .righty {
+          order: 2;
+          flex-grow: 0;
+          width: 20px;
+          text-align: right;
+          font-weight: 900;
+          display: inline-block;
+
+          text-align: center;
+        }
       }
 
     }
@@ -41,29 +83,39 @@ body {
       justify-content: flex-start;
       align-content: flex-start;
       align-items: flex-start;
+      margin-bottom: 30px;
 
-      background: transparent;
       //border:1px solid black;
       gap: 5px;
-      width: calc(100% - 28ex - 15px);
+      width: calc(100% - 50ex - 28px);
       height: auto;
 
       & .roster {
-        width: 300px;
-        min-width: 400px;
+        width: 600px;
+        height: auto;
+        //border: 1px solid orange;
 
-        & .text{
-          text-align:justify;
+        border-width: 0 !important;
+
+        & .text {
+          text-align: justify;
         }
 
       }
-
-
-
     }
   }
 }
 
-.hidden{
-  display:none;
+.hidden {
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  gap: 0 !important;
+
+  & div.name.player {
+    display: none !important;
+  }
+
+  padding: 0 !important;
+  order: 100 !important;
 }

@@ -115,3 +115,5 @@ def table7_3(gender_name, race_name, rolled_value=0):
     height = base_height + rolled_value
     weight = base_weight + rolled_value * weight_modifier
     return height, weight
+
+

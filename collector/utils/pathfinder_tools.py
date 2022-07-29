@@ -9,14 +9,14 @@ HITDICE_TYPE = (
 )
 
 BABRates = (
-    ('FBAB', 'Fast BAB'),
-    ('MBAB', 'Medium BAB'),
-    ('SBAB', 'Slow BAB'),
+    ('FBAB', 'Fast'),
+    ('MBAB', 'Medium'),
+    ('SBAB', 'Slow'),
 )
 
 SaveRates = (
-    ('GSAVE', 'Good Save'),
-    ('BSAVE', 'Bad Save'),
+    ('GSAVE', 'Good'),
+    ('BSAVE', 'Bad'),
 )
 
 

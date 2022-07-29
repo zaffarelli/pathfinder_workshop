@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib import admin
-from collector.utils.pathfinder_tools import BABRates, SaveRates
+from collector.utils.pathfinder_tools import BABRates, SaveRates, ABILITIES_CHOICES
 from collector.models.pathfinder_class_feature import PathfinderClassFeature
 
 
@@ -19,6 +19,8 @@ class PathfinderClass(models.Model):
 
     volatile_age = models.IntegerField(default=0, blank=True)
     volatile_gold = models.PositiveIntegerField(default=0, blank=True)
+
+    main_ability = models.CharField(max_length=3, default='---', choices=ABILITIES_CHOICES, blank=True)
 
     BAB_rate = models.CharField(max_length=4, choices=BABRates, default='MBAB')
     fort_rate = models.CharField(max_length=5, choices=SaveRates, default='BSAVE')
@@ -54,6 +56,7 @@ class PathfinderClass(models.Model):
 
 class PathfinderClassAdmin(admin.ModelAdmin):
     from collector.models.pathfinder_advancement import PathfinderClassAdvancementInline
-    ordering = ['name']
-    list_display = ['name', 'is_npc_class', 'is_spellcasting_class', 'skill_ranks_per_level', 'hit_die', "class_skills"]
+    ordering = ['is_npc_class', 'name']
+    list_display = ['name', 'main_ability', 'is_npc_class', 'is_spellcasting_class', 'BAB_rate', 'fort_rate', 'ref_rate',
+                    'will_rate', 'skill_ranks_per_level', 'hit_die', "class_skills"]
     inlines = [PathfinderClassAdvancementInline]

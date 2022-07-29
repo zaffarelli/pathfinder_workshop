@@ -21,10 +21,11 @@ class PathfinderWorkshop {
 
     revealUI() {
         let me = this;
+        $('.header').removeClass('hidden');
         $('.menuzone').removeClass('hidden');
-        $('.eventzone').removeClass('hidden');
-        $('.userzone').removeClass('hidden');
-        $('.wrapper').removeClass('hidden');
+      //  $('.eventzone').removeClass('hidden');
+      //  $('.userzone').removeClass('hidden');
+      //  $('.wrapper').removeClass('hidden');
         $('.details').removeClass('hidden');
     }
 
@@ -134,35 +135,14 @@ class PathfinderWorkshop {
         $('.toggle').off().on('click', function (event) {
             event.preventDefault();
             event.stopPropagation();
-            let action = $(this).attr('action');
             let param = $(this).attr('param');
-            let option = $(this).attr('option');
-            let url = 'ajax/toggle/' + action + '/';
             if (param != undefined) {
-                let p = param.replaceAll('-', '_');
-                if (option) {
-                    url = 'ajax/toggle/' + action + '/' + p + '/' + option + '/';
-                } else {
-                    url = 'ajax/toggle/' + action + '/' + p + '/';
-                }
+                //$('.roster').addClass('hidden');
+                $('#roster__'+param).toggleClass('hidden');
             }
-            $.ajax({
-                url: url,
-                success: function (answer) {
-                    if (action == 'toggle_follower') {
-                        $('#dialog').html(answer.data);
-                    } else {
-                        $(answer.target).html(answer.data);
-                    }
-                    me.rebootLinks();
-                },
-                error: function (answer) {
-                    console.error(answer);
-                    me.rebootLinks();
-                }
-            });
-
+            console.log('shoot');
         });
+        console.log('Register Toggle!!');
     }
 
     registerAction() {
@@ -280,10 +260,12 @@ class PathfinderWorkshop {
             me.registerToggle();
             // me.registerAction();
             // me.registerPseudoLinks();
+            console.log("Reboot links :)");
         });
     }
 
     perform() {
+        console.log("Perform");
         let me = this;
         // me.loadAjax();
         me.rebootLinks();

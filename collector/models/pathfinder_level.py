@@ -28,11 +28,12 @@ class PathfinderLevel(models.Model):
 
     @property
     def base_attack_bonus(self):
+        # Todo: Handle supplementary attacks
         bab = 0
         if self.character_class.BAB_rate == 'FBAB':
             bab = self.level
         elif self.character_class.BAB_rate == 'MBAB':
-            bab = self.level - 1
+            bab = (self.level - 1) % 4 + 3 * math.floor(self.level - 1 / 4)
         elif self.character_class.BAB_rate == 'SBAB':
             bab = math.floor(self.level / 2)
         return bab
@@ -60,8 +61,6 @@ class PathfinderLevel(models.Model):
         elif self.character_class.will_rate == 'BSAVE':
             score = math.floor(self.level / 3)
         return score
-
-
 
 
 class PathfinderLevelInline(admin.TabularInline):
