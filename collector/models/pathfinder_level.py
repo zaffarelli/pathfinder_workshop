@@ -13,7 +13,7 @@ class PathfinderLevel(models.Model):
     character_class = models.ForeignKey(PathfinderClass, on_delete=models.CASCADE)
     level = models.PositiveIntegerField(default=0)
     is_favorite = models.BooleanField(default=False)
-    is_giving_skill_points = models.BooleanField(default=False)
+    # is_giving_skill_points = models.BooleanField(default=False)
     favored_skill_points = models.PositiveIntegerField(default=0)
     favored_hit_points = models.PositiveIntegerField(default=0)
     deity = models.CharField(default='', max_length=128, blank=True)
@@ -70,4 +70,4 @@ class PathfinderLevelInline(admin.TabularInline):
 
 
 class PathfinderLevelAdmin(admin.ModelAdmin):
-    list_display = ['character', 'character_class', 'level', 'is_favorite', 'is_giving_skill_points']
+    list_display = ['character', 'character_class', 'level', 'is_favorite']

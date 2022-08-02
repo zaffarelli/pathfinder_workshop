@@ -2,12 +2,11 @@ import math
 
 
 def aging_class_group_tbl7_1(class_name):
+    g = 2
     if class_name in ['barbarian', 'rogue', 'sorcerer']:
         g = 0
     elif class_name in ['bard', 'fighter', 'paladin', 'ranger']:
         g = 1
-    elif class_name in ['cleric', 'druid', 'monk', 'wizard']:
-        g = 2
     return g
 
 

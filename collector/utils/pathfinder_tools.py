@@ -1,4 +1,4 @@
-FONTSET = ['Roboto', 'Ubuntu', 'Neuton', 'Raleway:wght@300;500;800&display=swap']
+FONTSET = ['Roboto', 'Ubuntu', 'Neuton', 'Raleway:wght@300;500;800&display=swap', 'UnifrakturMaguntia', 'Khand', 'Schoolbell']
 
 HITDICE_TYPE = (
     ("4", "d4"),

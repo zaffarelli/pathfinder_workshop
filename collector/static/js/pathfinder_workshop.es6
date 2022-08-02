@@ -19,13 +19,14 @@ class PathfinderWorkshop {
         });
     }
 
+
     revealUI() {
         let me = this;
         $('.header').removeClass('hidden');
         $('.menuzone').removeClass('hidden');
-      //  $('.eventzone').removeClass('hidden');
-      //  $('.userzone').removeClass('hidden');
-      //  $('.wrapper').removeClass('hidden');
+        //  $('.eventzone').removeClass('hidden');
+        //  $('.userzone').removeClass('hidden');
+        //  $('.wrapper').removeClass('hidden');
         $('.details').removeClass('hidden');
     }
 
@@ -138,7 +139,7 @@ class PathfinderWorkshop {
             let param = $(this).attr('param');
             if (param != undefined) {
                 //$('.roster').addClass('hidden');
-                $('#roster__'+param).toggleClass('hidden');
+                $('#roster__' + param).toggleClass('hidden');
             }
             console.log('shoot');
         });
@@ -208,6 +209,15 @@ class PathfinderWorkshop {
                     if (action == 'register_submit') {
                         $(".invite_block").html(answer.data);
                     }
+
+                    if (action == 'character_sheet') {
+                        $('#d3area').removeClass('hidden');
+                        let s = JSON.parse(answer.settings);
+                        let d = JSON.parse(answer.data);
+                        me.d3 = new CrossOverSheet(s, "#d3area", me);
+                        me.d3.perform(d);
+                    }
+
                     $('#reday').click();
                     $('#reday').css('border-color', "red");
                     // console.log("reday");
@@ -258,7 +268,7 @@ class PathfinderWorkshop {
             // me.registerDisplay();
             // me.registerOverlay();
             me.registerToggle();
-            // me.registerAction();
+            me.registerAction();
             // me.registerPseudoLinks();
             console.log("Reboot links :)");
         });

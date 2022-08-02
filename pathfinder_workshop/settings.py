@@ -150,4 +150,6 @@ STATICFILES_FINDERS = [
     'sass_processor.finders.CssFinder',
 ]
 
-RELEASE = '0.5.0'
+RELEASE = '0.6.0'
+
+# pip install charset-normalizer==2.0.12 cryptography==37.0.2 django-colorfield==0.7.0 django-sass==1.0.0 django-sass-processor==1.1

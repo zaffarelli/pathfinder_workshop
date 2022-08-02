@@ -12,9 +12,10 @@ class PathfinderArmor(PathfinderGear):
     armor_check_penalty = models.IntegerField(default=0, blank=True)
     arcane_spell_failure = models.IntegerField(default=0, blank=True)
     category = models.CharField(default='', max_length=256, blank=True)
+    is_shield = models.BooleanField(default=False, blank=True)
 
 
 class PathfinderArmorAdmin(PathfinderGearAdmin):
     ordering = ['category', 'AC_bonus', 'name']
     list_display = ['name', 'category', 'gp_value', 'AC_bonus', 'lbs_weight', 'armor_check_penalty']
-    list_filter = ['category']
+    list_filter = ['category', 'is_shield']

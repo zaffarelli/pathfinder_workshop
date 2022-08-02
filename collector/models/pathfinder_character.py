@@ -30,17 +30,19 @@ class PathfinderCharacter(Character):
     volatile_choice_racial_mod = models.CharField(max_length=3, default='---', choices=ABILITIES_CHOICES, blank=True)
     volatile_hwmod = models.IntegerField(default=0, blank=True)
     volatile_money = models.IntegerField(default=0, blank=True)
+    volatile_age = models.IntegerField(default=0, blank=True)
 
     race = models.ForeignKey(PathfinderRace, on_delete=models.SET_NULL, null=True, blank=True)
     gender = models.CharField(default='m', max_length=1, choices=(('m', 'Male'), ('f', 'Female')), blank=True)
 
-    age = models.IntegerField(default=25, blank=True)
+    age = models.IntegerField(default=0, blank=True)
     LtoC = models.IntegerField(default=0, blank=True)
     GtoE = models.IntegerField(default=0, blank=True)
     xp_value = models.IntegerField(default=0, blank=True)
     CR = models.IntegerField(default=1, blank=True)
     speed = models.IntegerField(default=30, blank=True)
     current_xp = models.PositiveIntegerField(default=0, blank=True)
+    homeland = models.TextField(max_length=128, default='', blank=True)
 
     # feats = models.ManyToManyField(PathfinderFeat)
 
@@ -205,10 +207,13 @@ class PathfinderCharacter(Character):
         self.ranked_skills = ", ".join(ranked_skills_list)
 
     def make_misc(self):
-        from collector.utils.pathfinder_core import table7_3
+        from collector.utils.pathfinder_core import table7_3, table7_1
         self.height, self.weight = table7_3(self.get_gender_display().lower(), self.race.name.lower(),
                                             self.volatile_hwmod)
         self.speed = self.race.speed
+        a,b,c = table7_1(self.race.name.lower(), self.pathfinderlevel_set.filter(is_favorite=True).first().character_class.name.lower())
+        print(a,b,c)
+        self.age = a + self.volatile_age
 
     def fix_offense(self):
         from collector.utils.pathfinder_tools import get_modifier
@@ -292,7 +297,22 @@ class PathfinderCharacter(Character):
         for equipment in current_set:
             if equipment.gear.is_armor:
                 x = equipment.gear.as_armor
-                equipped_armors.append({'gear': equipment.gear, 'armor': x})
+                if not x.is_shield:
+                    equipped_armors.append({'gear': equipment.gear, 'armor': x})
+        return equipped_armors
+
+    def equipped_shields(self, equipped=True):
+        from collector.models.pathfinder_armor import PathfinderArmor
+        equipped_armors = []
+        if equipped:
+            current_set = self.pathfinderequipment_set.filter(equipped=True)
+        else:
+            current_set = self.pathfinderequipment_set.all()
+        for equipment in current_set:
+            if equipment.gear.is_armor:
+                x = equipment.gear.as_armor
+                if x.is_shield:
+                    equipped_armors.append({'gear': equipment.gear, 'armor': x})
         return equipped_armors
 
     @property
@@ -305,6 +325,13 @@ class PathfinderCharacter(Character):
     def total_feats(self):
         x = math.floor((self.tcl + 1) / 2)
         return x
+
+    @property
+    def character_class_levels(self):
+        ccl = []
+        for level in self.pathfinderlevel_set.all():
+            ccl.append(level.class_level.lower())
+        return " ".join(ccl)
 
     @property
     def roster(self):
@@ -470,6 +497,14 @@ class PathfinderCharacter(Character):
                     list.append(
                         f"{cs_flagstart}{rank.skill.name}{cs_flagend}&nbsp;{as_modifier(rank.total_score)}{rank.details}")
         return ", ".join(list)
+
+    @property
+    def sheet_skills(self):
+        from collector.models.pathfinder_skill import PathfinderSkill
+        list = []
+        for rank in self.pathfinderrank_set.order_by('skill'):
+            list.append(rank.to_json())
+        return list
 
 
 def roll_standard_abilities(modeladmin, request, queryset):
