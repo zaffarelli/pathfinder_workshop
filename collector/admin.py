@@ -1,5 +1,6 @@
 from django.contrib import admin
-from collector.models.pathfinder_character import PathfinderCharacter, PathfinderCharacterAdmin
+from collector.models.pathfinder_character import PathfinderCharacter
+from collector.models.pathfinder_character_admin import PathfinderCharacterAdmin
 from collector.models.pathfinder_race import PathfinderRace, PathfinderRaceAdmin
 from collector.models.pathfinder_level import PathfinderLevel, PathfinderLevelAdmin
 from collector.models.pathfinder_class import PathfinderClass, PathfinderClassAdmin

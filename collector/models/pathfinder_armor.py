@@ -13,9 +13,11 @@ class PathfinderArmor(PathfinderGear):
     arcane_spell_failure = models.IntegerField(default=0, blank=True)
     category = models.CharField(default='', max_length=256, blank=True)
     is_shield = models.BooleanField(default=False, blank=True)
+    speed_30 = models.IntegerField(default=30, blank=True)
+    speed_20 = models.IntegerField(default=20, blank=True)
 
 
 class PathfinderArmorAdmin(PathfinderGearAdmin):
     ordering = ['category', 'AC_bonus', 'name']
-    list_display = ['name', 'category', 'gp_value', 'AC_bonus', 'lbs_weight', 'armor_check_penalty']
+    list_display = ['name', 'category', 'gp_value', 'AC_bonus', 'lbs_weight', 'armor_check_penalty', 'speed_30', 'speed_20']
     list_filter = ['category', 'is_shield']

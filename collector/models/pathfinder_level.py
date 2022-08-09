@@ -54,19 +54,13 @@ class PathfinderLevel(models.Model):
             score = math.floor(self.level / 3)
         return score
 
-    def willpower_bonus(self):
+    def will_bonus(self):
         score = 0
         if self.character_class.will_rate == 'GSAVE':
             score = math.ceil(self.level / 2) + 1
         elif self.character_class.will_rate == 'BSAVE':
             score = math.floor(self.level / 3)
         return score
-
-
-class PathfinderLevelInline(admin.TabularInline):
-    model = PathfinderLevel
-    extras = 1
-    ordering = ('character_class', 'level')
 
 
 class PathfinderLevelAdmin(admin.ModelAdmin):

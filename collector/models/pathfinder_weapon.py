@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib import admin
 from collector.models.pathfinder_gear import PathfinderGear, PathfinderGearAdmin
+from collector.utils.pathfinder_tools import json_default
+import json
 
 
 class PathfinderWeapon(PathfinderGear):
@@ -25,7 +27,14 @@ class PathfinderWeapon(PathfinderGear):
         else:
             return f'{self.name}'
 
-
+    @property
+    def as_json(self):
+        data = {}
+        data['name'] = self.name
+        data['DMG_small'] = self.DMG_small
+        data['DMG_medium'] = self.DMG_medium
+        jstr = json.dumps(data, default=json_default, sort_keys=True, indent=4)
+        return jstr
 
 
 

@@ -1,4 +1,5 @@
 $base_background: #102030;
+$player_background: #202020;
 $base_color: #F0F0F0;
 $website_background_image: "/static/collector/paper.png";
 $base_font: Roboto;
@@ -29,16 +30,14 @@ body {
   }
 
   & .main {
-
-
-
-
     & .menuzone {
       background: transparent;
-
       & .menu_item {
         background: $base_background;
         color: $base_color;
+        &.PC{
+          background: $player_background;
+        }
 
         font-variant: small-caps;
         text-align: left;

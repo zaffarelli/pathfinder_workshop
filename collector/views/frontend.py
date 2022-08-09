@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from collector.utils.pathfinder_tools import FONTSET, get_modifier, as_modifier
+from collector.utils.pathfinder_tools import FONTSET, get_modifier, as_modifier, as_squares
 from collector.models.pathfinder_character import PathfinderCharacter
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
@@ -11,10 +11,10 @@ import math
 def index(request):
     if not request.user.is_authenticated:
         return redirect('accounts/login/')
-    characters = PathfinderCharacter.objects.order_by('-current_xp', 'name')
+    characters = PathfinderCharacter.objects.order_by('-player', '-current_xp', 'name')
     ch = []
     for c in characters:
-        ch.append({'name': c.name, 'rid': c.rid, 'object': c.to_json(), 'roster': c.roster})
+        ch.append({'name': c.name, 'rid': c.rid, 'object': c.to_json(), 'roster': c.roster, 'player': c.player})
     context = {'fontset': FONTSET, 'characters': ch}
     return render(request, 'collector/index.html', context=context)
 
@@ -35,9 +35,9 @@ def display_crossover_sheet(request, slug=None, option=None):
         c.ccl = c.character_class_levels
         c.height_foot = f'{math.floor(c.height / 12)} ft. {c.height % 12} in.'
         c.weight_lbs = f'{c.weight} lbs'
-        c.height_m = f'{math.floor(c.height * 2.54)/100}'
-        c.weight_kg = f'{c.weight/2}'
-
+        c.height_m = f'{math.floor(c.height * 2.54) / 100}'
+        c.weight_kg = f'{c.weight / 2}'
+        c.deity = c.fetch_deity()
         c.STR_mod = as_modifier(get_modifier(c.STR))
         c.DEX_mod = as_modifier(get_modifier(c.DEX))
         c.CON_mod = as_modifier(get_modifier(c.CON))
@@ -45,15 +45,19 @@ def display_crossover_sheet(request, slug=None, option=None):
         c.WIS_mod = as_modifier(get_modifier(c.WIS))
         c.CHA_mod = as_modifier(get_modifier(c.CHA))
 
+        c.speed_sq = as_squares(c.speed)
+        c.armor_speed_sq = as_squares(c.armor_speed)
+
+        c.all_weapons = [{},{},{},{},{},{},{},{},{},{}]
+        print(c.all_weapons)
+
+
         c.all_ranks = c.sheet_skills
 
         c.armor_bonus = c.AC_armor_bonus
         c.shield_bonus = "+4"
 
-
-
-        print(c.all_ranks)
-
+        # print(c.all_ranks)
 
         # spe = c.get_specialities()
         # shc = c.get_shortcuts()

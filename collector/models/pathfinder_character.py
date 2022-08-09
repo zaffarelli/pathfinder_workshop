@@ -2,23 +2,12 @@ from django.db import models
 from collector.models.character import Character
 from collector.utils.pathfinder_tools import as_modifier, ABILITIES_CHOICES, get_modifier
 from collector.models.pathfinder_race import PathfinderRace
-from collector.models.pathfinder_feat import PathfinderFeat
-from django.contrib import admin
 import math
 
 
 class PathfinderCharacter(Character):
     class Meta:
         verbose_name = 'Pathfinder Character'
-
-    player = models.CharField(max_length=128, default='', blank=True)
-
-    STR = models.IntegerField(default=0, blank=True, null=True)
-    DEX = models.IntegerField(default=0, blank=True, null=True)
-    CON = models.IntegerField(default=0, blank=True, null=True)
-    INT = models.IntegerField(default=0, blank=True, null=True)
-    WIS = models.IntegerField(default=0, blank=True, null=True)
-    CHA = models.IntegerField(default=0, blank=True, null=True)
 
     volatile_STR = models.IntegerField(default=0, blank=True, null=True)
     volatile_DEX = models.IntegerField(default=0, blank=True, null=True)
@@ -35,59 +24,72 @@ class PathfinderCharacter(Character):
     race = models.ForeignKey(PathfinderRace, on_delete=models.SET_NULL, null=True, blank=True)
     gender = models.CharField(default='m', max_length=1, choices=(('m', 'Male'), ('f', 'Female')), blank=True)
 
+    player = models.CharField(max_length=128, default='', blank=True)
+
+    STR = models.IntegerField(default=0, blank=True, null=True)
+    DEX = models.IntegerField(default=0, blank=True, null=True)
+    CON = models.IntegerField(default=0, blank=True, null=True)
+    INT = models.IntegerField(default=0, blank=True, null=True)
+    WIS = models.IntegerField(default=0, blank=True, null=True)
+    CHA = models.IntegerField(default=0, blank=True, null=True)
     age = models.IntegerField(default=0, blank=True)
     LtoC = models.IntegerField(default=0, blank=True)
     GtoE = models.IntegerField(default=0, blank=True)
     xp_value = models.IntegerField(default=0, blank=True)
     CR = models.IntegerField(default=1, blank=True)
-    speed = models.IntegerField(default=30, blank=True)
+    DR = models.IntegerField(default=0, blank=True)
+    speed = models.IntegerField(default=0, blank=True)
+    armor_speed = models.IntegerField(default=0, blank=True)
+    fly_speed = models.IntegerField(default=0, blank=True)
+    swim_speed = models.IntegerField(default=0, blank=True)
+    climb_speed = models.IntegerField(default=0, blank=True)
+    burrow_speed = models.IntegerField(default=0, blank=True)
     current_xp = models.PositiveIntegerField(default=0, blank=True)
     homeland = models.TextField(max_length=128, default='', blank=True)
-
     # feats = models.ManyToManyField(PathfinderFeat)
-
     AC = models.IntegerField(default=0, blank=True)
     touch_AC = models.IntegerField(default=0, blank=True)
     flatfooted_AC = models.IntegerField(default=0, blank=True)
     AC_details = models.TextField(max_length=1024, default='', blank=True)
-
     AC_armor_bonus = models.IntegerField(default=0, blank=True)
     AC_shield_bonus = models.IntegerField(default=0, blank=True)
     AC_size_modifier = models.IntegerField(default=0, blank=True)
     AC_natural_armor = models.IntegerField(default=0, blank=True)
     AC_deflection_modifier = models.IntegerField(default=0, blank=True)
     AC_misc_modifier = models.IntegerField(default=0, blank=True)
-
     init = models.IntegerField(default=0, blank=True)
+    init_mod = models.IntegerField(default=0, blank=True)
     senses = models.TextField(default='', max_length=128, blank=True)
-
     tcl = models.IntegerField(default=0, blank=True)
-
     total_skill_points = models.IntegerField(default=0, blank=True)
-
     hp = models.IntegerField(default=0, blank=True)
     hp_formula = models.TextField(max_length=1024, default='', blank=True)
-
-    fort = models.IntegerField(default=0, blank=True)
-    ref = models.IntegerField(default=0, blank=True)
+    fortitude = models.IntegerField(default=0, blank=True)
+    reflex = models.IntegerField(default=0, blank=True)
     will = models.IntegerField(default=0, blank=True)
+    base_fortitude = models.IntegerField(default=0, blank=True)
+    base_reflex = models.IntegerField(default=0, blank=True)
+    base_will = models.IntegerField(default=0, blank=True)
+    fortitude_ability_mod = models.IntegerField(default=0, blank=True)
+    reflex_ability_mod = models.IntegerField(default=0, blank=True)
+    will_ability_mod = models.IntegerField(default=0, blank=True)
     saves_details = models.TextField(max_length=1024, default='', blank=True)
-
     BAB = models.IntegerField(default=0, blank=True)
     CMB = models.IntegerField(default=0, blank=True)
     CMD = models.IntegerField(default=0, blank=True)
-
     during_combat_tactics = models.TextField(max_length=1024, default='', blank=True)
     morale_tactics = models.TextField(max_length=1024, default='', blank=True)
-
     presentation = models.TextField(max_length=1024, default='', blank=True)
-
     height = models.IntegerField(default=0, blank=True)
     weight = models.IntegerField(default=0, blank=True)
-
     ranked_skills = models.TextField(default="", max_length=1024, blank=True)
-
     dm_notes = models.TextField(default='', max_length=2048, blank=True)
+
+    def update_tcl(self):
+        self.tcl = 0
+        for level in self.pathfinderlevel_set.all():
+            self.tcl += level.level
+        self.CR = self.tcl + 1
 
     @property
     def alignment(self):
@@ -96,6 +98,13 @@ class PathfinderCharacter(Character):
         str = f'{LtoC[self.LtoC + 1]}{GtoE[self.GtoE + 1]}'
         if str == 'NN':
             str = 'N'
+        return str
+
+    def fetch_deity(self):
+        str = ""
+        for level in self.pathfinderlevel_set.all():
+            if level.deity:
+                str = level.deity.title()
         return str
 
     def make_abilities(self):
@@ -152,13 +161,25 @@ class PathfinderCharacter(Character):
         self.touch_AC = 10 + self.AC_shield_bonus + get_modifier(
             self.DEX) + self.AC_size_modifier + self.AC_deflection_modifier
         self.flatfooted_AC = 10 + self.AC_armor_bonus + self.AC_size_modifier + self.AC_natural_armor
-        self.fort = get_modifier(self.CON)
-        self.ref = get_modifier(self.DEX)
-        self.will = get_modifier(self.WIS)
+
+    def make_savingthrows(self):
+        self.base_fortitude = 0
+        self.base_reflex = 0
+        self.base_will = 0
         for level in self.pathfinderlevel_set.all():
-            self.fort += level.fortitude_bonus()
-            self.ref += level.reflex_bonus()
-            self.will += level.willpower_bonus()
+            self.base_fortitude += level.fortitude_bonus()
+            self.base_reflex += level.reflex_bonus()
+            self.base_will += level.will_bonus()
+
+        self.fortitude_ability_mod = get_modifier(self.CON)
+        self.reflex_ability_mod = get_modifier(self.DEX)
+        self.will_ability_mod = get_modifier(self.WIS)
+
+        self.fortitude = self.base_fortitude + self.fortitude_ability_mod
+        # print("Reflex 1", self.reflex, "Base", self.base_reflex, "Ability Mod", self.reflex_ability_mod)
+        self.reflex = self.base_reflex + self.reflex_ability_mod
+        self.will = self.base_will + self.will_ability_mod
+        # print("Reflex 2", self.reflex, "Base", self.base_reflex, "Ability Mod", self.reflex_ability_mod)
 
     def make_ranks(self):
         from collector.models.pathfinder_skill import PathfinderSkill
@@ -190,11 +211,11 @@ class PathfinderCharacter(Character):
                 if rank.skill.name.lower() in class_skills_list:
                     # ranked_skills_list.append(f'{rank.skill.name}{rank.if_wildcard}')
                     if level.level > highest_level:
-                        print(rank.skill.name, "is class skill for ", level)
+                        # print(rank.skill.name, "is class skill for ", level)
                         highest_level = level.level
                         rank.class_skill_as = level
                         rank.max = level.level
-                        print(rank.skill.name, rank.skill.ability, getattr(self, rank.skill.ability))
+                        # print(rank.skill.name, rank.skill.ability, getattr(self, rank.skill.ability))
                         rank.ability_modifier = get_modifier(getattr(self, rank.skill.ability))
                     rank.class_skill_bonus = 3
             rank.racial_modifier = 0
@@ -210,17 +231,26 @@ class PathfinderCharacter(Character):
         from collector.utils.pathfinder_core import table7_3, table7_1
         self.height, self.weight = table7_3(self.get_gender_display().lower(), self.race.name.lower(),
                                             self.volatile_hwmod)
-        self.speed = self.race.speed
-        a,b,c = table7_1(self.race.name.lower(), self.pathfinderlevel_set.filter(is_favorite=True).first().character_class.name.lower())
-        print(a,b,c)
+        a, b, c = table7_1(self.race.name.lower(),
+                           self.pathfinderlevel_set.filter(is_favorite=True).first().character_class.name.lower())
         self.age = a + self.volatile_age
+        self.make_speed()
+
+    def make_speed(self):
+        self.speed = self.race.speed
+        speed_field = "speed_" + str(self.speed)
+        self.armor_speed = 30
+        for armor in self.equipped_armors():
+            new_speed = getattr(armor['armor'], speed_field)
+            if self.armor_speed > new_speed:
+                self.armor_speed = new_speed
 
     def fix_offense(self):
         from collector.utils.pathfinder_tools import get_modifier
         bestbab = 0
         for level in self.pathfinderlevel_set.all():
             bestbab += level.base_attack_bonus
-        print("monk", bestbab)
+        # print("monk", bestbab)
         self.BAB = bestbab
         CMB_SIZE_MODIFIER = {
             'fine': -8,
@@ -245,15 +275,14 @@ class PathfinderCharacter(Character):
             self.AC_armor_bonus += a["armor"].AC_bonus
         self.AC_details = ",  ".join(armors)
         self.make_ac()
-
-    def update_tcl(self):
-        self.tcl = 0
-        for level in self.pathfinderlevel_set.all():
-            self.tcl += level.level
-        self.CR = self.tcl + 1
+        self.make_hp()
+        self.make_savingthrows()
 
     def fix_statistics(self):
-        pass
+        self.make_abilities()
+        self.make_ranks()
+        self.make_misc()
+        self.update_tcl()
 
     def fix_spells(self):
         pass
@@ -263,20 +292,15 @@ class PathfinderCharacter(Character):
 
     def fix(self):
         super().fix()
-        self.update_tcl()
-        if self.need_fix:
-            # self.race.propagate(self)
+        if self.race and len(self.pathfinderlevel_set.all()):
+            self.fix_statistics()
+            self.fix_gear()
             self.fix_offense()
             self.fix_defense()
-            self.fix_statistics()
             self.fix_spells()
-            self.fix_gear()
-            self.make_misc()
-            self.make_abilities()
-            self.make_hp()
-
-            self.make_ranks()
-            self.need_fix = False
+            print(f"{self.name} fixed...")
+        else:
+            print("Race / Levels missing")
 
     def equipped_weapons(self):
         from collector.models.pathfinder_weapon import PathfinderWeapon
@@ -365,7 +389,7 @@ class PathfinderCharacter(Character):
         str += f"<div class='block'>Defense</div>"
         str += f"<b>AC</b> {self.AC}, touch {self.touch_AC}, flat-footed {self.flatfooted_AC} ({self.AC_details})"
         str += f"<br/><b>hp</b> {self.hp} ({self.hp_formula})"
-        str += f"<br/><b>Fort</b> {as_modifier(self.fort)} <b>Ref</b> {as_modifier(self.ref)} <b>Will</b> {as_modifier(self.will)}; {self.saves_details}"
+        str += f"<br/><b>Fort</b> {as_modifier(self.fortitude)} <b>Ref</b> {as_modifier(self.reflex)} <b>Will</b> {as_modifier(self.will)}; {self.saves_details}"
 
         str += f"<div class='block'>Offense</div>"
         str += f"<b>Speed</b> {self.speed} ft"
@@ -446,9 +470,25 @@ class PathfinderCharacter(Character):
                 spell_level = -1
                 if cl:
                     # Todo: set dynamic filter here
-                    list.append(f'<i>{cl.label}</i><ul>')
-                    for spell in PathfinderSpell.objects.filter(source="PFRPG Core", druid__lte=level.level).order_by(
-                            'druid', 'name'):
+                    list.append(f'<i>{cl.label}</i><br/>Domains: {level.domains}<ul>')
+
+                    if level.character_class.name.lower() == 'druid':
+                        their_spell_list = PathfinderSpell.objects.filter(source="PFRPG Core",
+                                                                          druid__lte=level.level).order_by('druid',
+                                                                                                           'name')
+                    elif level.character_class.name.lower() == 'cleric':
+                        their_spell_list = PathfinderSpell.objects.filter(source="PFRPG Core",
+                                                                          cleric__lte=level.level).order_by('cleric',
+                                                                                                            'name')
+                    elif level.character_class.name.lower() == 'ranger':
+                        their_spell_list = PathfinderSpell.objects.filter(source="PFRPG Core",
+                                                                          cleric__lte=level.level).order_by('ranger',
+                                                                                                            'name')
+                    else:
+                        their_spell_list = PathfinderSpell.objects.filter(source="PFRPG Core",
+                                                                          druid__lte=level.level).order_by('druid',
+                                                                                                           'name')
+                    for spell in their_spell_list:
                         if spell_level != spell.SLA_Level:
                             if spell_level != -1:
                                 list.append(", ".join(level_list))
@@ -456,7 +496,15 @@ class PathfinderCharacter(Character):
                             level_list = []
                             spell_level = spell.SLA_Level
                             list.append(f"<li><em>Level {spell.SLA_Level}:</em> ")
-                        level_list.append(f"{spell.name}")
+                        addon = ""
+                        sdom = spell.domain.lower().split(" ")
+                        ldom = level.domains.lower().split(', ')
+                        if len(sdom) > 0:
+                            # print(spell.name,sdom, ldom, level.domains.lower().split(", "),addon)
+                            for d in ldom:
+                                if d in sdom:
+                                    addon = f' [<span style="color:purple;">{d}</span>]'
+                        level_list.append(f"{spell.name}{addon}")
                     list.append(", ".join(level_list))
                     list.append(f".</li>")
                     list.append(f'</ul>')
@@ -506,49 +554,9 @@ class PathfinderCharacter(Character):
             list.append(rank.to_json())
         return list
 
-
-def roll_standard_abilities(modeladmin, request, queryset):
-    from collector.utils.pathfinder_tools import standard_method
-    for c in queryset:
-        c.base_STR = standard_method()
-        c.base_DEX = standard_method()
-        c.base_CON = standard_method()
-        c.base_INT = standard_method()
-        c.base_WIS = standard_method()
-        c.base_CHA = standard_method()
-        c.need_fix = True
-        c.save()
-    short_description = 'Roll Abilities (Standard)'
-
-
-def roll_classic_abilities(modeladmin, request, queryset):
-    from collector.utils.pathfinder_tools import classic_method
-    for c in queryset:
-        c.base_STR = classic_method()
-        c.base_DEX = classic_method()
-        c.base_CON = classic_method()
-        c.base_INT = classic_method()
-        c.base_WIS = classic_method()
-        c.base_CHA = classic_method()
-        c.need_fix = True
-        c.save()
-    short_description = 'Roll Abilities (Classic)'
-
-
-def refix(modeladmin, request, queryset):
-    from collector.utils.pathfinder_tools import classic_method
-    for c in queryset:
-        c.need_fix = True
-        c.save()
-    short_description = 'Refix'
-
-
-class PathfinderCharacterAdmin(admin.ModelAdmin):
-    from collector.models.pathfinder_level import PathfinderLevelInline
-    from collector.models.pathfinder_rank import PathfinderRankInline
-    from collector.models.pathfinder_equipment import PathfinderEquipmentInline
-    from collector.models.pathfinder_character_feat import PathfinderCharacterFeatInline
-    ordering = ['-player', '-tcl']
-    list_display = ['name', 'player', 'tcl', 'hp', 'STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA', 'dm_notes']
-    actions = [roll_standard_abilities, roll_classic_abilities, refix]
-    inlines = [PathfinderLevelInline, PathfinderRankInline, PathfinderEquipmentInline, PathfinderCharacterFeatInline]
+    @property
+    def sheet_weapons(self):
+        list = []
+        for weapon in self.equipped_weapons():
+            list.append(weapon['weapon'].as_json)
+        return list

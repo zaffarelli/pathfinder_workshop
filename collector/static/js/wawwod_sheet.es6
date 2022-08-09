@@ -107,8 +107,8 @@ class WawwodSheet {
             .style('stroke', me.draw_fill)
             .style('stroke-width', '3pt')
             .style('stroke-linecap', 'round')
-            // .attr('marker-end', "url(#arrowhead)")
-            // .attr('marker-start', "url(#arrowhead)")
+        // .attr('marker-end', "url(#arrowhead)")
+        // .attr('marker-start', "url(#arrowhead)")
         ;
     }
 
@@ -123,8 +123,8 @@ class WawwodSheet {
             .style('stroke', me.draw_fill)
             .style('stroke-width', '3pt')
             .style('stroke-linecap', 'round')
-            // .attr('marker-end', "url(#arrowhead)")
-            // .attr('marker-start', "url(#arrowhead)")
+        // .attr('marker-end', "url(#arrowhead)")
+        // .attr('marker-start', "url(#arrowhead)")
         ;
     }
 
@@ -287,7 +287,7 @@ class WawwodSheet {
                 return ox;
             })
             .attr('y', function (d, i) {
-                return oy;
+                return oy-0.1*me.stepy;
             })
             .attr('width', function (d, i) {
                 return 0.2 * me.stepx;
@@ -296,8 +296,10 @@ class WawwodSheet {
                 return 0.2 * me.stepy;
             })
             .style("fill", function (d, i) {
-                if (r.is_class_skill) {
-                    return me.draw_fill;
+                if (me.blank == false) {
+                    if (r.is_class_skill) {
+                        return me.draw_fill;
+                    }
                 }
                 return "transparent";
             })
@@ -334,69 +336,163 @@ class WawwodSheet {
             .style("stroke", me.shadow_stroke)
             .style("stroke-width", '0.5pt')
             .text(r.ability);
-        item.append('text')
-            .attr("x", ox + 6.5 * me.stepx)
-            .attr("y", oy)
-            .attr("dy", "6pt")
-            .style("text-anchor", 'middle')
-            .style("font-family", me.user_font)
-            .style("font-size", me.small_font_size + 'pt')
-            .style("fill", me.user_fill)
-            .style("stroke", me.user_stroke)
-            .style("stroke-width", '0.5pt')
-            .text(r.ab_mod);
-        item.append('text')
-            .attr("x", ox + 7.0 * me.stepx)
-            .attr("y", oy)
-            .attr("dy", "6pt")
-            .style("text-anchor", 'middle')
-            .style("font-family", me.user_font)
-            .style("font-size", me.small_font_size + 'pt')
-            .style("fill", me.user_fill)
-            .style("stroke", me.user_stroke)
-            .style("stroke-width", '0.5pt')
-            .text(function (d) {
-                if (r.rank == 0) {
-                    return "-"
-                }
-                return r.rank
-            });
-        item.append('text')
-            .attr("x", ox + 4.5 * me.stepx)
-            .attr("y", oy)
-            .attr("dy", "6pt")
-            .style("text-anchor", 'middle')
-            .style("font-family", me.user_font)
-            .style("font-size", me.small_font_size + 'pt')
-            .style("fill", me.user_fill)
-            .style("stroke", me.user_stroke)
-            .style("stroke-width", '0.5pt')
-            .text(function (d) {
-                if (r.is_trained_only) {
+
+        item.append('rect')
+            .attr("x", ox + 6.2 * me.stepx)
+            .attr("y", oy - 0.3 * me.stepy)
+            .attr('width', function (d, i) {
+                return 0.5 * me.stepx;
+            })
+            .attr('height', function (d, i) {
+                return 0.6 * me.stepy;
+            })
+            .style("fill", function (d, i) {
+                return "transparent";
+            })
+            .style("stroke", me.shadow_stroke)
+            .style("stroke-width", '1.0pt')
+
+        ;
+
+
+        item.append('rect')
+            .attr("x", ox + 6.8 * me.stepx)
+            .attr("y", oy - 0.3 * me.stepy)
+            .attr('width', function (d, i) {
+                return 0.5 * me.stepx;
+            })
+            .attr('height', function (d, i) {
+                return 0.6 * me.stepy;
+            })
+            .style("fill", function (d, i) {
+                return "transparent";
+            })
+            .style("stroke", me.shadow_stroke)
+            .style("stroke-width", '1.0pt')
+
+        ;
+
+
+        item.append('rect')
+            .attr("x", ox + 7.4 * me.stepx)
+            .attr("y", oy - 0.3 * me.stepy)
+            .attr('width', function (d, i) {
+                return 0.5 * me.stepx;
+            })
+            .attr('height', function (d, i) {
+                return 0.6 * me.stepy;
+            })
+            .style("fill", function (d, i) {
+                return "transparent";
+            })
+            .style("stroke", me.shadow_stroke)
+            .style("stroke-width", '1.0pt')
+
+        ;
+
+        item.append('rect')
+            .attr("x", ox + 4.2 * me.stepx)
+            .attr("y", oy - 0.3 * me.stepy)
+            .attr('width', function (d, i) {
+                return 0.7 * me.stepx;
+            })
+            .attr('height', function (d, i) {
+                return 0.6 * me.stepy;
+            })
+            .style("fill", function (d, i) {
+                return "transparent";
+            })
+            .style("stroke", me.shadow_stroke)
+            .style("stroke-width", '1.0pt')
+
+        ;
+
+        item.append('rect')
+            .attr("x", ox + 8.0 * me.stepx)
+            .attr("y", oy - 0.3 * me.stepy)
+            .attr('width', function (d, i) {
+                return 1.2 * me.stepx;
+            })
+            .attr('height', function (d, i) {
+                return 0.6 * me.stepy;
+            })
+            .style("fill", function (d, i) {
+                return "transparent";
+            })
+            .style("stroke", me.shadow_stroke)
+            .style("stroke-width", '1.0pt')
+
+        ;
+
+        if (me.blank == false) {
+            item.append('text')
+                .attr("x", ox + 6.5 * me.stepx)
+                .attr("y", oy)
+                .attr("dy", "6pt")
+                .style("text-anchor", 'middle')
+                .style("font-family", me.user_font)
+                .style("font-size", me.small_font_size + 'pt')
+                .style("fill", me.user_fill)
+                .style("stroke", me.user_stroke)
+                .style("stroke-width", '0.5pt')
+                .text(r.ab_mod);
+
+
+            item.append('text')
+                .attr("x", ox + 7.0 * me.stepx)
+                .attr("y", oy)
+                .attr("dy", "6pt")
+                .style("text-anchor", 'middle')
+                .style("font-family", me.user_font)
+                .style("font-size", me.small_font_size + 'pt')
+                .style("fill", me.user_fill)
+                .style("stroke", me.user_stroke)
+                .style("stroke-width", '0.5pt')
+                .text(function (d) {
                     if (r.rank == 0) {
                         return "-"
                     }
-                }
-                return r.total
-            });
-        item.append('text')
-            .attr("x", ox + 7.5 * me.stepx)
-            .attr("y", oy)
-            .attr("dy", "6pt")
-            .style("text-anchor", 'middle')
-            .style("font-family", me.user_font)
-            .style("font-size", me.small_font_size + 'pt')
-            .style("fill", me.user_fill)
-            .style("stroke", me.user_stroke)
-            .style("stroke-width", '0.5pt')
-            .text(function (d) {
-                if (r.is_class_skill) {
-                    if (r.rank > 0) {
-                        return "+3"
+                    return r.rank
+                });
+            item.append('text')
+                .attr("x", ox + 7.6 * me.stepx)
+                .attr("y", oy)
+                .attr("dy", "6pt")
+                .style("text-anchor", 'middle')
+                .style("font-family", me.user_font)
+                .style("font-size", me.small_font_size + 'pt')
+                .style("fill", me.user_fill)
+                .style("stroke", me.user_stroke)
+                .style("stroke-width", '0.5pt')
+                .text(function (d) {
+                    if (r.is_class_skill) {
+                        if (r.rank > 0) {
+                            return "+3"
+                        }
                     }
-                }
-                return "-"
-            });
+                    return "-"
+                });
+
+
+            item.append('text')
+                .attr("x", ox + 4.5 * me.stepx)
+                .attr("y", oy)
+                .attr("dy", "6pt")
+                .style("text-anchor", 'middle')
+                .style("font-family", me.user_font)
+                .style("font-size", me.small_font_size + 'pt')
+                .style("fill", me.user_fill)
+                .style("stroke", me.user_stroke)
+                .style("stroke-width", '0.5pt')
+                .text(function (d) {
+                    if (r.is_trained_only) {
+                        if (r.rank == 0) {
+                            return "-"
+                        }
+                    }
+                    return r.total
+                });
+        }
     }
 
 
@@ -560,6 +656,133 @@ class WawwodSheet {
         }
     }
 
+    boxField(label_full, data_field, ox, oy, width = 1, height = 0.8, wob = false, label = "", preserve = false) {
+        let me = this;
+        let item = me.daddy.append('g')
+            .attr('class', 'attr_grp');
+        let th = 0.1;
+        if (wob == true) {
+            th = 0;
+        }
+        item.append('rect')
+            .attr('x', function (d, i) {
+                return (ox + th) * me.stepx;
+            })
+            .attr('y', function (d, i) {
+                return oy * me.stepy;
+            })
+            .attr('width', function (d, i) {
+                return (width - 2 * th) * me.stepx;
+            })
+            .attr('height', function (d, i) {
+                return height * me.stepy;
+            })
+            .style("fill", function (d) {
+                if (wob) {
+                    return me.draw_fill;
+                }
+                return "transparent";
+            })
+            .style("stroke", function (d) {
+                return me.shadow_stroke;
+            })
+            .style("stroke-width", '1.0pt')
+        ;
+        if (wob) {
+            item.append('text')
+                .attr('x', function (d, i) {
+                    return (ox + width * 0.5) * me.stepx;
+                })
+                .attr('y', (oy + 0.4) * me.stepy)
+                .style("text-anchor", 'middle')
+                .style("font-family", me.title_font)
+                .style("font-size", me.medium_font_size + 'px')
+                .style("fill", "#F0F0F0")
+                .style("stroke", "#C0C0C0")
+                .style("stroke-width", '0.5pt')
+                .text(label_full)
+            ;
+            item.append('text')
+                .attr('x', function (d, i) {
+                    return (ox + width * 0.5) * me.stepx;
+                })
+                .attr('y', (oy + 0.65) * me.stepy)
+                .style("text-anchor", 'middle')
+                .style("font-family", me.title_font)
+                .style("font-size", me.tiny_font_size + 'pt')
+                .style("fill", "#F0F0F0")
+                .style("stroke", "#C0C0C0")
+                .style("stroke-width", '0.5pt')
+                .text(label)
+            ;
+        } else {
+            let words = label_full.split(" ");
+            if (preserve) {
+                words = [label_full];
+            }
+            item.append('text')
+                .attr('x', function (d, i) {
+                    return (ox + width * 0.5) * me.stepx;
+                })
+                .attr('y', function (d) {
+                    if (preserve) {
+                        return (oy + 0.3) * me.stepy
+                    }
+                    if (words.length == 1) {
+                        return (oy - 0.1) * me.stepy
+                    }
+                    return (oy - 0.3) * me.stepy
+                })
+                .style("text-anchor", 'middle')
+                .style("font-family", me.title_font)
+                .style("font-size", me.tiny_font_size + 'pt')
+                .style("fill", me.draw_fill)
+                .style("stroke", me.draw_stroke)
+                .style("stroke-width", '0.5pt')
+                .text(words[0])
+            ;
+            if (words.length > 1) {
+                item.append('text')
+                    .attr('x', function (d, i) {
+                        return (ox + width * 0.5) * me.stepx;
+                    })
+                    .attr('y', (oy - 0.05) * me.stepy)
+                    .style("text-anchor", 'middle')
+                    .style("font-family", me.title_font)
+                    .style("font-size", me.tiny_font_size + 'pt')
+                    .style("fill", me.draw_fill)
+                    .style("stroke", me.draw_stroke)
+                    .style("stroke-width", '0.5pt')
+                    .text(words[1])
+                ;
+            }
+
+            if (me.blank == false) {
+                item.append('text')
+                    .attr('x', function (d, i) {
+                        return (ox + width * 0.5) * me.stepx;
+                    })
+                    .attr('y', (oy + 0.5) * me.stepy)
+                    .attr('width', me.stepx * 0.8)
+                    .attr('height', (height) * me.stepy)
+                    .style("text-anchor", 'middle')
+                    .style("font-family", me.user_font)
+                    .style("font-size", me.medium_font_size + 'px')
+                    .style("fill", me.user_fill)
+                    .style("stroke", me.user_stroke)
+                    .style("stroke-width", '1.0pt')
+                    .text(function (d) {
+                        if (data_field == 0) {
+                            return ""
+                        }
+                        return me.data[data_field];
+                    })
+                ;
+            }
+        }
+    }
+
+
     acField(label, label_full, value, value_mod, ox, oy, width = 3, height = 0.5, type = "ac") {
         let me = this;
         let item = me.daddy.append('g')
@@ -585,42 +808,42 @@ class WawwodSheet {
         ;
         let squares = [{
             "num": 0,
-            "thickness":3,
+            "thickness": 3,
             "types": ["ac", "touch", "ff"]
         }, {
             "num": 2,
             "types": ["ac", "ff"],
-            "thickness":1,
+            "thickness": 1,
             "value": "AC_armor_bonus"
         }, {
             "num": 3,
             "types": ["ac", "ff"],
-            "thickness":1,
+            "thickness": 1,
             "value": "AC_shield_bonus"
         }, {
             "num": 4,
             "types": ["ac", "touch"],
-            "thickness":1,
+            "thickness": 1,
             "value": "DEX_mod"
         }, {
             "num": 5,
             "types": ["ac", "touch", "ff"],
-            "thickness":1,
+            "thickness": 1,
             "value": "AC_size_modifier"
         }, {
             "num": 6,
             "types": ["ac", "ff"],
-            "thickness":1,
+            "thickness": 1,
             "value": "AC_natural_armor"
         }, {
             "num": 7,
             "types": ["ac", "touch"],
-            "thickness":1,
+            "thickness": 1,
             "value": "AC_deflection_bonus"
         }, {
             "num": 8,
             "types": ["ac", "touch", "ff"],
-            "thickness":1,
+            "thickness": 1,
             "value": "AC_temporary_modifier"
         }];
         _.forEach(squares, function (v, k) {
@@ -634,14 +857,14 @@ class WawwodSheet {
                     .attr('height', height * me.stepy)
                     .style("fill", "transparent")
                     .style("stroke", me.shadow_stroke)
-                    .style("stroke-width", v['thickness']+'pt')
+                    .style("stroke-width", v['thickness'] + 'pt')
                 ;
-                if ((me.blank == false) & (v['num']>0)) {
+                if ((me.blank == false) & (v['num'] > 0)) {
                     item.append('text')
                         .attr('x', function (d, i) {
-                            return ox + (width+0.5 + v['num'] ) * me.stepx;
+                            return ox + (width + 0.5 + v['num']) * me.stepx;
                         })
-                        .attr('y', oy+0.5*me.stepy)
+                        .attr('y', oy + 0.5 * me.stepy)
                         .attr('width', me.stepx * 0.8)
                         .attr('height', (height) * me.stepy)
                         .style("text-anchor", 'middle')
@@ -681,17 +904,7 @@ class WawwodSheet {
             )
             .text(label_full);
 
-        item
-            .append('text')
-            .attr("x", ox + (3.5) * me.stepx)
-            .attr("y", oy + height * me.stepy * 1.5 / 2)
-            .style("text-anchor", 'middle')
-            .style("font-family", me.title_font)
-            .style("font-size", me.medium_font_size + 'px')
-            .style("fill", me.draw_fill)
-            .style("stroke", me.draw_stroke)
-            .style("stroke-width", '0.5pt')
-            .text("= 10 + ");
+
         item.append('text').attr("x", ox + (width + 0.5) * me.stepx)
             .attr("y", oy + height * me.stepy * 1.5 / 2)
             .style("text-anchor", 'middle')
@@ -701,6 +914,22 @@ class WawwodSheet {
             .style("stroke", me.user_stroke)
             .style("stroke-width", '0.5pt')
             .text(value);
+    }
+
+    floatingText(ox, oy, txt) {
+        let me = this;
+        let item = me.daddy.append('g')
+            .attr('class', 'attr_grp');
+        item.append('text')
+            .attr("x", ox * me.stepx)
+            .attr("y", oy * me.stepy)
+            .style("text-anchor", 'middle')
+            .style("font-family", me.title_font)
+            .style("font-size", me.medium_font_size + 'px')
+            .style("fill", me.draw_fill)
+            .style("stroke", me.draw_stroke)
+            .style("stroke-width", '0.5pt')
+            .text(txt);
     }
 
 
@@ -729,57 +958,57 @@ class WawwodSheet {
         ;
         let squares = [{
             "num": 0,
-            "thickness":3
+            "thickness": 3
 
         }, {
             "num": 1,
-            "thickness":1,
+            "thickness": 1,
             "value": "AC_armor_bonus"
         }, {
             "num": 2,
-            "thickness":1,
+            "thickness": 1,
             "value": "AC_shield_bonus"
         }, {
             "num": 3,
-            "thickness":1,
+            "thickness": 1,
             "value": "DEX_mod"
         }, {
             "num": 4,
-            "thickness":1,
+            "thickness": 1,
             "value": "AC_size_modifier"
         }, {
             "num": 5,
-            "thickness":1,
+            "thickness": 1,
             "value": "AC_natural_armor"
         }];
         _.forEach(squares, function (v, k) {
 
-                item.append('rect')
+            item.append('rect')
+                .attr('x', function (d, i) {
+                    return ox + (width + v['num'] + 0.1) * me.stepx;
+                })
+                .attr('y', oy)
+                .attr('width', me.stepx * 0.8)
+                .attr('height', height * me.stepy)
+                .style("fill", "transparent")
+                .style("stroke", me.shadow_stroke)
+                .style("stroke-width", v['thickness'] + 'pt')
+            if ((me.blank == false) & (v['num'] > 0)) {
+                item.append('text')
                     .attr('x', function (d, i) {
-                        return ox + (width + v['num'] + 0.1) * me.stepx;
+                        return ox + (width + 0.5 + v['num']) * me.stepx;
                     })
-                    .attr('y', oy)
+                    .attr('y', oy + 0.5 * me.stepy)
                     .attr('width', me.stepx * 0.8)
-                    .attr('height', height * me.stepy)
-                    .style("fill", "transparent")
-                    .style("stroke", me.shadow_stroke)
-                    .style("stroke-width", v['thickness']+'pt')
-                if ((me.blank == false) & (v['num']>0)) {
-                    item.append('text')
-                        .attr('x', function (d, i) {
-                            return ox + (width+0.5 + v['num'] ) * me.stepx;
-                        })
-                        .attr('y', oy+0.5*me.stepy)
-                        .attr('width', me.stepx * 0.8)
-                        .attr('height', (height) * me.stepy)
-                        .style("text-anchor", 'middle')
-                        .style("font-family", me.user_font)
-                        .style("font-size", me.medium_font_size + 'px')
-                        .style("fill", me.user_fill)
-                        .style("stroke", me.user_stroke)
-                        .style("stroke-width", '1.0pt')
-                        .text(me.data[v['value']]);
-                }
+                    .attr('height', (height) * me.stepy)
+                    .style("text-anchor", 'middle')
+                    .style("font-family", me.user_font)
+                    .style("font-size", me.medium_font_size + 'px')
+                    .style("fill", me.user_fill)
+                    .style("stroke", me.user_stroke)
+                    .style("stroke-width", '1.0pt')
+                    .text(me.data[v['value']]);
+            }
 
         })
 

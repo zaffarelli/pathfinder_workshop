@@ -1,4 +1,7 @@
-FONTSET = ['Roboto', 'Ubuntu', 'Neuton', 'Raleway:wght@300;500;800&display=swap', 'UnifrakturMaguntia', 'Khand', 'Schoolbell']
+import math
+
+FONTSET = ['Roboto', 'Ubuntu', 'Neuton', 'Raleway:wght@300;500;800&display=swap', 'UnifrakturMaguntia', 'Khand',
+           'Schoolbell']
 
 HITDICE_TYPE = (
     ("4", "d4"),
@@ -103,6 +106,11 @@ def as_modifier(i):
 def get_modifier(ability):
     import math
     return math.floor((ability - 10) / 2)
+
+
+def as_squares(speed):
+    s = math.floor(speed / 5)
+    return s
 
 
 RANDOM_STARTING_AGE_PER_RACE = (
