@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib import admin
+from collector.models.pathfinder_spells_collection import PathfinderSpellsCollection
 
 LARGE_STR = 64 * 4
 STD_STR = 64 * 3
@@ -30,6 +31,8 @@ class PathfinderSpell(models.Model):
     spell_resistance = models.CharField(max_length=LARGE_STR, default='', blank=True)
     description = models.TextField(max_length=BIG_SIZE, default='', blank=True)
     description_formatted = models.TextField(max_length=BIG_SIZE, default='', blank=True)
+
+    spells_collection = models.ManyToManyField(PathfinderSpellsCollection, blank=True)
 
     source = models.CharField(max_length=STD_STR, default='', blank=True)
     full_text = models.TextField(max_length=HUGE_TEXT, default='', blank=True)

@@ -2,6 +2,8 @@ from django.db import models
 from django.contrib import admin
 from collector.models.pathfinder_class import PathfinderClass
 from collector.models.pathfinder_character import PathfinderCharacter
+from collector.models.pathfinder_spells_collection import PathfinderSpellsCollection
+from collector.utils.pathfinder_tools import get_modifier
 import math
 
 
@@ -18,6 +20,7 @@ class PathfinderLevel(models.Model):
     favored_hit_points = models.PositiveIntegerField(default=0)
     deity = models.CharField(default='', max_length=128, blank=True)
     domains = models.CharField(default='', max_length=128, blank=True)
+    spells_collection = models.ForeignKey(PathfinderSpellsCollection, on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
         return f'({self.character.name}) {self.character_class} level {self.level} '
@@ -62,6 +65,20 @@ class PathfinderLevel(models.Model):
             score = math.floor(self.level / 3)
         return score
 
+    @property
+    def total_ranks(self):
+        r = 0
+        r += get_modifier(getattr(self.character, "INT"))
+        r += self.character_class.skill_ranks_per_level
+        return r*self.level + self.favored_skill_points
+
+
+    @property
+    def spells_list(self):
+        if self.spells_collection:
+            return self.spells_collection.spells_list
+        else:
+            return []
 
 class PathfinderLevelAdmin(admin.ModelAdmin):
     list_display = ['character', 'character_class', 'level', 'is_favorite']

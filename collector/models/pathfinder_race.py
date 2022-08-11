@@ -21,7 +21,7 @@ class PathfinderRace(models.Model):
     bonus_racial_skill = models.IntegerField(default=0, blank=True)
 
     size = models.CharField(default='Medium', max_length=30, blank=True)
-    speed = models.IntegerField(default=30, blank=True)
+    # speed = models.IntegerField(default=30, blank=True)
     category = models.CharField(default='Humanoid', max_length=30, blank=True)
     languages = models.CharField(default='', max_length=128, blank=True)
 
@@ -41,6 +41,14 @@ class PathfinderRace(models.Model):
     def senses(self):
         senses = self.special_abilities.filter(is_senses=True).values_list('name', flat=True)
         return ",".join(senses)
+
+
+    def get_speed(self):
+        speeds = self.special_abilities.filter(name="Slow Speed")
+        if len(speeds)==1:
+            return 20
+        else:
+            return 30
 
     @property
     def racial_modifiers(self):

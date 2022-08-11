@@ -10,6 +10,7 @@ class PathfinderSkill(models.Model):
     is_trained_only = models.BooleanField(default=False)
     is_wildcard = models.BooleanField(default=False)
     is_wildcard = models.BooleanField(default=False)
+    acp_applies = models.BooleanField(default=False)
     ability = models.CharField(max_length=3, default='INT', choices=ABILITIES_CHOICES, blank=True)
 
     def __str__(self):
@@ -18,4 +19,5 @@ class PathfinderSkill(models.Model):
 
 class PathfinderSkillAdmin(admin.ModelAdmin):
     ordering = ["name"]
-    list_display = ['name', 'is_trained_only', 'is_wildcard', 'ability']
+    list_display = ['name', 'is_trained_only', 'is_wildcard', 'acp_applies', 'ability']
+    list_filter = ['is_trained_only', 'is_wildcard', 'acp_applies', 'ability']

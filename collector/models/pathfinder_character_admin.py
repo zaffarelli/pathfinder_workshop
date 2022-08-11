@@ -5,13 +5,13 @@ from collector.models.pathfinder_character import PathfinderCharacter
 def roll_standard_abilities(modeladmin, request, queryset):
     from collector.utils.pathfinder_tools import standard_method
     for c in queryset:
-        c.base_STR = standard_method()
-        c.base_DEX = standard_method()
-        c.base_CON = standard_method()
-        c.base_INT = standard_method()
-        c.base_WIS = standard_method()
-        c.base_CHA = standard_method()
-        c.need_fix = True
+        c.volatile_STR = standard_method()
+        c.volatile_DEX = standard_method()
+        c.volatile_CON = standard_method()
+        c.volatile_INT = standard_method()
+        c.volatile_WIS = standard_method()
+        c.volatile_CHA = standard_method()
+
         c.save()
     short_description = 'Roll Abilities (Standard)'
 
@@ -19,13 +19,13 @@ def roll_standard_abilities(modeladmin, request, queryset):
 def roll_classic_abilities(modeladmin, request, queryset):
     from collector.utils.pathfinder_tools import classic_method
     for c in queryset:
-        c.base_STR = classic_method()
-        c.base_DEX = classic_method()
-        c.base_CON = classic_method()
-        c.base_INT = classic_method()
-        c.base_WIS = classic_method()
-        c.base_CHA = classic_method()
-        c.need_fix = True
+        c.volatile_STR = classic_method()
+        c.volatile_DEX = classic_method()
+        c.volatile_CON = classic_method()
+        c.volatile_INT = classic_method()
+        c.volatile_WIS = classic_method()
+        c.volatile_CHA = classic_method()
+        
         c.save()
     short_description = 'Roll Abilities (Classic)'
 

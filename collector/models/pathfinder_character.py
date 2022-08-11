@@ -1,6 +1,7 @@
 from django.db import models
 from collector.models.character import Character
-from collector.utils.pathfinder_tools import as_modifier, ABILITIES_CHOICES, get_modifier
+from collector.utils.pathfinder_tools import as_modifier, ABILITIES_CHOICES, get_modifier, dice
+from collector.utils.pathfinder_core import table7_3, table7_1
 from collector.models.pathfinder_race import PathfinderRace
 import math
 
@@ -228,25 +229,27 @@ class PathfinderCharacter(Character):
         self.ranked_skills = ", ".join(ranked_skills_list)
 
     def make_misc(self):
-        from collector.utils.pathfinder_core import table7_3, table7_1
         self.height, self.weight = table7_3(self.get_gender_display().lower(), self.race.name.lower(),
                                             self.volatile_hwmod)
-        a, b, c = table7_1(self.race.name.lower(),
-                           self.pathfinderlevel_set.filter(is_favorite=True).first().character_class.name.lower())
-        self.age = a + self.volatile_age
+        base, num, faces = table7_1(self.race.name.lower(),
+                                    self.pathfinderlevel_set.filter(
+                                        is_favorite=True).first().character_class.name.lower())
+        if self.volatile_age == 0:
+            self.volatile_age = dice(num, faces)
+        self.age = base + self.volatile_age
         self.make_speed()
 
     def make_speed(self):
-        self.speed = self.race.speed
+        self.speed = self.race.get_speed()
         speed_field = "speed_" + str(self.speed)
-        self.armor_speed = 30
+        self.armor_speed = self.speed
         for armor in self.equipped_armors():
             new_speed = getattr(armor['armor'], speed_field)
+            print(self.name, speed_field, new_speed)
             if self.armor_speed > new_speed:
                 self.armor_speed = new_speed
 
     def fix_offense(self):
-        from collector.utils.pathfinder_tools import get_modifier
         bestbab = 0
         for level in self.pathfinderlevel_set.all():
             bestbab += level.base_attack_bonus
@@ -292,7 +295,7 @@ class PathfinderCharacter(Character):
 
     def fix(self):
         super().fix()
-        if self.race and len(self.pathfinderlevel_set.all()):
+        if self.race and len(self.pathfinderlevel_set.all()) > 0:
             self.fix_statistics()
             self.fix_gear()
             self.fix_offense()
@@ -344,6 +347,13 @@ class PathfinderCharacter(Character):
         if "Small Size" in self.race.special_abilities.all().values_list('name', flat=True):
             return True
         return False
+
+    @property
+    def total_ranks(self):
+        list = []
+        for level in self.pathfinderlevel_set.all():
+            list.append(f"{level.class_level}: {level.total_ranks}")
+        return ", ".join(list) + "."
 
     @property
     def total_feats(self):
@@ -559,4 +569,12 @@ class PathfinderCharacter(Character):
         list = []
         for weapon in self.equipped_weapons():
             list.append(weapon['weapon'].as_json)
+        return list
+
+    @property
+    def spells_lists(self):
+        list = []
+        for level in self.pathfinderlevel_set.all():
+            if level.spells_collection:
+                list.append({"name": level.class_level, "list": level.spells_list})
         return list

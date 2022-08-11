@@ -11,6 +11,7 @@ from collector.models.pathfinder_weapon import PathfinderWeapon, PathfinderWeapo
 from collector.models.pathfinder_armor import PathfinderArmor, PathfinderArmorAdmin
 from collector.models.pathfinder_rank import PathfinderRank, PathfinderRankAdmin
 from collector.models.pathfinder_spell import PathfinderSpell, PathfinderSpellAdmin
+from collector.models.pathfinder_spells_collection import PathfinderSpellsCollection, PathfinderSpellsCollectionAdmin
 
 from collector.models.pathfinder_equipment import PathfinderEquipment, PathfinderEquipmentAdmin
 from collector.models.pathfinder_special_ability import PathfinderSpecialAbility, PathfinderSpecialAbilityAdmin
@@ -34,3 +35,5 @@ admin.site.register(PathfinderEquipment, PathfinderEquipmentAdmin)
 admin.site.register(PathfinderSpecialAbility, PathfinderSpecialAbilityAdmin)
 admin.site.register(PathfinderClassFeature, PathfinderClassFeatureAdmin)
 admin.site.register(PathfinderClassAdvancement, PathfinderClassAdvancementAdmin)
+
+admin.site.register(PathfinderSpellsCollection, PathfinderSpellsCollectionAdmin)

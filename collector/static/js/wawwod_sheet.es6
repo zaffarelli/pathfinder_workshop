@@ -58,7 +58,7 @@ class WawwodSheet {
 
     init() {
         let me = this;
-        me.debug = false;
+        me.debug = true;
         me.page = 0;
         me.blank = false;
         me.width = parseInt($(me.parent).css("width"), 10) * 0.75;
@@ -322,6 +322,12 @@ class WawwodSheet {
                 let s = r.skill_name;
                 if (r.is_trained_only) {
                     s += "*";
+                }
+                if (r.acp_applies) {
+                    s += "+";
+                }
+                if (r.wildcard){
+                    s += " ("+r.wildcard+")"
                 }
                 return s
             });

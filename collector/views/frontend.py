@@ -47,6 +47,7 @@ def display_crossover_sheet(request, slug=None, option=None):
 
         c.speed_sq = as_squares(c.speed)
         c.armor_speed_sq = as_squares(c.armor_speed)
+        c.ranks_summary = c.total_ranks
 
         c.all_weapons = [{},{},{},{},{},{},{},{},{},{}]
         print(c.all_weapons)
@@ -56,6 +57,9 @@ def display_crossover_sheet(request, slug=None, option=None):
 
         c.armor_bonus = c.AC_armor_bonus
         c.shield_bonus = "+4"
+
+
+        c.spellbook = c.spells_lists
 
         # print(c.all_ranks)
 

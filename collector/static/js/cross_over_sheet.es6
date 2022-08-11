@@ -14,24 +14,13 @@ class CrossOverSheet extends WawwodSheet {
         let me = this
         let lines = me.back.append('g');
         if (me.page === 0) {
-            // me.crossline(1, 2, 35);
-            // me.crossline(23, 2, 35);
-            // Mid lines
-            // me.midline(1.5, 5, 19);
             me.midline(4, 0.5, 23.5);
-            // me.midline(35, 0.5, 23.5);
-
             me.crossline(0.5, 0.5, 1.0);
             me.midline(0.5, 0.5, 1.0);
-
             me.crossline(23.5, 35.5, 35.0);
             me.midline(35.5, 23.0, 23.5);
 
-            // me.midline(6);
-            // me.midline(9);
-            // me.midline(16);
-            // me.midline(23);
-            // me.midline(30);
+
             // Title
             let txt = me.sheet_type("Pathfinder").toUpperCase();
 
@@ -75,8 +64,6 @@ class CrossOverSheet extends WawwodSheet {
             // me.attField("INITIATIVE", "Modifier", me.data.init, '', 7.5 * me.stepx, 10 * me.stepy, 2, 0.8, false);
 
 
-
-
             // me.saveField("Fortitude", "Constitution", me.data.fortitude, '', 1.0 * me.stepx, 15 * me.stepy, 2, 0.8, "fort");
             // me.saveField("Reflex", "Dexterity", me.data.dexterity, '', 1.0 * me.stepx, 16 * me.stepy, 2, 0.8, "fort");
             // me.saveField("Will", "Wisdom", me.data.wisdom, '', 1.0 * me.stepx, 17 * me.stepy, 2, 0.8, "fort");
@@ -98,31 +85,43 @@ class CrossOverSheet extends WawwodSheet {
                 me.skillField(14 * me.stepx, skill_ystart * me.stepy, v);
                 skill_ystart += 0.65;
             });
-
+            console.log(me.data['ranks_summary'])
+            me.stdField("Total Skill Ranks ", me.data['ranks_summary'].toUpperCase(), 14 * me.stepx, 32 * me.stepy, 6);
             me.decorationText(4, 2.25, 3, 'middle', me.logo_font, me.fat_font_size, me.shadow_fill, me.shadow_stroke, 4, "Pathfinder", me.back);
             me.decorationText(4, 2.25, 0, 'middle', me.logo_font, me.fat_font_size, me.draw_fill, me.draw_stroke, 0.5, "Pathfinder", me.back);
             me.decorationText(4, 2.75, 0, 'middle', me.title_font, me.big_font_size, me.draw_fill, me.draw_stroke, 0.5, "Role Playing Game", me.back);
-            me.decorationText(4, 3.5, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, "Bourrassol Character Sheet", me.back);
+            me.decorationText(4, 3.5, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, "Character Sheet", me.back);
         } else if (me.page === 1) {
-            me.crossline(1, 2, 35);
-            me.crossline(23, 2, 35);
-            me.midline(2.5, 1, 23);
-            me.midline(35, 1, 23);
+            me.midline(4, 0.5, 23.5);
+            me.crossline(0.5, 0.5, 1.0);
+            me.midline(0.5, 0.5, 1.0);
+            me.crossline(23.5, 35.5, 35.0);
+            me.midline(35.5, 23.0, 23.5);
+            me.daddy = lines;
 
-            me.crossline(9.75, 4, 34);
+            console.log(me.data['spellbook'])
+            me.drawSpellbook(0.5, 5, me.data['spellbook'])
+            me.decorationText(4, 2.25, 3, 'middle', me.logo_font, me.fat_font_size, me.shadow_fill, me.shadow_stroke, 4, "Pathfinder", me.back);
+            me.decorationText(4, 2.25, 0, 'middle', me.logo_font, me.fat_font_size, me.draw_fill, me.draw_stroke, 0.5, "Pathfinder", me.back);
+            me.decorationText(4, 2.75, 0, 'middle', me.title_font, me.big_font_size, me.draw_fill, me.draw_stroke, 0.5, "Role Playing Game", me.back);
+            me.decorationText(4, 3.5, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, "Spells Lists Sheet", me.back);
 
         } else if (me.page === 2) {
-
-            me.crossline(1, 2, 35);
-            me.crossline(23, 2, 35);
-            me.midline(2.5, 1, 23);
-            me.midline(35, 1, 23);
-            me.crossline(11.5, 4, 34);
+            me.midline(4, 0.5, 23.5);
+            me.crossline(0.5, 0.5, 1.0);
+            me.midline(0.5, 0.5, 1.0);
+            me.crossline(23.5, 35.5, 35.0);
+            me.midline(35.5, 23.0, 23.5);
+            me.decorationText(4, 2.25, 3, 'middle', me.logo_font, me.fat_font_size, me.shadow_fill, me.shadow_stroke, 4, "Pathfinder", me.back);
+            me.decorationText(4, 2.25, 0, 'middle', me.logo_font, me.fat_font_size, me.draw_fill, me.draw_stroke, 0.5, "Pathfinder", me.back);
+            me.decorationText(4, 2.75, 0, 'middle', me.title_font, me.big_font_size, me.draw_fill, me.draw_stroke, 0.5, "Role Playing Game", me.back);
+            me.decorationText(4, 3.5, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, "Possession Sheet", me.back);
+            me.daddy = lines;
 
 
         }
         if (me.page > 0) {
-            me.decorationText(1.5, 2.25, 0, 'start', me.user_font, me.medium_font_size, me.user_fill, me.user_stroke, 0.5, me.data["name"] + " (p." + (me.page + 1) + ")", me.back);
+            me.decorationText(10.5, 2.25, 0, 'start', me.user_font, me.medium_font_size, me.user_fill, me.user_stroke, 0.5, me.data["name"] + " (p." + (me.page + 1) + ")", me.back);
         }
         me.decorationText(21.5, 1.75, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, me.pre_title, me.back);
         me.decorationText(21.5, 2.25, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, me.post_title, me.back);
@@ -187,10 +186,10 @@ class CrossOverSheet extends WawwodSheet {
         let me = this;
         // HP
         me.boxField("HP", "", ox, oy, 2, 0.8, true, "Hit Points");
-        me.boxField("Total", "hp", ox+2, oy, 2);
-        me.boxField("Damage Resistance", 0, ox+4, oy, 3);
-        me.boxField("Wounds/Current HP", 0, ox, oy+1, 7, 1.8, false, "", true);
-        me.boxField("Nonlethal Damage", 0, ox, oy+3, 7, 1.4, false, "", true);
+        me.boxField("Total", "hp", ox + 2, oy, 2);
+        me.boxField("Damage Resistance", 0, ox + 4, oy, 3);
+        me.boxField("Wounds/Current HP", 0, ox, oy + 1, 7, 1.8, false, "", true);
+        me.boxField("Nonlethal Damage", 0, ox, oy + 3, 7, 1.4, false, "", true);
     }
 
 
@@ -198,7 +197,7 @@ class CrossOverSheet extends WawwodSheet {
         let me = this;
         // Languages
         me.boxField("Languages", "", ox, oy, 9.5, 0.8, true, "");
-        me.boxField("", "languages", ox, oy+1, 9.5, 1.8);
+        me.boxField("", "languages", ox, oy + 1, 9.5, 1.8);
 
     }
 
@@ -206,56 +205,56 @@ class CrossOverSheet extends WawwodSheet {
         let me = this;
         let oy = y;
         me.boxField("Weapons", "", ox, oy, 13, 0.8, true, "");
-        oy+=1.5
+        oy += 1.5
         _.forEach(me.data.all_weapons, function (v, k) {
-                if (k==0) {
-                    me.boxField("Weapon", 0, ox, oy, 4, 0.8, false, "");
-                    me.boxField("Attack Bonus", 0, ox + 4, oy, 1);
-                    me.boxField("DMG", 0, ox + 5, oy, 2);
-                    me.boxField("Damage Bonus", 0, ox + 7, oy, 1);
-                    me.boxField("Weapon Type", 0, ox + 8, oy, 1);
-                    me.boxField("Range", 0, ox + 9, oy, 1);
-                    me.boxField("Ammoes", 0, ox + 10, oy, 1);
-                    me.boxField("Special", 0, ox + 11, oy, 2);
-                }else{
-                    me.boxField("", 0, ox, oy, 4, 0.8, false, "");
-                    me.boxField("", 0, ox + 4, oy, 1);
-                    me.boxField("", 0, ox + 5, oy, 2);
-                    me.boxField("", 0, ox + 7, oy, 1);
-                    me.boxField("", 0, ox + 8, oy, 1);
-                    me.boxField("", 0, ox + 9, oy, 1);
-                    me.boxField("", 0, ox + 10, oy, 1);
-                    me.boxField("", 0, ox + 11, oy, 2);
-                }
-                oy += 1.1;
+            if (k == 0) {
+                me.boxField("Weapon", 0, ox, oy, 4, 0.8, false, "");
+                me.boxField("Attack Bonus", 0, ox + 4, oy, 1);
+                me.boxField("DMG", 0, ox + 5, oy, 2);
+                me.boxField("Damage Bonus", 0, ox + 7, oy, 1);
+                me.boxField("Weapon Type", 0, ox + 8, oy, 1);
+                me.boxField("Range", 0, ox + 9, oy, 1);
+                me.boxField("Ammoes", 0, ox + 10, oy, 1);
+                me.boxField("Special", 0, ox + 11, oy, 2);
+            } else {
+                me.boxField("", 0, ox, oy, 4, 0.8, false, "");
+                me.boxField("", 0, ox + 4, oy, 1);
+                me.boxField("", 0, ox + 5, oy, 2);
+                me.boxField("", 0, ox + 7, oy, 1);
+                me.boxField("", 0, ox + 8, oy, 1);
+                me.boxField("", 0, ox + 9, oy, 1);
+                me.boxField("", 0, ox + 10, oy, 1);
+                me.boxField("", 0, ox + 11, oy, 2);
+            }
+            oy += 1.1;
         });
     }
 
     drawInit(ox, oy) {
         let me = this;
         me.boxField("INITIATIVE", 0, ox, oy, 2, 0.8, true, "Modifier");
-        me.boxField("Total", "init", ox+2, oy, 2);
-        me.floatingText(ox+4.1,oy+0.5,"=")
-        me.boxField("Dex Modifier", "DEX_mod", ox+4.2, oy, 1);
-        me.floatingText(ox+5.4,oy+0.5,"+")
-        me.boxField("Misc Modifier", "init_mod", ox+5.6, oy, 1);
+        me.boxField("Total", "init", ox + 2, oy, 2);
+        me.floatingText(ox + 4.1, oy + 0.5, "=")
+        me.boxField("Dex Modifier", "DEX_mod", ox + 4.2, oy, 1);
+        me.floatingText(ox + 5.4, oy + 0.5, "+")
+        me.boxField("Misc Modifier", "init_mod", ox + 5.6, oy, 1);
     }
 
     drawSpeed(ox, oy) {
         let me = this;
         // SPEED
         me.boxField("SPEED", "", ox, oy, 2, 0.8, true, "Feet");
-        me.boxField("Land", "speed", ox+2, oy, 2);
-        me.boxField("Squares", "speed_sq", ox+4, oy, 1);
-        me.boxField("With Armor", "armor_speed", ox+5, oy, 2);
-        me.boxField("Squares", "armor_speed_sq", ox+7, oy, 1);
+        me.boxField("Land", "speed", ox + 2, oy, 2);
+        me.boxField("Squares", "speed_sq", ox + 4, oy, 1);
+        me.boxField("With Armor", "armor_speed", ox + 5, oy, 2);
+        me.boxField("Squares", "armor_speed_sq", ox + 7, oy, 1);
 
-        me.boxField("Fly", "fly_speed", ox, oy+1.5, 2);
-        me.boxField("Swim", "swim_speed", ox+2, oy+1.5, 2);
-        me.boxField("Climb", "climb_speed", ox+4, oy+1.5, 2);
-        me.boxField("Burrow", "burrow_speed", ox+6, oy+1.5, 2);
+        me.boxField("Fly", "fly_speed", ox, oy + 1.5, 2);
+        me.boxField("Swim", "swim_speed", ox + 2, oy + 1.5, 2);
+        me.boxField("Climb", "climb_speed", ox + 4, oy + 1.5, 2);
+        me.boxField("Burrow", "burrow_speed", ox + 6, oy + 1.5, 2);
 
-        me.boxField("Mods", 0, ox+8, oy, 1.5, 2.3);
+        me.boxField("Mods", 0, ox + 8, oy, 1.5, 2.3);
 
     }
 
@@ -263,76 +262,76 @@ class CrossOverSheet extends WawwodSheet {
         let me = this;
         let oy = y;
 
-            // me.simpleText("Total", 3 * me.stepx, 11 * me.stepy + dy, 1)
-            // me.simpleText("Armor", 5 * me.stepx, 11 * me.stepy, 1)
-            // me.simpleText("Bonus", 5 * me.stepx, 11 * me.stepy + dy, 1)
-            // me.simpleText("Shield", 6 * me.stepx, 11 * me.stepy, 1)
-            // me.simpleText("Bonus", 6 * me.stepx, 11 * me.stepy + dy, 1)
-            // me.simpleText("DEX", 7 * me.stepx, 11 * me.stepy, 1)
-            // me.simpleText("Modifier", 7 * me.stepx, 11 * me.stepy + dy, 1)
-            // me.simpleText("Size", 8 * me.stepx, 11 * me.stepy, 1)
-            // me.simpleText("Modifier", 8 * me.stepx, 11 * me.stepy + dy, 1)
-            // me.simpleText("Natural", 9 * me.stepx, 11 * me.stepy, 1)
-            // me.simpleText("Armor", 9 * me.stepx, 11 * me.stepy + dy, 1)
-            // me.simpleText("Deflection", 10 * me.stepx, 11 * me.stepy, 1)
-            // me.simpleText("Bonus", 10 * me.stepx, 11 * me.stepy + dy, 1)
-            // me.simpleText("Temporary", 11 * me.stepx, 11 * me.stepy, 1)
-            // me.simpleText("Modifier", 11 * me.stepx, 11 * me.stepy + dy, 1)
+        // me.simpleText("Total", 3 * me.stepx, 11 * me.stepy + dy, 1)
+        // me.simpleText("Armor", 5 * me.stepx, 11 * me.stepy, 1)
+        // me.simpleText("Bonus", 5 * me.stepx, 11 * me.stepy + dy, 1)
+        // me.simpleText("Shield", 6 * me.stepx, 11 * me.stepy, 1)
+        // me.simpleText("Bonus", 6 * me.stepx, 11 * me.stepy + dy, 1)
+        // me.simpleText("DEX", 7 * me.stepx, 11 * me.stepy, 1)
+        // me.simpleText("Modifier", 7 * me.stepx, 11 * me.stepy + dy, 1)
+        // me.simpleText("Size", 8 * me.stepx, 11 * me.stepy, 1)
+        // me.simpleText("Modifier", 8 * me.stepx, 11 * me.stepy + dy, 1)
+        // me.simpleText("Natural", 9 * me.stepx, 11 * me.stepy, 1)
+        // me.simpleText("Armor", 9 * me.stepx, 11 * me.stepy + dy, 1)
+        // me.simpleText("Deflection", 10 * me.stepx, 11 * me.stepy, 1)
+        // me.simpleText("Bonus", 10 * me.stepx, 11 * me.stepy + dy, 1)
+        // me.simpleText("Temporary", 11 * me.stepx, 11 * me.stepy, 1)
+        // me.simpleText("Modifier", 11 * me.stepx, 11 * me.stepy + dy, 1)
 
-            // me.acField("AC", "Armor Class", me.data.AC, '', 1.0 * me.stepx, 11.5 * me.stepy, 2, 0.8, "ac");
-            // me.acField("Touch", "Armor Class", me.data.touch_AC, '', 1.0 * me.stepx, 12.5 * me.stepy, 2, 0.8, "touch");
-            // me.acField("Flat-Footed", "Armor Class", me.data.flatfooted_AC, '', 1.0 * me.stepx, 13.5 * me.stepy, 2, 0.8, "ff");
+        // me.acField("AC", "Armor Class", me.data.AC, '', 1.0 * me.stepx, 11.5 * me.stepy, 2, 0.8, "ac");
+        // me.acField("Touch", "Armor Class", me.data.touch_AC, '', 1.0 * me.stepx, 12.5 * me.stepy, 2, 0.8, "touch");
+        // me.acField("Flat-Footed", "Armor Class", me.data.flatfooted_AC, '', 1.0 * me.stepx, 13.5 * me.stepy, 2, 0.8, "ff");
 
         me.boxField("AC", 0, ox, oy, 2, 0.8, true, "armor class");
         me.boxField("Total", "AC", ox + 2, oy, 1);
-        me.floatingText(ox+3.5,oy+0.5,"= 10 +")
+        me.floatingText(ox + 3.5, oy + 0.5, "= 10 +")
         me.boxField("Armor Bonus", "AC_armor_bonus", ox + 4, oy, 1);
-        me.floatingText(ox+5,oy+0.5,"+")
+        me.floatingText(ox + 5, oy + 0.5, "+")
         me.boxField("Shield Bonus", "AC_shield_bonus", ox + 5, oy, 1);
-        me.floatingText(ox+6,oy+0.5,"+")
+        me.floatingText(ox + 6, oy + 0.5, "+")
         me.boxField("DEX Modifier", "DEX_mod", ox + 6, oy, 1);
-        me.floatingText(ox+7,oy+0.5,"+")
+        me.floatingText(ox + 7, oy + 0.5, "+")
         me.boxField("Size Modifier", "AC_size_modifier", ox + 7, oy, 1);
-        me.floatingText(ox+8,oy+0.5,"+")
+        me.floatingText(ox + 8, oy + 0.5, "+")
         me.boxField("Natural Armor", "AC_natural_armor", ox + 8, oy, 1);
-        me.floatingText(ox+9,oy+0.5,"+")
+        me.floatingText(ox + 9, oy + 0.5, "+")
         me.boxField("Deflection Bonus", "AC_deflection_bonus", ox + 9, oy, 1);
-        me.floatingText(ox+10,oy+0.5,"+")
+        me.floatingText(ox + 10, oy + 0.5, "+")
         me.boxField("Temp modifier", "AC_temp_modifier", ox + 10, oy, 1);
-        me.boxField("Mods", 0, ox+11, oy, 2, 2.8);
+        me.boxField("Mods", 0, ox + 11, oy, 2, 2.8);
         oy += 1;
         me.boxField("Touch", 0, ox, oy, 2, 0.8, true, "armor class");
         me.boxField("", "touch_AC", ox + 2, oy, 1);
-        me.floatingText(ox+3.5,oy+0.5,"= 10 +")
+        me.floatingText(ox + 3.5, oy + 0.5, "= 10 +")
         // me.boxField("", "AC_armor_bonus", ox + 4, oy, 1);
         // me.floatingText(ox+5,oy+0.5,"+")
         // me.boxField("", "AC_shield_bonus", ox + 5, oy, 1);
         // me.floatingText(ox+6,oy+0.5,"+")
         me.boxField("", "DEX_mod", ox + 6, oy, 1);
-        me.floatingText(ox+7,oy+0.5,"+")
+        me.floatingText(ox + 7, oy + 0.5, "+")
         me.boxField("", "AC_size_modifier", ox + 7, oy, 1);
-        me.floatingText(ox+8,oy+0.5,"+")
-        me.boxField("", "AC_natural_armor", ox + 8, oy, 1);
-        me.floatingText(ox+9,oy+0.5,"+")
+        // me.floatingText(ox+8,oy+0.5,"+")
+        // me.boxField("", "AC_natural_armor", ox + 8, oy, 1);
+        me.floatingText(ox + 9, oy + 0.5, "+")
         me.boxField("", "AC_deflection_bonus", ox + 9, oy, 1);
-        me.floatingText(ox+10,oy+0.5,"+")
+        me.floatingText(ox + 10, oy + 0.5, "+")
         me.boxField("", "AC_temp_modifier", ox + 10, oy, 1);
         oy += 1;
         me.boxField("Flat Footed", 0, ox, oy, 2, 0.8, true, "armor class");
         me.boxField("", "flatfooted_AC", ox + 2, oy, 1);
-        me.floatingText(ox+3.5,oy+0.5,"= 10 +")
+        me.floatingText(ox + 3.5, oy + 0.5, "= 10 +")
         me.boxField("", "AC_armor_bonus", ox + 4, oy, 1);
-        me.floatingText(ox+5,oy+0.5,"+")
+        me.floatingText(ox + 5, oy + 0.5, "+")
         me.boxField("", "AC_shield_bonus", ox + 5, oy, 1);
-        me.floatingText(ox+6,oy+0.5,"+")
+        me.floatingText(ox + 6, oy + 0.5, "+")
         // me.boxField("", "DEX_mod", ox + 6, oy, 1);
         // me.floatingText(ox+7,oy+0.5,"+")
         me.boxField("", "AC_size_modifier", ox + 7, oy, 1);
-        me.floatingText(ox+8,oy+0.5,"+")
+        me.floatingText(ox + 8, oy + 0.5, "+")
         me.boxField("", "AC_natural_armor", ox + 8, oy, 1);
-        me.floatingText(ox+9,oy+0.5,"+")
-        // me.boxField("", "AC_deflection_bonus", ox + 9, oy, 1);
-        // me.floatingText(ox+10,oy+0.5,"+")
+        me.floatingText(ox + 9, oy + 0.5, "+")
+        me.boxField("", "AC_deflection_bonus", ox + 9, oy, 1);
+        me.floatingText(ox + 10, oy + 0.5, "+")
         me.boxField("", "AC_temp_modifier", ox + 10, oy, 1);
 
     }
@@ -341,42 +340,42 @@ class CrossOverSheet extends WawwodSheet {
         let me = this;
         me.boxField("Fortitude", 0, ox, oy, 2, 0.8, true, "Constitution");
         me.boxField("Total", "fortitude", ox + 2, oy, 1);
-        me.floatingText(ox+3,oy+0.5,"=")
+        me.floatingText(ox + 3, oy + 0.5, "=")
         me.boxField("Base Save", "base_fortitude", ox + 3, oy, 1);
-        me.floatingText(ox+4,oy+0.5,"+")
+        me.floatingText(ox + 4, oy + 0.5, "+")
         me.boxField("Ability Modifier", "fortitude_ability_mod", ox + 4, oy, 1);
-        me.floatingText(ox+5,oy+0.5,"+")
+        me.floatingText(ox + 5, oy + 0.5, "+")
         me.boxField("Magic Modifier", "fortitude_magic_mod", ox + 5, oy, 1);
-        me.floatingText(ox+6,oy+0.5,"+")
+        me.floatingText(ox + 6, oy + 0.5, "+")
         me.boxField("Misc Modifier", "fortitude_misc_mod", ox + 6, oy, 1);
-        me.floatingText(ox+7,oy+0.5,"+")
+        me.floatingText(ox + 7, oy + 0.5, "+")
         me.boxField("Temp Modifier", "fortitude_temp_mod", ox + 7, oy, 1);
-        me.boxField("Mods", 0, ox+8, oy, 5, 2.8);
+        me.boxField("Mods", 0, ox + 8, oy, 5, 2.8);
 
         me.boxField("Reflex", 0, ox, oy + 1, 2, 0.8, true, "Dexterity");
         me.boxField("", "reflex", ox + 2, oy + 1, 1);
-        me.floatingText(ox+3,oy+1.5,"=")
+        me.floatingText(ox + 3, oy + 1.5, "=")
         me.boxField("", "base_reflex", ox + 3, oy + 1, 1);
-        me.floatingText(ox+4,oy+1.5,"+")
+        me.floatingText(ox + 4, oy + 1.5, "+")
         me.boxField("", "reflex_ability_mod", ox + 4, oy + 1, 1);
-        me.floatingText(ox+5,oy+1.5,"+")
+        me.floatingText(ox + 5, oy + 1.5, "+")
         me.boxField("", "reflex_magic_mod", ox + 5, oy + 1, 1);
-        me.floatingText(ox+6,oy+1.5,"+")
+        me.floatingText(ox + 6, oy + 1.5, "+")
         me.boxField("", "reflex_misc_mod", ox + 6, oy + 1, 1);
-        me.floatingText(ox+7,oy+1.5,"+")
+        me.floatingText(ox + 7, oy + 1.5, "+")
         me.boxField("", "reflex_temp_mod", ox + 7, oy + 1, 1);
 
         me.boxField("Will", 0, ox, oy + 2, 2, 0.8, true, "Wisdom");
         me.boxField("", "will", ox + 2, oy + 2, 1);
-        me.floatingText(ox+3,oy+2.5,"=")
+        me.floatingText(ox + 3, oy + 2.5, "=")
         me.boxField("", "base_will", ox + 3, oy + 2, 1);
-        me.floatingText(ox+4,oy+2.5,"+")
+        me.floatingText(ox + 4, oy + 2.5, "+")
         me.boxField("", "will_ability_mod", ox + 4, oy + 2, 1);
-        me.floatingText(ox+5,oy+2.5,"+")
+        me.floatingText(ox + 5, oy + 2.5, "+")
         me.boxField("", "will_magic_mod", ox + 5, oy + 2, 1);
-        me.floatingText(ox+6,oy+2.5,"+")
+        me.floatingText(ox + 6, oy + 2.5, "+")
         me.boxField("", "will_misc_mod", ox + 6, oy + 2, 1);
-        me.floatingText(ox+7,oy+2.5,"+")
+        me.floatingText(ox + 7, oy + 2.5, "+")
         me.boxField("", "will_temp_mod", ox + 7, oy + 2, 1);
     }
 
@@ -386,21 +385,53 @@ class CrossOverSheet extends WawwodSheet {
         me.boxField("BAB", 0, ox, oy, 3, 0.8, true, "Base Attack Bonus");
         me.boxField("", "BAB", ox + 3, oy, 3);
 
-        me.boxField("SR", 0, ox+6, oy, 3, 0.8, true, "Spell Resistance");
+        me.boxField("SR", 0, ox + 6, oy, 3, 0.8, true, "Spell Resistance");
         me.boxField("", "SR", ox + 9, oy, 4);
 
 
-        oy += 1;
+        oy += 1.4;
         me.boxField("CMB", 0, ox, oy, 3, 0.8, true, "Combat Maneuver Bonus");
-        me.boxField("", "", ox + 3, oy, 1);
+        me.boxField("", "CMB", ox + 3, oy, 1);
+        me.floatingText(ox + 4.5, oy + 0.5, "= ")
+        me.boxField("BAB", "BAB", ox + 5, oy, 1);
+        me.floatingText(ox + 6, oy + 0.5, "+")
+        me.boxField("STR modifier", "STR_mod", ox + 6, oy, 1);
+        // me.floatingText(ox+7,oy+0.5,"+")
+        // me.boxField("DEX Modifier", "DEX_mod", ox + 7, oy, 1);
+        me.floatingText(ox + 8, oy + 0.5, "+")
+        me.boxField("Size Modifier", "AC_size_modifier", ox + 8, oy, 1);
+
+        me.boxField("Mods", "", ox + 9, oy, 4, 1.8);
+
 
         oy += 1;
         me.boxField("CMD", 0, ox, oy, 3, 0.8, true, "Combat Maneuver Defense");
-        me.boxField("", "", ox + 3, oy, 1);
+        me.boxField("", "CMD", ox + 3, oy, 1);
+        me.floatingText(ox + 4.5, oy + 0.5, "= 10 +")
+        me.boxField("", "BAB", ox + 5, oy, 1);
+        me.floatingText(ox + 6, oy + 0.5, "+")
+        me.boxField("", "STR_mod", ox + 6, oy, 1);
+        me.floatingText(ox + 7, oy + 0.5, "+")
+        me.boxField("DEX Modifier", "DEX_mod", ox + 7, oy, 1);
+        me.floatingText(ox + 8, oy + 0.5, "+")
+        me.boxField("", "AC_size_modifier", ox + 8, oy, 1);
 
 
     }
 
+    drawSpellbook(ox, y, spells_lists) {
+        let me = this;
+        let oy = y;
+        _.forEach(spells_lists, function (list, li) {
+            _.forEach(list.list, function (spell, si) {
+                console.log(spell)
+                me.stdField("Spell", spell.name, ox*me.stepx, oy*me.stepy, 4);
+                me.stdField("Level", spell.level, (ox + 4.5)*me.stepx, oy*me.stepy, 1);
+                me.stdField("Short Description", spell.short_description +" (domain="+spell.domain+")", (ox + 6)*me.stepx, oy*me.stepy, 10);
+                oy += 1;
+            })
+        })
+    }
 
     fillBackgroundNotes(oy) {
         let me = this;

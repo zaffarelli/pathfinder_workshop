@@ -32,6 +32,7 @@ class PathfinderRank(models.Model):
         data = {}
         data['skill_name'] = self.skill.name
         data['rank'] = self.rank
+        data['wildcard'] = self.wildcard
         data['is_class_skill'] = (self.class_skill_as is not None)
         data['ability'] = (self.skill.ability)
         data['ab_mod'] = as_modifier(get_modifier(getattr(self.character,self.skill.ability)))
@@ -39,6 +40,7 @@ class PathfinderRank(models.Model):
         data['ability_modifier'] = self.ability_modifier
         data['racial_modifier'] = self.racial_modifier
         data['is_trained_only'] = self.skill.is_trained_only
+        data['acp_applies'] = self.skill.acp_applies
         data['total'] = self.total_score
         jstr = json.dumps(data, default=json_default, sort_keys=True, indent=4)
         return jstr
