@@ -27,6 +27,8 @@ class PathfinderCharacter(Character):
 
     player = models.CharField(max_length=128, default='', blank=True)
 
+    in_spotlight = models.BooleanField(default=False, blank=True)
+
     STR = models.IntegerField(default=0, blank=True, null=True)
     DEX = models.IntegerField(default=0, blank=True, null=True)
     CON = models.IntegerField(default=0, blank=True, null=True)
@@ -46,6 +48,7 @@ class PathfinderCharacter(Character):
     climb_speed = models.IntegerField(default=0, blank=True)
     burrow_speed = models.IntegerField(default=0, blank=True)
     current_xp = models.PositiveIntegerField(default=0, blank=True)
+    next_level = models.PositiveIntegerField(default=0, blank=True)
     homeland = models.TextField(max_length=128, default='', blank=True)
     # feats = models.ManyToManyField(PathfinderFeat)
     AC = models.IntegerField(default=0, blank=True)
@@ -288,7 +291,10 @@ class PathfinderCharacter(Character):
         self.update_tcl()
 
     def fix_spells(self):
-        pass
+        for level in self.pathfinderlevel_set.all():
+            if level.current_caster_level > 0:
+                if not level.character_class.uses_custom_spells_collection:
+                    level.autofill_spells_collection()
 
     def fix_gear(self):
         pass
@@ -358,7 +364,16 @@ class PathfinderCharacter(Character):
     @property
     def total_feats(self):
         x = math.floor((self.tcl + 1) / 2)
-        return x
+        t = ""
+        for level in self.pathfinderlevel_set.all():
+            print(level.active_features)
+            if "Bonus Feat" in level.active_features.keys():
+                t += f' + {level.active_features["Bonus Feat"]}'
+        racial_bf = self.race.special_abilities.filter(name="Bonus Feat")
+        if len(racial_bf)>0:
+            t += f' + {len(racial_bf)}'
+        s = f'{x}{t}'
+        return s
 
     @property
     def character_class_levels(self):
@@ -473,7 +488,6 @@ class PathfinderCharacter(Character):
     def roster_spells(self):
         from collector.models.pathfinder_spell import PathfinderSpell
         list = []
-        languages = self.race.languages.split(";")
         for level in self.pathfinderlevel_set.all():
             if level.character_class.is_spellcasting_class:
                 cl, ms, cc = level.character_class.current_caster_level(level.level)
@@ -576,5 +590,25 @@ class PathfinderCharacter(Character):
         list = []
         for level in self.pathfinderlevel_set.all():
             if level.spells_collection:
-                list.append({"name": level.class_level, "list": level.spells_list})
+                list.append({"name": level.class_level, "spd": level.spd,"list": level.spells_list})
+        return list
+
+    @property
+    def all_feats(self):
+        list = []
+        for feat in self.pathfindercharacterfeat_set.all():
+            label = f"{feat.feat.name}"
+            if feat.feat.is_fighter_feat:
+                label += f"*"
+            if feat.choice:
+                label += f" ({feat.choice})"
+            list.append(label)
+        print("FEATS",list)
+        return list
+
+    @property
+    def all_class_features(self):
+        list = []
+        for level in self.pathfinderlevel_set.all():
+            list.append({"name": level.class_level, "features": level.active_features})
         return list

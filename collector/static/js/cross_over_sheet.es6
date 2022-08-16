@@ -26,47 +26,10 @@ class CrossOverSheet extends WawwodSheet {
 
 
             me.daddy = lines;
-            me.stdField("Character Name", me.data['name'].toUpperCase(), 8 * me.stepx, 1.5 * me.stepy, 6);
-            me.stdField("Alignment", me.data['alignment_str'], 14.5 * me.stepx, 1.5 * me.stepy, 2);
-            me.stdField("Player", me.data['player'], 17 * me.stepx, 1.5 * me.stepy, 6.5);
-
-            me.stdField("Character Class and Level", me.data.ccl, 8 * me.stepx, 2.5 * me.stepy, 7.5);
-            me.stdField("Deity", me.data['deity'], 16 * me.stepx, 2.5 * me.stepy, 3);
-            me.stdField("Homeland", me.data['homeland'], 19.5 * me.stepx, 2.5 * me.stepy, 4);
-
-            me.stdField("Race", me.data.race_name, 8 * me.stepx, 3.5 * me.stepy, 3);
-            me.stdField("Size", me.data.size, 11.5 * me.stepx, 3.5 * me.stepy, 2.5);
-            me.stdField("Gender", me.data.gender_str, 14.5 * me.stepx, 3.5 * me.stepy, 2.5);
-            me.stdField("Age", me.data.age, 17.5 * me.stepx, 3.5 * me.stepy, 1);
-            me.stdField("Height", me.data.height_foot + " (" + me.data.height_m + ")", 19 * me.stepx, 3.5 * me.stepy, 2);
-            me.stdField("Weight", me.data.weight_lbs + " (" + me.data.weight_kg + ")", 21.5 * me.stepx, 3.5 * me.stepy, 2);
 
 
-            // me.attField("STR", "strength", me.data.STR, me.data.STR_mod, 1 * me.stepx, 5 * me.stepy, 2, 0.8, true);
-            // me.attField("DEX", "dexterity", me.data.DEX, me.data.DEX_mod, 1 * me.stepx, 6 * me.stepy, 2, 0.8, true);
-            // me.attField("CON", "constitution", me.data.CON, me.data.CON_mod, 1 * me.stepx, 7 * me.stepy, 2, 0.8, true);
-            // me.attField("INT", "intelligence", me.data.INT, me.data.INT_mod, 1 * me.stepx, 8 * me.stepy, 2, 0.8, true);
-            // me.attField("WIS", "wisdom", me.data.WIS, me.data.WIS_mod, 1 * me.stepx, 9 * me.stepy, 2, 0.8, true);
-            // me.attField("CHA", "charisma", me.data.CHA, me.data.CHA_mod, 1 * me.stepx, 10 * me.stepy, 2, 0.8, true);
+            me.characterInfo();
 
-            let dy = me.tiny_font_size + 4;
-            // me.simpleText("Ability Name", 1 * me.stepx, 4.5 * me.stepy + dy, 2)
-            // me.simpleText("Ability", 3 * me.stepx, 4.5 * me.stepy, 1)
-            // me.simpleText("Score", 3 * me.stepx, 4.5 * me.stepy + dy, 1)
-            // me.simpleText("Ability", 4 * me.stepx, 4.5 * me.stepy, 1)
-            // me.simpleText("Modifier", 4 * me.stepx, 4.5 * me.stepy + dy, 1)
-            // me.simpleText("Temp", 5 * me.stepx, 4.5 * me.stepy, 1)
-            // me.simpleText("Adjustment", 5 * me.stepx, 4.5 * me.stepy + dy, 1)
-            // me.simpleText("Temp", 6 * me.stepx, 4.5 * me.stepy, 1)
-            // me.simpleText("Modifier", 6 * me.stepx, 4.5 * me.stepy + dy, 1)
-
-
-            // me.attField("INITIATIVE", "Modifier", me.data.init, '', 7.5 * me.stepx, 10 * me.stepy, 2, 0.8, false);
-
-
-            // me.saveField("Fortitude", "Constitution", me.data.fortitude, '', 1.0 * me.stepx, 15 * me.stepy, 2, 0.8, "fort");
-            // me.saveField("Reflex", "Dexterity", me.data.dexterity, '', 1.0 * me.stepx, 16 * me.stepy, 2, 0.8, "fort");
-            // me.saveField("Will", "Wisdom", me.data.wisdom, '', 1.0 * me.stepx, 17 * me.stepy, 2, 0.8, "fort");
 
             me.drawAbilities(0.5, 5)
             me.drawHP(6.7, 5)
@@ -80,12 +43,12 @@ class CrossOverSheet extends WawwodSheet {
 
             me.boxField("SKILLS", 0, 14, 7.5, 9.5, 0.8, true, "");
             let skill_ystart = 9
-            // console.log(me.data.all_ranks)
+
             _.forEach(me.data.all_ranks, function (v, k) {
                 me.skillField(14 * me.stepx, skill_ystart * me.stepy, v);
                 skill_ystart += 0.65;
             });
-            console.log(me.data['ranks_summary'])
+
             me.stdField("Total Skill Ranks ", me.data['ranks_summary'].toUpperCase(), 14 * me.stepx, 32 * me.stepy, 6);
             me.decorationText(4, 2.25, 3, 'middle', me.logo_font, me.fat_font_size, me.shadow_fill, me.shadow_stroke, 4, "Pathfinder", me.back);
             me.decorationText(4, 2.25, 0, 'middle', me.logo_font, me.fat_font_size, me.draw_fill, me.draw_stroke, 0.5, "Pathfinder", me.back);
@@ -97,14 +60,19 @@ class CrossOverSheet extends WawwodSheet {
             me.midline(0.5, 0.5, 1.0);
             me.crossline(23.5, 35.5, 35.0);
             me.midline(35.5, 23.0, 23.5);
-            me.daddy = lines;
-
-            console.log(me.data['spellbook'])
-            me.drawSpellbook(0.5, 5, me.data['spellbook'])
             me.decorationText(4, 2.25, 3, 'middle', me.logo_font, me.fat_font_size, me.shadow_fill, me.shadow_stroke, 4, "Pathfinder", me.back);
             me.decorationText(4, 2.25, 0, 'middle', me.logo_font, me.fat_font_size, me.draw_fill, me.draw_stroke, 0.5, "Pathfinder", me.back);
             me.decorationText(4, 2.75, 0, 'middle', me.title_font, me.big_font_size, me.draw_fill, me.draw_stroke, 0.5, "Role Playing Game", me.back);
-            me.decorationText(4, 3.5, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, "Spells Lists Sheet", me.back);
+            me.decorationText(4, 3.5, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, "Equipment Sheet", me.back);
+            me.daddy = lines;
+            me.characterInfo();
+            me.drawClassData(13.5, 4.75);
+            me.drawGear(0.5, 4.75);
+            me.drawFeats(13.5, 7.5);
+            me.drawSpecialAbilities(13.5, 17.0);
+            me.drawMoney(13.5, 30.5);
+            me.drawEncumberance(0.5, 30.5);
+            me.drawSpecial(1.5, 35.5);
 
         } else if (me.page === 2) {
             me.midline(4, 0.5, 23.5);
@@ -115,18 +83,18 @@ class CrossOverSheet extends WawwodSheet {
             me.decorationText(4, 2.25, 3, 'middle', me.logo_font, me.fat_font_size, me.shadow_fill, me.shadow_stroke, 4, "Pathfinder", me.back);
             me.decorationText(4, 2.25, 0, 'middle', me.logo_font, me.fat_font_size, me.draw_fill, me.draw_stroke, 0.5, "Pathfinder", me.back);
             me.decorationText(4, 2.75, 0, 'middle', me.title_font, me.big_font_size, me.draw_fill, me.draw_stroke, 0.5, "Role Playing Game", me.back);
-            me.decorationText(4, 3.5, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, "Possession Sheet", me.back);
+            me.decorationText(4, 3.5, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, "Spells Sheet", me.back);
             me.daddy = lines;
-
-
+            me.characterInfo();
+            me.drawSpellbook(0.5, 5, me.data['spellbook'])
         }
         if (me.page > 0) {
-            me.decorationText(10.5, 2.25, 0, 'start', me.user_font, me.medium_font_size, me.user_fill, me.user_stroke, 0.5, me.data["name"] + " (p." + (me.page + 1) + ")", me.back);
+            // me.decorationText(10.5, 2.25, 0, 'start', me.user_font, me.medium_font_size, me.user_fill, me.user_stroke, 0.5, me.data["name"] + " (p." + (me.page + 1) + ")", me.back);
         }
         me.decorationText(21.5, 1.75, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, me.pre_title, me.back);
         me.decorationText(21.5, 2.25, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, me.post_title, me.back);
         me.decorationText(1.5, 35.8, -16, 'start', me.base_font, me.small_font_size, me.draw_fill, me.draw_stroke, 0.5, me.guideline, me.back);
-        me.decorationText(22.4, 35.5, 5, 'end', me.title_font, me.small_font_size, me.draw_fill, me.draw_stroke, 0.5, "Pathfinder 1E Character Sheet 2022 (Version:0.6) Generated with Pathfinder Workshop", me.back);
+        me.decorationText(22.4, 35.5, 5, 'end', me.title_font, me.small_font_size, me.draw_fill, me.draw_stroke, 0.5, "Zaff's Pathfinder 1E Character Sheet 2022 (Version:0.7) Generated with Pathfinder Workshop", me.back);
         // me.decorationText(22.5, 34.8, 0, 'end', me.base_font, me.small_font_size, me.draw_fill, me.draw_stroke, 0.5, 'Challenge:' + me.data['freebies'], me.back);
     }
 
@@ -135,12 +103,30 @@ class CrossOverSheet extends WawwodSheet {
         me.addButton(0, 'Save SVG');
         me.addButton(1, 'Save PNG');
         me.addButton(2, 'Save PDF');
-        me.addButton(3, 'Edit');
         me.addButton(4, 'Page 1');
         me.addButton(5, 'Page 2');
         me.addButton(6, 'Page 3');
+        me.addButton(7, 'Page 4');
     }
 
+    characterInfo() {
+        let me = this;
+        me.stdField("Character Name", me.data['name'].toUpperCase(), 8, 1.5, 6);
+        me.stdField("Alignment", me.data['alignment_str'], 14.5, 1.5, 2);
+        me.stdField("Player", me.data['player'], 17, 1.5, 6.5);
+
+        me.stdField("Character Class and Level", me.data.ccl, 8, 2.5, 7.5);
+        me.stdField("Deity", me.data['deity'], 16, 2.5, 3);
+        me.stdField("Homeland", me.data['homeland'], 19.5, 2.5, 4);
+
+        me.stdField("Race", me.data.race_name, 8, 3.5, 3);
+        me.stdField("Size", me.data.size, 11.5, 3.5, 2.5);
+        me.stdField("Gender", me.data.gender_str, 14.5, 3.5, 2.5);
+        me.stdField("Age", me.data.age, 17.5, 3.5, 1);
+        me.stdField("Height", me.data.height_foot + " (" + me.data.height_m + ")", 19, 3.5, 2);
+        me.stdField("Weight", me.data.weight_lbs + " (" + me.data.weight_kg + ")", 21.5, 3.5, 2);
+
+    }
 
     drawAbilities(ox, y) {
         let me = this;
@@ -199,6 +185,152 @@ class CrossOverSheet extends WawwodSheet {
         me.boxField("Languages", "", ox, oy, 9.5, 0.8, true, "");
         me.boxField("", "languages", ox, oy + 1, 9.5, 1.8);
 
+    }
+
+    drawClassData(ox, y) {
+        let me = this;
+        let oy = y;
+        // Languages
+        me.boxField("Experience Points", "", ox, oy, 3, 0.8, true, "");
+        me.boxField("XP", "current_xp", ox + 3, oy, 3);
+        me.boxField("Next Level", "next_level", ox + 6, oy, 4);
+        oy += 1.4;
+        me.boxField("Favored Class", "", ox, oy, 4, 0.8, true, "");
+        me.boxField("", "", ox + 4, oy, 4, 0.8, false, "");
+        me.boxField("Skills Points", "", ox + 8, oy, 1, 0.8, false, "Skills Points");
+        me.boxField("Hit Points", "", ox + 9, oy, 1, 0.8, false, "Hit Points");
+
+    }
+
+    drawGear(ox, y) {
+        let me = this;
+        let oy = y;
+        let txt = "", txt2 = "";
+        // Languages
+        me.boxField("Gear/Equipment", "", ox, oy, 12.5, 0.8, true, "");
+        oy += 0.9
+        _.forEach([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], function (v, k) {
+            oy += 0.8
+            me.smallField(k + 1, ox, oy, 10.5);
+            if (k == 0) {
+                txt = "Weight";
+                txt2 = "Value"
+            } else {
+                txt = txt2 = "";
+            }
+
+            me.boxField(txt, "", ox + 10.5, oy - 0.6, 1, 0.6, false, "");
+            me.boxField(txt2, "", ox + 11.5, oy - 0.6, 1, 0.6, false, "");
+        });
+    }
+
+    drawFeats(ox, y) {
+        let me = this;
+        let oy = y;
+        let txt = ""
+        // Languages
+        me.boxField("Feats", "", ox, oy, 8, 0.8, true, "");
+        me.boxField("Total", "nb_feats", ox + 8, oy, 2, 0.8, false, "");
+        oy += 0.9
+        console.log(me.data['feats_list'])
+        let w = me.data['nb_feats'].split("+")
+        let nb_feats = 0
+        _.forEach(w, function (x) {
+            nb_feats += parseInt(x)
+        })
+        _.forEach([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], function (v, k) {
+            oy += 0.8
+            txt = k + 1
+            if (me.blank == false) {
+                if (k < nb_feats) {
+                    txt = me.data['feats_list'][k]
+                }
+            }
+
+            me.smallField(txt, ox, oy, 10);
+
+        });
+    }
+
+    drawSpecialAbilities(ox, y) {
+        let me = this;
+        let oy = y;
+        let txt = "", txt2 = "";
+        console.log(me.data['all_features'])
+        me.boxField("Special Abilities", "", ox, oy, 10, 0.8, true, "");
+        oy += 0.9
+        _.forEach([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], function (v, k) {
+            oy += 0.8
+            txt = k + 1
+            if (me.blank == false) {
+                // if (k < me.data['all_features']['features'].length) {
+                //     txt = me.data['all_features']['features'][k]
+                // }
+            }
+            me.smallField(k + 1, ox, oy, 10);
+        });
+    }
+
+    drawMoney(ox, y) {
+        let me = this;
+        let oy = y;
+        let txt = "", txt2 = "";
+        me.boxField("Money", "", ox, oy, 10, 0.8, true, "1 PP = 10 GP = 100 SP = 1000 CP");
+        oy += 0.9
+        _.forEach([{"type": "Platinium Coins"}, {"type": "Gold Coins"}, {"type": "Silver Coins"}, {"type": "Copper Coins"}], function (v, k) {
+            oy += 0.8
+            me.boxField(v["type"], "", ox, oy - 0.6, 3, 0.6, true, "");
+            me.smallField("", ox + 3.5, oy, 4);
+        });
+    }
+
+    drawEncumberance(ox, y) {
+        let me = this;
+        let oy = y;
+        let txt = "", txt2 = "";
+        me.boxField("Encumberance", "", ox, oy, 12.5, 0.8, true, "How much you can carry");
+        oy += 0.9
+        _.forEach([{"type": "Light Load"}, {"type": "Medium Load"}, {"type": "Heavy Load"}], function (v, k) {
+            oy += 0.8
+            me.boxField(v["type"], "", ox, oy - 0.6, 3, 0.6, true, "");
+            me.smallField("", ox + 3.5, oy, 6);
+        });
+    }
+
+    drawSpecial(ox, oy) {
+        let me = this;
+        let item = me.daddy.append('g')
+            .attr('class', 'skill_text_grp');
+        item.append('rect')
+            .attr('x', function (d, i) {
+                return ox * me.stepx;
+            })
+            .attr('y', function (d, i) {
+                return (oy - 0.1) * me.stepy;
+            })
+            .attr('width', function (d, i) {
+                return 0.2 * me.stepx;
+            })
+            .attr('height', function (d, i) {
+                return 0.2 * me.stepy;
+            })
+            .style("fill", function (d, i) {
+                return "transparent";
+            })
+            .style("stroke", me.shadow_stroke)
+            .style("stroke-width", '1.0pt')
+        ;
+        item.append('text')
+            .attr("x", (ox + 0.3) * me.stepx)
+            .attr("y", oy * me.stepy)
+            .attr("dy", "6pt")
+            .style("text-anchor", 'start')
+            .style("font-family", me.title_font)
+            .style("font-size", me.tiny_font_size + 'pt')
+            .style("fill", me.draw_fill)
+            .style("stroke", me.shadow_stroke)
+            .style("stroke-width", '0.5pt')
+            .text("Check this box if you're deeply convinced Zaffarelli is the best DM ever. Your opinion matters.");
     }
 
     drawWeapons(ox, y) {
@@ -262,25 +394,6 @@ class CrossOverSheet extends WawwodSheet {
         let me = this;
         let oy = y;
 
-        // me.simpleText("Total", 3 * me.stepx, 11 * me.stepy + dy, 1)
-        // me.simpleText("Armor", 5 * me.stepx, 11 * me.stepy, 1)
-        // me.simpleText("Bonus", 5 * me.stepx, 11 * me.stepy + dy, 1)
-        // me.simpleText("Shield", 6 * me.stepx, 11 * me.stepy, 1)
-        // me.simpleText("Bonus", 6 * me.stepx, 11 * me.stepy + dy, 1)
-        // me.simpleText("DEX", 7 * me.stepx, 11 * me.stepy, 1)
-        // me.simpleText("Modifier", 7 * me.stepx, 11 * me.stepy + dy, 1)
-        // me.simpleText("Size", 8 * me.stepx, 11 * me.stepy, 1)
-        // me.simpleText("Modifier", 8 * me.stepx, 11 * me.stepy + dy, 1)
-        // me.simpleText("Natural", 9 * me.stepx, 11 * me.stepy, 1)
-        // me.simpleText("Armor", 9 * me.stepx, 11 * me.stepy + dy, 1)
-        // me.simpleText("Deflection", 10 * me.stepx, 11 * me.stepy, 1)
-        // me.simpleText("Bonus", 10 * me.stepx, 11 * me.stepy + dy, 1)
-        // me.simpleText("Temporary", 11 * me.stepx, 11 * me.stepy, 1)
-        // me.simpleText("Modifier", 11 * me.stepx, 11 * me.stepy + dy, 1)
-
-        // me.acField("AC", "Armor Class", me.data.AC, '', 1.0 * me.stepx, 11.5 * me.stepy, 2, 0.8, "ac");
-        // me.acField("Touch", "Armor Class", me.data.touch_AC, '', 1.0 * me.stepx, 12.5 * me.stepy, 2, 0.8, "touch");
-        // me.acField("Flat-Footed", "Armor Class", me.data.flatfooted_AC, '', 1.0 * me.stepx, 13.5 * me.stepy, 2, 0.8, "ff");
 
         me.boxField("AC", 0, ox, oy, 2, 0.8, true, "armor class");
         me.boxField("Total", "AC", ox + 2, oy, 1);
@@ -419,16 +532,38 @@ class CrossOverSheet extends WawwodSheet {
 
     }
 
-    drawSpellbook(ox, y, spells_lists) {
+    drawSpellbook(x, y, spells_lists) {
         let me = this;
+        let ox = x;
         let oy = y;
+        console.log(spells_lists)
         _.forEach(spells_lists, function (list, li) {
+            me.smallField("Spells as " + list.name, ox, oy, 11.5, true);
+
+            oy += 0.6;
+            ox += 1
+            let txt = ""
+            _.forEach(list.spd, function (spd, di) {
+                // me.smallField("LVL "+di + " " + spd.spd, ox, oy, 0.5);
+                txt = spd.spd
+                if (spd.spd != '-') {
+                    txt = parseInt(spd.spd) + spd.ability_bonus
+
+                }
+                me.boxField("Lvl " + spd.level.toString(), txt, ox, oy, 1, 0.8, false, spd.level, false, true);
+                ox += 1;
+            })
+            ox = x;
+            oy += 1.5;
             _.forEach(list.list, function (spell, si) {
-                console.log(spell)
-                me.stdField("Spell", spell.name, ox*me.stepx, oy*me.stepy, 4);
-                me.stdField("Level", spell.level, (ox + 4.5)*me.stepx, oy*me.stepy, 1);
-                me.stdField("Short Description", spell.short_description +" (domain="+spell.domain+")", (ox + 6)*me.stepx, oy*me.stepy, 10);
-                oy += 1;
+                let desc = spell.short_description.replace("&nbsp;"," ")
+                me.smallField(spell.name, ox, oy, 2.5);
+                me.smallField(spell.level, (ox + 2.75), oy, 0.5);
+                me.smallField(desc, (ox + 3.5), oy, 8);
+                _.forEach([0,1,2,3,4,5], function (t, ti) {
+                    me.boxField("", "", ox+11.5+0.25*t, oy-0.3, 0.4, 0.2, false, "", false, true);
+                });
+                oy += 0.5;
             })
         })
     }

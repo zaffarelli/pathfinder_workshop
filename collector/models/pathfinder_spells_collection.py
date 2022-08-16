@@ -10,6 +10,7 @@ class PathfinderSpellsCollection(models.Model):
         verbose_name = 'Pathfinder Spells Collection'
 
     name = models.CharField(default="", max_length=128)
+    is_finished = models.BooleanField(default=False)
 
     @property
     def spells(self):
@@ -26,7 +27,7 @@ class PathfinderSpellsCollection(models.Model):
         return list
 
     def __str__(self):
-        return f'Collection {self.name}'
+        return f'Spells for {self.name}'
 
 
 class PathfinderSpellsCollectionAdmin(admin.ModelAdmin):

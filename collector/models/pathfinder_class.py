@@ -34,7 +34,8 @@ class PathfinderClass(models.Model):
 
     is_npc_class = models.BooleanField(default=False)
     is_spellcasting_class = models.BooleanField(default=False)
-
+    uses_custom_spells_collection = models.BooleanField(default=False)
+    caster_level = models.IntegerField(default=20)
     skill_ranks_per_level = models.IntegerField(default=2, blank=True)
     hit_die = models.IntegerField(default=4, blank=True)
 
@@ -58,5 +59,5 @@ class PathfinderClassAdmin(admin.ModelAdmin):
     from collector.models.pathfinder_advancement import PathfinderClassAdvancementInline
     ordering = ['is_npc_class', 'name']
     list_display = ['name', 'main_ability', 'is_npc_class', 'is_spellcasting_class', 'BAB_rate', 'fort_rate', 'ref_rate',
-                    'will_rate', 'skill_ranks_per_level', 'hit_die', "class_skills"]
+                    'will_rate', 'skill_ranks_per_level', 'hit_die','caster_level', 'uses_custom_spells_collection', "class_skills"]
     inlines = [PathfinderClassAdvancementInline]

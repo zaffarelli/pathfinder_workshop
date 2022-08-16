@@ -10,3 +10,4 @@ class CollectorConfig(AppConfig):
         import collector.signals.pathfinder_gear
         import collector.signals.pathfinder_armor
         import collector.signals.pathfinder_weapon
+        import collector.signals.pathfinder_level

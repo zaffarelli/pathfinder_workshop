@@ -11,7 +11,7 @@ import math
 def index(request):
     if not request.user.is_authenticated:
         return redirect('accounts/login/')
-    characters = PathfinderCharacter.objects.order_by('-player', '-current_xp', 'name')
+    characters = PathfinderCharacter.objects.order_by('-in_spotlight','-current_xp','-player',  'name')
     ch = []
     for c in characters:
         ch.append({'name': c.name, 'rid': c.rid, 'object': c.to_json(), 'roster': c.roster, 'player': c.player})
@@ -58,8 +58,11 @@ def display_crossover_sheet(request, slug=None, option=None):
         c.armor_bonus = c.AC_armor_bonus
         c.shield_bonus = "+4"
 
-
+        c.nb_feats = c.total_feats
         c.spellbook = c.spells_lists
+
+        c.feats_list = c.all_feats
+        c.all_features = c.all_class_features
 
         # print(c.all_ranks)
 

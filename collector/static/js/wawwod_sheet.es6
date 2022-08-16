@@ -58,7 +58,7 @@ class WawwodSheet {
 
     init() {
         let me = this;
-        me.debug = true;
+        me.debug = false;
         me.page = 0;
         me.blank = false;
         me.width = parseInt($(me.parent).css("width"), 10) * 0.75;
@@ -146,6 +146,7 @@ class WawwodSheet {
         // d3.select(me.parent).selectAll("svg").remove();
         me.vis = d3.select(me.parent).append("svg")
             .attr("id", me.data['rid'])
+            .attr("class", "pathfinder_sheet")
             .attr("viewBox", "0 0 " + me.w + " " + me.h)
             .attr("width", me.w)
             .attr("height", me.h);
@@ -232,26 +233,18 @@ class WawwodSheet {
         let item = me.daddy.append('g')
             .attr('class', 'std_field_grp');
         item.append('line')
-            .attr('x1', function (d, i) {
-                return ox;
-            })
-            .attr('y1', function (d, i) {
-                return oy + 1;
-            })
-            .attr('x2', function (d, i) {
-                return ox + me.stepx * size;
-            })
-            .attr('y2', function (d, i) {
-                return oy;
-            })
+            .attr('x1', ox * me.stepx)
+            .attr('y1', oy * me.stepy)
+            .attr('x2', (ox + size) * me.stepx)
+            .attr('y2', oy * me.stepy)
             .style("fill", me.draw_fill)
             .style("stroke", me.shadow_stroke)
             .style("stroke-width", '1.0pt')
 
         ;
         item.append('text')
-            .attr("x", ox)
-            .attr("y", oy)
+            .attr("x", ox * me.stepx)
+            .attr("y", oy * me.stepy)
             .attr("dy", "12pt")
             .style("text-anchor", 'start')
             .style("font-family", me.title_font)
@@ -262,8 +255,8 @@ class WawwodSheet {
             .text(label);
         if (me.blank == false) {
             item.append('text')
-                .attr("x", ox)
-                .attr("y", oy)
+                .attr("x", ox * me.stepx)
+                .attr("y", oy * me.stepy)
                 .attr("dy", "-6pt")
                 .style("text-anchor", 'start')
                 .style("font-family", me.user_font)
@@ -274,6 +267,61 @@ class WawwodSheet {
                 .text(value);
         }
     }
+
+    smallField(value, ox, oy, size = 3, wob = false) {
+        let me = this;
+        let item = me.daddy.append('g')
+            .attr('class', 'std_field_grp');
+        if (wob) {
+            item.append('rect')
+                .attr('x', ox * me.stepx)
+                .attr('y', (oy-0.5) * me.stepy)
+                .attr('width', size * me.stepx)
+                .attr('height', 0.5*me.stepy)
+                .style("fill", me.draw_fill)
+                .style("stroke", me.shadow_stroke)
+                .style("stroke-width", '1.0pt')
+            ;
+            item.append('text')
+                .attr("x", (ox + size/2)  * me.stepx)
+                .attr("y", (oy) * me.stepy)
+                .attr("dy", -me.small_font_size/2)
+                .style("text-anchor", 'middle')
+                .style("font-family", me.title_font)
+                .style("font-size", me.small_font_size + 'px')
+                .style("fill", "#F0F0F0")
+                .style("stroke", "#C0C0C0")
+                .style("stroke-width", '0.5pt')
+                .text(value);
+        } else {
+            item.append('line')
+                .attr('x1', ox * me.stepx)
+                .attr('y1', oy * me.stepy)
+                .attr('x2', (ox + size) * me.stepx)
+                .attr('y2', (oy) * me.stepy)
+                .style("fill", me.draw_fill)
+                .style("stroke", me.shadow_stroke)
+                .style("stroke-width", '1.0pt')
+
+            ;
+            if (me.blank == false) {
+                item.append('text')
+                    .attr("x", ox * me.stepx)
+                    .attr("y", oy * me.stepy)
+                    .attr("dy", "-6pt")
+                    .style("text-anchor", 'start')
+                    .style("font-family", me.user_font)
+                    .style("font-size", me.tiny_font_size + 'pt')
+                    .style("fill", me.user_fill)
+                    .style("stroke", me.user_stroke)
+                    .style("stroke-width", '0.5pt')
+                    .text(value);
+            }
+        }
+
+
+    }
+
 
     skillField(ox, oy, rank) {
         let me = this;
@@ -287,7 +335,7 @@ class WawwodSheet {
                 return ox;
             })
             .attr('y', function (d, i) {
-                return oy-0.1*me.stepy;
+                return oy - 0.1 * me.stepy;
             })
             .attr('width', function (d, i) {
                 return 0.2 * me.stepx;
@@ -326,8 +374,8 @@ class WawwodSheet {
                 if (r.acp_applies) {
                     s += "+";
                 }
-                if (r.wildcard){
-                    s += " ("+r.wildcard+")"
+                if (r.wildcard) {
+                    s += " (" + r.wildcard + ")"
                 }
                 return s
             });
@@ -662,7 +710,7 @@ class WawwodSheet {
         }
     }
 
-    boxField(label_full, data_field, ox, oy, width = 1, height = 0.8, wob = false, label = "", preserve = false) {
+    boxField(label_full, data_field, ox, oy, width = 1, height = 0.8, wob = false, label = "", preserve = false, direct_value=false) {
         let me = this;
         let item = me.daddy.append('g')
             .attr('class', 'attr_grp');
@@ -722,9 +770,11 @@ class WawwodSheet {
                 .text(label)
             ;
         } else {
-            let words = label_full.split(" ");
+            let words = []
             if (preserve) {
                 words = [label_full];
+            }else{
+                words = label_full.split(" ");
             }
             item.append('text')
                 .attr('x', function (d, i) {
@@ -778,6 +828,9 @@ class WawwodSheet {
                     .style("stroke", me.user_stroke)
                     .style("stroke-width", '1.0pt')
                     .text(function (d) {
+                        if (direct_value == true){
+                            return data_field;
+                        }
                         if (data_field == 0) {
                             return ""
                         }
@@ -1891,7 +1944,7 @@ class WawwodSheet {
     saveSVG() {
         let me = this;
         me.svg.selectAll('.do_not_print').attr('opacity', 0);
-        let base_svg = d3.select("svg").html();
+        let base_svg = d3.select("#d3area svg").html();
         let flist = '<style>';
         for (let f of me.config['fontset']) {
             flist += '@import url("https://fonts.googleapis.com/css2?family=' + f + '");';
@@ -1904,7 +1957,7 @@ class WawwodSheet {
 xmlns="http://www.w3.org/2000/svg" version="1.1" \
 xmlns:xlink="http://www.w3.org/1999/xlink"> \
 ' + flist + base_svg + '</svg>';
-        let fname = me.data['rid'] + ".svg"
+        let fname = me.data['rid']+"_"+me.page + ".svg"
         let nuke = document.createElement("a");
         nuke.href = 'data:application/octet-stream;base64,' + btoa(me.formatXml(exportable_svg));
         nuke.setAttribute("download", fname);
@@ -1915,7 +1968,7 @@ xmlns:xlink="http://www.w3.org/1999/xlink"> \
     createPDF() {
         let me = this;
         me.svg.selectAll('.do_not_print').attr('opacity', 0);
-        let base_svg = d3.select("#d3area svg").html();
+        let base_svg = d3.select("#d3area svg#sheet").html();
         let flist = '<style>';
         console.log(me.config['fontset']);
         for (let f of me.config['fontset']) {

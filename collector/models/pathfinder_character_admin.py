@@ -44,7 +44,7 @@ class PathfinderCharacterAdmin(admin.ModelAdmin):
     from collector.models.pathfinder_equipment import PathfinderEquipmentInline
     from collector.models.pathfinder_character_feat import PathfinderCharacterFeatInline
     ordering = ['-player', '-tcl']
-    list_display = ['name', 'player', 'tcl', 'hp', 'STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA', 'dm_notes']
+    list_display = ['name', 'player', 'tcl', 'hp', 'STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA', 'homeland', 'dm_notes']
     actions = [roll_standard_abilities, roll_classic_abilities, refix]
     inlines = [PathfinderLevelInline, PathfinderRankInline, PathfinderEquipmentInline,
                PathfinderCharacterFeatInline]

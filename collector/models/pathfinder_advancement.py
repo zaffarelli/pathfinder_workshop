@@ -22,6 +22,15 @@ class PathfinderClassAdvancement(models.Model):
     spd_8 = models.CharField(default='-', max_length=4, blank=True)
     spd_9 = models.CharField(default='-', max_length=4, blank=True)
 
+    @property
+    def max_spell_level(self):
+        m = -1
+        for x in range(0, 10):
+            val = getattr(self, "spd_" + str(x))
+            if val != '-':
+                m = x
+        return m
+
     def __str__(self):
         return f'{self.pathfinder_class} level {self.level}'
 
@@ -46,5 +55,5 @@ class PathfinderClassAdvancementInline(admin.TabularInline):
 class PathfinderClassAdvancementAdmin(admin.ModelAdmin):
     ordering = ['pathfinder_class', 'level']
     list_display = ['label', 'level', 'spd_0', 'spd_1', 'spd_2', 'spd_3', 'spd_4', 'spd_5', 'spd_6', 'spd_7',
-                    'spd_8', 'spd_9', 'features_list']
+                    'spd_8', 'spd_9', 'max_spell_level', 'features_list']
     list_filter = ['pathfinder_class', 'level']
