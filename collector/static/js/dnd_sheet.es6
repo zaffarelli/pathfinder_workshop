@@ -1,10 +1,11 @@
-class WawwodSheet {
+class DnDSheet {
     constructor(data, parent, collector) {
         let me = this;
         me.parent = parent;
         me.co = collector;
         me.config = data;
         me.count = 0;
+
     }
 
     decorationText(x, y, d = 0, a = 'middle', f, s, b, c, w, t, v, o = 1) {
@@ -60,7 +61,9 @@ class WawwodSheet {
         let me = this;
         me.debug = false;
         me.page = 0;
-        me.blank = false;
+        me.version = "1.0";
+        me.date_release = "November 2022";
+        me.blank = true;
         me.width = parseInt($(me.parent).css("width"), 10) * 0.75;
         me.height = me.width * 1.4;
         me.w = 1.25 * me.width;
@@ -323,7 +326,7 @@ class WawwodSheet {
     }
 
 
-    skillField(ox, oy, rank) {
+    skillField(ox, oy, rank, no_header=1) {
         let me = this;
         let size = 4;
         let item = me.daddy.append('g')
@@ -369,18 +372,100 @@ class WawwodSheet {
             .text(function (d) {
                 let s = r.skill_name;
                 if (r.is_trained_only) {
-                    s += "*";
+                    s += " *";
                 }
                 if (r.acp_applies) {
-                    s += "+";
+                    s += " ¤";
                 }
                 if (r.wildcard) {
                     s += " (" + r.wildcard + ")"
                 }
                 return s
             });
+
+        item.append('rect')
+            .attr("x", ox + 4.2 * me.stepx)
+            .attr("y", oy - 0.3 * me.stepy)
+            .attr('width', function (d, i) {
+                return 0.6 * me.stepx;
+            })
+            .attr('height', function (d, i) {
+                return 0.6 * me.stepy;
+            })
+            .style("fill", function (d, i) {
+                return "transparent";
+            })
+            .style("stroke", me.shadow_stroke)
+            .style("stroke-width", '2.0pt')
+
+        ;
+
+        if (no_header == 0){
+            item.append('text')
+            .attr("x", ox + 4.5 * me.stepx)
+            .attr("y", oy - 0.6 * me.stepy)
+            .attr("dy", "4pt")
+            .style("text-anchor", 'middle')
+            .style("font-family", me.title_font)
+            .style("font-size", me.small_font_size + 'pt')
+            .style("fill", me.draw_fill)
+            .style("stroke", me.shadow_stroke)
+            .style("stroke-width", '0.5pt')
+            .text("Rnk");
+
+            item.append('text')
+            .attr("x", ox + 6.8 * me.stepx)
+            .attr("y", oy - 0.6 * me.stepy)
+            .attr("dy", "4pt")
+            .style("text-anchor", 'middle')
+            .style("font-family", me.title_font)
+            .style("font-size", me.small_font_size + 'pt')
+            .style("fill", me.draw_fill)
+            .style("stroke", me.shadow_stroke)
+            .style("stroke-width", '0.5pt')
+            .text("CC");
+
+            item.append('text')
+            .attr("x", ox + 7.5 * me.stepx)
+            .attr("y", oy - 0.6 * me.stepy)
+            .attr("dy", "4pt")
+            .style("text-anchor", 'middle')
+            .style("font-family", me.title_font)
+            .style("font-size", me.small_font_size + 'pt')
+            .style("fill", me.draw_fill)
+            .style("stroke", me.shadow_stroke)
+            .style("stroke-width", '0.5pt')
+            .text("ACP");
+
+            item.append('text')
+            .attr("x", ox + 8.2 * me.stepx)
+            .attr("y", oy - 0.6 * me.stepy)
+            .attr("dy", "4pt")
+            .style("text-anchor", 'middle')
+            .style("font-family", me.title_font)
+            .style("font-size", me.small_font_size + 'pt')
+            .style("fill", me.draw_fill)
+            .style("stroke", me.shadow_stroke)
+            .style("stroke-width", '0.5pt')
+            .text("MOD");
+
+            item.append('text')
+            .attr("x", ox + 9.1 * me.stepx)
+            .attr("y", oy - 0.6 * me.stepy)
+            .attr("dy", "4pt")
+            .style("text-anchor", 'middle')
+            .style("font-family", me.title_font)
+            .style("font-size", me.small_font_size + 'pt')
+            .style("fill", me.draw_fill)
+            .style("stroke", me.shadow_stroke)
+            .style("stroke-width", '0.5pt')
+            .text("VAL");
+        }
+
+
+
         item.append('text')
-            .attr("x", ox + 5.5 * me.stepx)
+            .attr("x", ox + 5.3 * me.stepx)
             .attr("y", oy)
             .attr("dy", "6pt")
             .style("text-anchor", 'middle')
@@ -391,11 +476,32 @@ class WawwodSheet {
             .style("stroke-width", '0.5pt')
             .text(r.ability);
 
+
+
+
         item.append('rect')
-            .attr("x", ox + 6.2 * me.stepx)
+            .attr("x", ox + 5.6 * me.stepx)
             .attr("y", oy - 0.3 * me.stepy)
             .attr('width', function (d, i) {
-                return 0.5 * me.stepx;
+                return 0.6 * me.stepx;
+            })
+            .attr('height', function (d, i) {
+                return 0.6 * me.stepy;
+            })
+            .style("fill", function (d, i) {
+                return "transparent";
+            })
+            .style("stroke", me.shadow_stroke)
+            .style("stroke-width", '1.0pt')
+        ;
+
+
+
+        item.append('rect')
+            .attr("x", ox + 6.5 * me.stepx)
+            .attr("y", oy - 0.3 * me.stepy)
+            .attr('width', function (d, i) {
+                return 0.6 * me.stepx;
             })
             .attr('height', function (d, i) {
                 return 0.6 * me.stepy;
@@ -409,11 +515,12 @@ class WawwodSheet {
         ;
 
 
+
         item.append('rect')
-            .attr("x", ox + 6.8 * me.stepx)
+            .attr("x", ox + 7.2 * me.stepx)
             .attr("y", oy - 0.3 * me.stepy)
             .attr('width', function (d, i) {
-                return 0.5 * me.stepx;
+                return 0.6 * me.stepx;
             })
             .attr('height', function (d, i) {
                 return 0.6 * me.stepy;
@@ -421,17 +528,19 @@ class WawwodSheet {
             .style("fill", function (d, i) {
                 return "transparent";
             })
+            .style("stroke", me.shadow_stroke)
             .style("stroke", me.shadow_stroke)
             .style("stroke-width", '1.0pt')
 
         ;
 
 
+
         item.append('rect')
-            .attr("x", ox + 7.4 * me.stepx)
+            .attr("x", ox + 7.9 * me.stepx)
             .attr("y", oy - 0.3 * me.stepy)
             .attr('width', function (d, i) {
-                return 0.5 * me.stepx;
+                return 0.6 * me.stepx;
             })
             .attr('height', function (d, i) {
                 return 0.6 * me.stepy;
@@ -440,15 +549,16 @@ class WawwodSheet {
                 return "transparent";
             })
             .style("stroke", me.shadow_stroke)
+            .style("stroke-dasharray", "2 2")
             .style("stroke-width", '1.0pt')
 
         ;
 
         item.append('rect')
-            .attr("x", ox + 4.2 * me.stepx)
+            .attr("x", ox + 8.8 * me.stepx)
             .attr("y", oy - 0.3 * me.stepy)
             .attr('width', function (d, i) {
-                return 0.7 * me.stepx;
+                return 0.6 * me.stepx;
             })
             .attr('height', function (d, i) {
                 return 0.6 * me.stepy;
@@ -456,24 +566,7 @@ class WawwodSheet {
             .style("fill", function (d, i) {
                 return "transparent";
             })
-            .style("stroke", me.shadow_stroke)
-            .style("stroke-width", '1.0pt')
-
-        ;
-
-        item.append('rect')
-            .attr("x", ox + 8.0 * me.stepx)
-            .attr("y", oy - 0.3 * me.stepy)
-            .attr('width', function (d, i) {
-                return 1.2 * me.stepx;
-            })
-            .attr('height', function (d, i) {
-                return 0.6 * me.stepy;
-            })
-            .style("fill", function (d, i) {
-                return "transparent";
-            })
-            .style("stroke", me.shadow_stroke)
+            .style("stroke", "#000")
             .style("stroke-width", '1.0pt')
 
         ;

@@ -214,7 +214,7 @@ class PathfinderWorkshop {
                         $('#d3area').removeClass('hidden');
                         let s = JSON.parse(answer.settings);
                         let d = JSON.parse(answer.data);
-                        me.d3 = new CrossOverSheet(s, "#d3area", me);
+                        me.d3 = new PathfinderSheet(s, "#d3area", me);
                         me.d3.perform(d);
                     }
 

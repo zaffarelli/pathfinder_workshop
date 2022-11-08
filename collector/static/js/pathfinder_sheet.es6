@@ -1,4 +1,4 @@
-class CrossOverSheet extends WawwodSheet {
+class PathfinderSheet extends DnDSheet {
     constructor(data, parent, collector) {
         super(data, parent, collector);
         this.init();
@@ -39,20 +39,23 @@ class CrossOverSheet extends WawwodSheet {
             me.drawSavingThrows(0.5, 15)
             me.drawAttack(0.5, 18.5)
             me.drawWeapons(0.5, 22)
-            me.drawLanguages(14, 32.5)
+            me.drawLanguages(0.5, 32.4)
 
             me.boxField("SKILLS", 0, 14, 7.5, 9.5, 0.8, true, "");
-            let skill_ystart = 9
+            let skill_ystart = 9.3;
 
             _.forEach(me.data.all_ranks, function (v, k) {
-                me.skillField(14 * me.stepx, skill_ystart * me.stepy, v);
+                me.skillField(14 * me.stepx, skill_ystart * me.stepy, v, k);
                 skill_ystart += 0.65;
             });
+            me.stdField("Total Skill Ranks ", me.data['ranks_summary'].toUpperCase(), 14, 34, 4.5);
+            me.stdField("Favored Class Ranks ", "", 19, 34, 4.5);
+            me.stdField("", "", 14, 32.4, 9);
+            me.stdField("Notes", "", 14, 33, 9);
+            me.decorationText(15, 35.00, 0, 'left', me.title_font, me.small_font_size, me.draw_fill, me.draw_stroke, 0.5, "* cannot be used untrained", me.back);
+            me.decorationText(19, 35.00, 0, 'left', me.title_font, me.small_font_size, me.draw_fill, me.draw_stroke, 0.5, "¤ armor check penalty", me.back);
 
-            me.stdField("Total Skill Ranks ", me.data['ranks_summary'].toUpperCase(), 14 * me.stepx, 32 * me.stepy, 6);
-            me.decorationText(4, 2.25, 3, 'middle', me.logo_font, me.fat_font_size, me.shadow_fill, me.shadow_stroke, 4, "Pathfinder", me.back);
-            me.decorationText(4, 2.25, 0, 'middle', me.logo_font, me.fat_font_size, me.draw_fill, me.draw_stroke, 0.5, "Pathfinder", me.back);
-            me.decorationText(4, 2.75, 0, 'middle', me.title_font, me.big_font_size, me.draw_fill, me.draw_stroke, 0.5, "Role Playing Game", me.back);
+
             me.decorationText(4, 3.5, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, "Character Sheet", me.back);
         } else if (me.page === 1) {
             me.midline(4, 0.5, 23.5);
@@ -60,9 +63,8 @@ class CrossOverSheet extends WawwodSheet {
             me.midline(0.5, 0.5, 1.0);
             me.crossline(23.5, 35.5, 35.0);
             me.midline(35.5, 23.0, 23.5);
-            me.decorationText(4, 2.25, 3, 'middle', me.logo_font, me.fat_font_size, me.shadow_fill, me.shadow_stroke, 4, "Pathfinder", me.back);
-            me.decorationText(4, 2.25, 0, 'middle', me.logo_font, me.fat_font_size, me.draw_fill, me.draw_stroke, 0.5, "Pathfinder", me.back);
-            me.decorationText(4, 2.75, 0, 'middle', me.title_font, me.big_font_size, me.draw_fill, me.draw_stroke, 0.5, "Role Playing Game", me.back);
+
+
             me.decorationText(4, 3.5, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, "Equipment Sheet", me.back);
             me.daddy = lines;
             me.characterInfo();
@@ -70,9 +72,10 @@ class CrossOverSheet extends WawwodSheet {
             me.drawGear(0.5, 4.75);
             me.drawFeats(13.5, 7.5);
             me.drawSpecialAbilities(13.5, 17.0);
-            me.drawMoney(13.5, 30.5);
+            me.drawMoney(11.0, 30.5);
             me.drawEncumberance(0.5, 30.5);
-            me.drawSpecial(1.5, 35.5);
+            me.drawSpecial(1.5, 34.5);
+            me.drawAlignment(19.5, 30.5);
 
         } else if (me.page === 2) {
             me.midline(4, 0.5, 23.5);
@@ -80,22 +83,34 @@ class CrossOverSheet extends WawwodSheet {
             me.midline(0.5, 0.5, 1.0);
             me.crossline(23.5, 35.5, 35.0);
             me.midline(35.5, 23.0, 23.5);
-            me.decorationText(4, 2.25, 3, 'middle', me.logo_font, me.fat_font_size, me.shadow_fill, me.shadow_stroke, 4, "Pathfinder", me.back);
-            me.decorationText(4, 2.25, 0, 'middle', me.logo_font, me.fat_font_size, me.draw_fill, me.draw_stroke, 0.5, "Pathfinder", me.back);
+
             me.decorationText(4, 2.75, 0, 'middle', me.title_font, me.big_font_size, me.draw_fill, me.draw_stroke, 0.5, "Role Playing Game", me.back);
             me.decorationText(4, 3.5, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, "Spells Sheet", me.back);
             me.daddy = lines;
             me.characterInfo();
             me.drawSpellbook(0.5, 5, me.data['spellbook'])
+
         }
         if (me.page > 0) {
-            // me.decorationText(10.5, 2.25, 0, 'start', me.user_font, me.medium_font_size, me.user_fill, me.user_stroke, 0.5, me.data["name"] + " (p." + (me.page + 1) + ")", me.back);
         }
-        me.decorationText(21.5, 1.75, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, me.pre_title, me.back);
-        me.decorationText(21.5, 2.25, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, me.post_title, me.back);
+        me.decorationText(12.0, 35.5, 5, 'middle', me.title_font, me.small_font_size, me.draw_fill, me.draw_stroke, 0.5, "Zaffarelli's Pathfinder 1st Edition Character Sheet (Version:" + me.version + ") Generated with Pathfinder Workshop [" + me.date_release + "]", me.back);
         me.decorationText(1.5, 35.8, -16, 'start', me.base_font, me.small_font_size, me.draw_fill, me.draw_stroke, 0.5, me.guideline, me.back);
-        me.decorationText(22.4, 35.5, 5, 'end', me.title_font, me.small_font_size, me.draw_fill, me.draw_stroke, 0.5, "Zaff's Pathfinder 1E Character Sheet 2022 (Version:0.7) Generated with Pathfinder Workshop", me.back);
+
         // me.decorationText(22.5, 34.8, 0, 'end', me.base_font, me.small_font_size, me.draw_fill, me.draw_stroke, 0.5, 'Challenge:' + me.data['freebies'], me.back);
+
+        // me.daddy.append('svg')
+        //     .attr('x',10)
+        //     .attr('y',10)
+        //     .attr('width',10)
+        //     .attr('height',10)
+        //     .attr('src','static/collector/pathfinder_vn.svg');
+
+        d3.xml('static/collector/pathfinder_vn.svg')
+            .then(data => {
+                d3.select('body').node().append(data.documentElement)
+            });
+
+
     }
 
     drawButtons() {
@@ -111,8 +126,8 @@ class CrossOverSheet extends WawwodSheet {
 
     characterInfo() {
         let me = this;
-        me.stdField("Character Name", me.data['name'].toUpperCase(), 8, 1.5, 6);
-        me.stdField("Alignment", me.data['alignment_str'], 14.5, 1.5, 2);
+        me.stdField("Character Name", me.data['name'].toUpperCase(), 8, 1.5, 8.5);
+        // me.stdField("Alignment", me.data['alignment_str'], 14.5, 1.5, 2);
         me.stdField("Player", me.data['player'], 17, 1.5, 6.5);
 
         me.stdField("Character Class and Level", me.data.ccl, 8, 2.5, 7.5);
@@ -182,8 +197,8 @@ class CrossOverSheet extends WawwodSheet {
     drawLanguages(ox, oy) {
         let me = this;
         // Languages
-        me.boxField("Languages", "", ox, oy, 9.5, 0.8, true, "");
-        me.boxField("", "languages", ox, oy + 1, 9.5, 1.8);
+        me.boxField("Languages", "", ox + 3, oy, 10, 0.8, true, "");
+        me.boxField("", "Languages", ox + 3, oy + 1, 10, 1.8);
 
     }
 
@@ -275,20 +290,41 @@ class CrossOverSheet extends WawwodSheet {
         let me = this;
         let oy = y;
         let txt = "", txt2 = "";
-        me.boxField("Money", "", ox, oy, 10, 0.8, true, "1 PP = 10 GP = 100 SP = 1000 CP");
+        me.boxField("Money", "", ox, oy, 8, 0.8, true, "1 PP = 10 GP = 100 SP = 1000 CP");
         oy += 0.9
         _.forEach([{"type": "Platinium Coins"}, {"type": "Gold Coins"}, {"type": "Silver Coins"}, {"type": "Copper Coins"}], function (v, k) {
             oy += 0.8
             me.boxField(v["type"], "", ox, oy - 0.6, 3, 0.6, true, "");
-            me.smallField("", ox + 3.5, oy, 4);
+            me.smallField("", ox + 3.5, oy, 2);
         });
     }
+
+    drawAlignment(ox, oy) {
+        let me = this;
+        me.boxField("Alignment", "", ox, oy, 4, 1.4, true, "Old School anti-Huitzy Kawek Release");
+        let stepsize = 1.1;
+        let item = me.back.append('g')
+        _.forEach(["LG", "NG", "CG", "LN", "N", "CN", "LE", "NE", "CE"], function (v, k) {
+            item.append('text')
+                .attr("x", (ox + 0.9 + (k % 3) * stepsize) * me.stepx)
+                .attr("y", (oy + 2.2 + Math.floor(k / 3) * stepsize) * me.stepy)
+                .style("text-anchor", 'middle')
+                .style("font-family", me.title_font)
+                .style("font-size", me.big_font_size + 'pt')
+                .style("fill", me.shadow_fill)
+                .style("stroke", me.shadow_stroke)
+                .style("stroke-width", '0.5pt')
+                .text(v)
+            ;
+        });
+    }
+
 
     drawEncumberance(ox, y) {
         let me = this;
         let oy = y;
         let txt = "", txt2 = "";
-        me.boxField("Encumberance", "", ox, oy, 12.5, 0.8, true, "How much you can carry");
+        me.boxField("Encumberance", "", ox, oy, 10, 0.8, true, "How much you can carry");
         oy += 0.9
         _.forEach([{"type": "Light Load"}, {"type": "Medium Load"}, {"type": "Heavy Load"}], function (v, k) {
             oy += 0.8
@@ -321,16 +357,16 @@ class CrossOverSheet extends WawwodSheet {
             .style("stroke-width", '1.0pt')
         ;
         item.append('text')
-            .attr("x", (ox + 0.3) * me.stepx)
+            .attr("x", (ox + 0.4) * me.stepx)
             .attr("y", oy * me.stepy)
-            .attr("dy", "6pt")
+            .attr("dy", "4pt")
             .style("text-anchor", 'start')
             .style("font-family", me.title_font)
             .style("font-size", me.tiny_font_size + 'pt')
             .style("fill", me.draw_fill)
             .style("stroke", me.shadow_stroke)
             .style("stroke-width", '0.5pt')
-            .text("Check this box if you're deeply convinced Zaffarelli is the best DM ever. Your opinion matters.");
+            .text("Check this box if you're deeply convinced Zaffarelli is great. Your opinion matters. Don't be shy.");
     }
 
     drawWeapons(ox, y) {
@@ -556,12 +592,12 @@ class CrossOverSheet extends WawwodSheet {
             ox = x;
             oy += 1.5;
             _.forEach(list.list, function (spell, si) {
-                let desc = spell.short_description.replace("&nbsp;"," ")
+                let desc = spell.short_description.replace("&nbsp;", " ")
                 me.smallField(spell.name, ox, oy, 2.5);
                 me.smallField(spell.level, (ox + 2.75), oy, 0.5);
                 me.smallField(desc, (ox + 3.5), oy, 8);
-                _.forEach([0,1,2,3,4,5], function (t, ti) {
-                    me.boxField("", "", ox+11.5+0.25*t, oy-0.3, 0.4, 0.2, false, "", false, true);
+                _.forEach([0, 1, 2, 3, 4, 5], function (t, ti) {
+                    me.boxField("", "", ox + 11.5 + 0.25 * t, oy - 0.3, 0.4, 0.2, false, "", false, true);
                 });
                 oy += 0.5;
             })

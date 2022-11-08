@@ -49,7 +49,7 @@ def display_crossover_sheet(request, slug=None, option=None):
         c.armor_speed_sq = as_squares(c.armor_speed)
         c.ranks_summary = c.total_ranks
 
-        c.all_weapons = [{},{},{},{},{},{},{},{},{},{}]
+        c.all_weapons = [{},{},{},{},{},{},{},{}]
         print(c.all_weapons)
 
 
