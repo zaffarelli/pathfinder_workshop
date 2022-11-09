@@ -1,0 +1,1967 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> <svg class="crossover_sheet" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"> <style>@import url("https://fonts.googleapis.com/css2?family=Roboto");@import url("https://fonts.googleapis.com/css2?family=Ubuntu");@import url("https://fonts.googleapis.com/css2?family=Neuton");@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800");@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia");@import url("https://fonts.googleapis.com/css2?family=Khand");@import url("https://fonts.googleapis.com/css2?family=Schoolbell");</style>
+<g class="all" transform="translate(0,0)">
+  <g class="page" transform="translate(0,0)">
+    <rect x="0" y="0" width="1402.5" height="1963.4999999999998" style="fill: white; stroke: rgb(136, 136, 136); stroke-width: 0px;" opacity="1">
+    </rect>
+    <g class="xover_sheet">
+    </g>
+    <g>
+    <g class="std_field_grp">
+      <line x1="467.5" y1="81.81249999999999" x2="964.21875" y2="81.81249999999999" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="467.5" y="81.81249999999999" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Character Name</text>
+    </g>
+    <g class="std_field_grp">
+      <line x1="993.4375" y1="81.81249999999999" x2="1373.28125" y2="81.81249999999999" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="993.4375" y="81.81249999999999" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Player</text>
+    </g>
+    <g class="std_field_grp">
+      <line x1="467.5" y1="136.35416666666663" x2="905.78125" y2="136.35416666666663" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="467.5" y="136.35416666666663" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Character Class and Level</text>
+    </g>
+    <g class="std_field_grp">
+      <line x1="935" y1="136.35416666666663" x2="1110.3125" y2="136.35416666666663" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="935" y="136.35416666666663" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Deity</text>
+    </g>
+    <g class="std_field_grp">
+      <line x1="1139.53125" y1="136.35416666666663" x2="1373.28125" y2="136.35416666666663" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="1139.53125" y="136.35416666666663" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Homeland</text>
+    </g>
+    <g class="std_field_grp">
+      <line x1="467.5" y1="190.89583333333331" x2="642.8125" y2="190.89583333333331" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="467.5" y="190.89583333333331" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Race</text>
+    </g>
+    <g class="std_field_grp">
+      <line x1="672.03125" y1="190.89583333333331" x2="818.125" y2="190.89583333333331" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="672.03125" y="190.89583333333331" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Size</text>
+    </g>
+    <g class="std_field_grp">
+      <line x1="847.34375" y1="190.89583333333331" x2="993.4375" y2="190.89583333333331" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="847.34375" y="190.89583333333331" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Gender</text>
+    </g>
+    <g class="std_field_grp">
+      <line x1="1022.65625" y1="190.89583333333331" x2="1081.09375" y2="190.89583333333331" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="1022.65625" y="190.89583333333331" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Age</text>
+    </g>
+    <g class="std_field_grp">
+      <line x1="1110.3125" y1="190.89583333333331" x2="1227.1875" y2="190.89583333333331" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="1110.3125" y="190.89583333333331" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Height</text>
+    </g>
+    <g class="std_field_grp">
+      <line x1="1256.40625" y1="190.89583333333331" x2="1373.28125" y2="190.89583333333331" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="1256.40625" y="190.89583333333331" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Weight</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="272.70833333333326" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="87.65625" y="294.525" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">STR</text>
+      <text x="87.65625" y="308.1604166666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">strength</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="151.9375" y="272.70833333333326" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="175.3125" y="256.3458333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Ability</text>
+      <text x="175.3125" y="269.98125" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Score</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="210.375" y="272.70833333333326" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="233.75" y="256.3458333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Ability</text>
+      <text x="233.75" y="269.98125" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Modifier</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="272.70833333333326" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="256.3458333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Temp</text>
+      <text x="292.1875" y="269.98125" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Score</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="272.70833333333326" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="350.625" y="256.3458333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Temp</text>
+      <text x="350.625" y="269.98125" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Modifier</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="327.24999999999994" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="87.65625" y="349.0666666666666" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">DEX</text>
+      <text x="87.65625" y="362.7020833333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">dexterity</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="151.9375" y="327.24999999999994" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="175.3125" y="321.7958333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="210.375" y="327.24999999999994" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="233.75" y="321.7958333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="327.24999999999994" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="321.7958333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="327.24999999999994" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="350.625" y="321.7958333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="381.79166666666663" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="87.65625" y="403.6083333333333" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">CON</text>
+      <text x="87.65625" y="417.2437499999999" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">constitution</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="151.9375" y="381.79166666666663" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="175.3125" y="376.3375" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="210.375" y="381.79166666666663" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="233.75" y="376.3375" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="381.79166666666663" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="376.3375" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="381.79166666666663" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="350.625" y="376.3375" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="436.33333333333326" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="87.65625" y="458.1499999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">INT</text>
+      <text x="87.65625" y="471.7854166666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">intelligence</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="151.9375" y="436.33333333333326" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="175.3125" y="430.8791666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="210.375" y="436.33333333333326" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="233.75" y="430.8791666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="436.33333333333326" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="430.8791666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="436.33333333333326" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="350.625" y="430.8791666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="490.8749999999999" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="87.65625" y="512.6916666666666" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">WIS</text>
+      <text x="87.65625" y="526.3270833333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">wisdom</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="151.9375" y="490.8749999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="175.3125" y="485.4208333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="210.375" y="490.8749999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="233.75" y="485.4208333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="490.8749999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="485.4208333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="490.8749999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="350.625" y="485.4208333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="545.4166666666665" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="87.65625" y="567.2333333333332" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">CHA</text>
+      <text x="87.65625" y="580.8687499999999" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">charisma</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="151.9375" y="545.4166666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="175.3125" y="539.9625" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="210.375" y="545.4166666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="233.75" y="539.9625" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="545.4166666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="539.9625" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="545.4166666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="350.625" y="539.9625" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="391.53125" y="272.70833333333326" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="449.96875" y="294.525" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">HP</text>
+      <text x="449.96875" y="308.1604166666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Hit Points</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="514.2499999999999" y="272.70833333333326" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="566.84375" y="267.25416666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Total</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="631.1249999999999" y="272.70833333333326" width="163.625" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="712.9375" y="256.3458333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Damage</text>
+      <text x="712.9375" y="269.98125" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Resistance</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="397.375" y="327.24999999999994" width="397.375" height="98.17499999999998" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="596.0625" y="343.61249999999995" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Wounds/Current HP</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="397.375" y="436.33333333333326" width="397.375" height="76.35833333333332" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="596.0625" y="452.69583333333327" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Nonlethal Damage</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="391.53125" y="545.4166666666665" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="449.96875" y="567.2333333333332" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">INITIATIVE</text>
+      <text x="449.96875" y="580.8687499999999" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Modifier</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="514.2499999999999" y="545.4166666666665" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="566.84375" y="539.9625" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Total</text>
+    </g>
+    <g class="attr_grp">
+      <text x="631.125" y="572.6874999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">=</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="642.8125" y="545.4166666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="666.1875" y="529.0541666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Dex</text>
+      <text x="666.1875" y="542.6895833333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Modifier</text>
+    </g>
+    <g class="attr_grp">
+      <text x="707.0937500000001" y="572.6874999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="724.625" y="545.4166666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="748" y="529.0541666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Misc</text>
+      <text x="748" y="542.6895833333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Modifier</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="818.125" y="272.70833333333326" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="876.5625" y="294.525" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">SPEED</text>
+      <text x="876.5625" y="308.1604166666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Feet</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="940.8437500000001" y="272.70833333333326" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="993.4375" y="267.25416666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Land</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="1057.71875" y="272.70833333333326" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="1081.09375" y="267.25416666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Squares</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="1116.15625" y="272.70833333333326" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="1168.75" y="256.3458333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">With</text>
+      <text x="1168.75" y="269.98125" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Armor</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="1233.03125" y="272.70833333333326" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="1256.40625" y="267.25416666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Squares</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="823.96875" y="354.52083333333326" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="876.5625" y="349.0666666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Fly</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="940.8437500000001" y="354.52083333333326" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="993.4375" y="349.0666666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Swim</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="1057.71875" y="354.52083333333326" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="1110.3125" y="349.0666666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Climb</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="1174.59375" y="354.52083333333326" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="1227.1875" y="349.0666666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Burrow</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="1291.46875" y="272.70833333333326" width="75.96875" height="125.4458333333333" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="1329.453125" y="267.25416666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Mods</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="627.2291666666665" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="87.65625" y="649.0458333333332" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">AC</text>
+      <text x="87.65625" y="662.6812499999999" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">armor class</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="151.9375" y="627.2291666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="175.3125" y="621.7749999999999" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Total</text>
+    </g>
+    <g class="attr_grp">
+      <text x="233.75" y="654.4999999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">= 10 +</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="627.2291666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="610.8666666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Armor</text>
+      <text x="292.1875" y="624.5020833333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Bonus</text>
+    </g>
+    <g class="attr_grp">
+      <text x="321.40625" y="654.4999999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="627.2291666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="350.625" y="610.8666666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Shield</text>
+      <text x="350.625" y="624.5020833333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Bonus</text>
+    </g>
+    <g class="attr_grp">
+      <text x="379.84375" y="654.4999999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="385.6875" y="627.2291666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="409.0625" y="610.8666666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">DEX</text>
+      <text x="409.0625" y="624.5020833333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Modifier</text>
+    </g>
+    <g class="attr_grp">
+      <text x="438.28125" y="654.4999999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="627.2291666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="610.8666666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Size</text>
+      <text x="467.5" y="624.5020833333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Modifier</text>
+    </g>
+    <g class="attr_grp">
+      <text x="496.71875" y="654.4999999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="502.5625" y="627.2291666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="525.9375" y="610.8666666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Natural</text>
+      <text x="525.9375" y="624.5020833333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Armor</text>
+    </g>
+    <g class="attr_grp">
+      <text x="555.15625" y="654.4999999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="561" y="627.2291666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="584.375" y="610.8666666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Deflection</text>
+      <text x="584.375" y="624.5020833333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Bonus</text>
+    </g>
+    <g class="attr_grp">
+      <text x="613.59375" y="654.4999999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="619.4375" y="627.2291666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="642.8125" y="610.8666666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Temp</text>
+      <text x="642.8125" y="624.5020833333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">modifier</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="677.875" y="627.2291666666665" width="105.1875" height="152.71666666666664" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="730.46875" y="621.7749999999999" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Mods</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="681.7708333333333" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="87.65625" y="703.5874999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Touch</text>
+      <text x="87.65625" y="717.2229166666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">armor class</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="151.9375" y="681.7708333333333" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="175.3125" y="676.3166666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="233.75" y="709.0416666666665" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">= 10 +</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="385.6875" y="681.7708333333333" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="409.0625" y="676.3166666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="438.28125" y="709.0416666666665" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="681.7708333333333" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="676.3166666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="555.15625" y="709.0416666666665" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="561" y="681.7708333333333" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="584.375" y="676.3166666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="613.59375" y="709.0416666666665" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="619.4375" y="681.7708333333333" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="642.8125" y="676.3166666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="736.3124999999999" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="87.65625" y="758.1291666666666" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Flat Footed</text>
+      <text x="87.65625" y="771.7645833333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">armor class</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="151.9375" y="736.3124999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="175.3125" y="730.8583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="233.75" y="763.5833333333333" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">= 10 +</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="736.3124999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="730.8583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="321.40625" y="763.5833333333333" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="736.3124999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="350.625" y="730.8583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="379.84375" y="763.5833333333333" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="736.3124999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="730.8583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="496.71875" y="763.5833333333333" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="502.5625" y="736.3124999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="525.9375" y="730.8583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="555.15625" y="763.5833333333333" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="561" y="736.3124999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="584.375" y="730.8583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="613.59375" y="763.5833333333333" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="619.4375" y="736.3124999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="642.8125" y="730.8583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="818.1249999999999" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="87.65625" y="839.9416666666665" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Fortitude</text>
+      <text x="87.65625" y="853.5770833333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Constitution</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="151.9375" y="818.1249999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="175.3125" y="812.6708333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Total</text>
+    </g>
+    <g class="attr_grp">
+      <text x="204.53125" y="845.3958333333331" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">=</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="210.375" y="818.1249999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="233.75" y="801.7624999999998" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Base</text>
+      <text x="233.75" y="815.3979166666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Save</text>
+    </g>
+    <g class="attr_grp">
+      <text x="262.96875" y="845.3958333333331" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="818.1249999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="801.7624999999998" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Ability</text>
+      <text x="292.1875" y="815.3979166666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Modifier</text>
+    </g>
+    <g class="attr_grp">
+      <text x="321.40625" y="845.3958333333331" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="818.1249999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="350.625" y="801.7624999999998" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Magic</text>
+      <text x="350.625" y="815.3979166666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Modifier</text>
+    </g>
+    <g class="attr_grp">
+      <text x="379.84375" y="845.3958333333331" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="385.6875" y="818.1249999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="409.0625" y="801.7624999999998" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Misc</text>
+      <text x="409.0625" y="815.3979166666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Modifier</text>
+    </g>
+    <g class="attr_grp">
+      <text x="438.28125" y="845.3958333333331" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="818.1249999999999" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="801.7624999999998" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Temp</text>
+      <text x="467.5" y="815.3979166666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Modifier</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="502.5625" y="818.1249999999999" width="280.5" height="152.71666666666664" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="642.8125" y="812.6708333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Mods</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="872.6666666666665" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="87.65625" y="894.4833333333331" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Reflex</text>
+      <text x="87.65625" y="908.1187499999997" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Dexterity</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="151.9375" y="872.6666666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="175.3125" y="867.2124999999999" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="204.53125" y="899.9374999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">=</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="210.375" y="872.6666666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="233.75" y="867.2124999999999" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="262.96875" y="899.9374999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="872.6666666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="867.2124999999999" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="321.40625" y="899.9374999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="872.6666666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="350.625" y="867.2124999999999" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="379.84375" y="899.9374999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="385.6875" y="872.6666666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="409.0625" y="867.2124999999999" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="438.28125" y="899.9374999999999" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="872.6666666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="867.2124999999999" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="927.2083333333331" width="116.875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="87.65625" y="949.0249999999997" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Will</text>
+      <text x="87.65625" y="962.6604166666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Wisdom</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="151.9375" y="927.2083333333331" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="175.3125" y="921.7541666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="204.53125" y="954.4791666666665" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">=</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="210.375" y="927.2083333333331" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="233.75" y="921.7541666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="262.96875" y="954.4791666666665" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="927.2083333333331" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="921.7541666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="321.40625" y="954.4791666666665" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="927.2083333333331" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="350.625" y="921.7541666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="379.84375" y="954.4791666666665" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="385.6875" y="927.2083333333331" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="409.0625" y="921.7541666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="438.28125" y="954.4791666666665" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="927.2083333333331" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="921.7541666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="1009.0208333333331" width="175.3125" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="116.875" y="1030.8374999999996" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">BAB</text>
+      <text x="116.875" y="1044.4729166666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Base Attack Bonus</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="210.375" y="1009.0208333333331" width="163.625" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="1003.5666666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="379.84375" y="1009.0208333333331" width="175.3125" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="1030.8374999999996" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">SR</text>
+      <text x="467.5" y="1044.4729166666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Spell Resistance</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="561" y="1009.0208333333331" width="222.0625" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="672.03125" y="1003.5666666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="1085.3791666666664" width="175.3125" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="116.875" y="1107.195833333333" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">CMB</text>
+      <text x="116.875" y="1120.8312499999997" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Combat Maneuver Bonus</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="210.375" y="1085.3791666666664" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="233.75" y="1079.9249999999997" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="292.1875" y="1112.6499999999996" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">= </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="1085.3791666666664" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="350.625" y="1079.9249999999997" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">BAB</text>
+    </g>
+    <g class="attr_grp">
+      <text x="379.84375" y="1112.6499999999996" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="385.6875" y="1085.3791666666664" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="409.0625" y="1069.0166666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">STR</text>
+      <text x="409.0625" y="1082.652083333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">modifier</text>
+    </g>
+    <g class="attr_grp">
+      <text x="496.71875" y="1112.6499999999996" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="502.5625" y="1085.3791666666664" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="525.9375" y="1069.0166666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Size</text>
+      <text x="525.9375" y="1082.652083333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Modifier</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="561" y="1085.3791666666664" width="222.0625" height="98.17499999999998" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="672.03125" y="1079.9249999999997" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Mods</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="1139.9208333333331" width="175.3125" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="116.875" y="1161.7374999999997" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">CMD</text>
+      <text x="116.875" y="1175.3729166666662" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Combat Maneuver Defense</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="210.375" y="1139.9208333333331" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="233.75" y="1134.4666666666662" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="292.1875" y="1167.1916666666664" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">= 10 +</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="1139.9208333333331" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="350.625" y="1134.4666666666662" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="379.84375" y="1167.1916666666664" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="385.6875" y="1139.9208333333331" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="409.0625" y="1134.4666666666662" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <text x="438.28125" y="1167.1916666666664" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="1139.9208333333331" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="1123.558333333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">DEX</text>
+      <text x="467.5" y="1137.1937499999997" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Modifier</text>
+    </g>
+    <g class="attr_grp">
+      <text x="496.71875" y="1167.1916666666664" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">+</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="502.5625" y="1139.9208333333331" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="525.9375" y="1134.4666666666662" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="1199.9166666666665" width="759.6875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="409.0625" y="1221.7333333333331" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Weapons</text>
+      <text x="409.0625" y="1235.3687499999996" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="35.0625" y="1281.7291666666665" width="222.0625" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="146.09375" y="1276.2749999999996" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Weapon</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="1281.7291666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="1265.3666666666663" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Attack</text>
+      <text x="292.1875" y="1279.002083333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Bonus</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="1281.7291666666665" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="379.84375" y="1276.2749999999996" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">DMG</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="1281.7291666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="1265.3666666666663" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Damage</text>
+      <text x="467.5" y="1279.002083333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Bonus</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="502.5625" y="1281.7291666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="525.9375" y="1265.3666666666663" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Weapon</text>
+      <text x="525.9375" y="1279.002083333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Type</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="561" y="1281.7291666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="584.375" y="1276.2749999999996" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Range</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="619.4375" y="1281.7291666666665" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="642.8125" y="1276.2749999999996" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Ammoes</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="677.875" y="1281.7291666666665" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="730.46875" y="1276.2749999999996" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Special</text>
+    </g>
+    <g class="attr_grp">
+      <rect x="35.0625" y="1341.725" width="222.0625" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="146.09375" y="1336.270833333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="1341.725" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="1336.270833333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="1341.725" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="379.84375" y="1336.270833333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="1341.725" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="1336.270833333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="502.5625" y="1341.725" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="525.9375" y="1336.270833333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="561" y="1341.725" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="584.375" y="1336.270833333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="619.4375" y="1341.725" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="642.8125" y="1336.270833333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="677.875" y="1341.725" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="730.46875" y="1336.270833333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="35.0625" y="1401.7208333333333" width="222.0625" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="146.09375" y="1396.2666666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="1401.7208333333333" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="1396.2666666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="1401.7208333333333" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="379.84375" y="1396.2666666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="1401.7208333333333" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="1396.2666666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="502.5625" y="1401.7208333333333" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="525.9375" y="1396.2666666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="561" y="1401.7208333333333" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="584.375" y="1396.2666666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="619.4375" y="1401.7208333333333" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="642.8125" y="1396.2666666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="677.875" y="1401.7208333333333" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="730.46875" y="1396.2666666666664" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="35.0625" y="1461.7166666666667" width="222.0625" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="146.09375" y="1456.2624999999998" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="1461.7166666666667" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="1456.2624999999998" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="1461.7166666666667" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="379.84375" y="1456.2624999999998" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="1461.7166666666667" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="1456.2624999999998" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="502.5625" y="1461.7166666666667" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="525.9375" y="1456.2624999999998" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="561" y="1461.7166666666667" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="584.375" y="1456.2624999999998" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="619.4375" y="1461.7166666666667" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="642.8125" y="1456.2624999999998" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="677.875" y="1461.7166666666667" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="730.46875" y="1456.2624999999998" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="35.0625" y="1521.7125" width="222.0625" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="146.09375" y="1516.2583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="1521.7125" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="1516.2583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="1521.7125" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="379.84375" y="1516.2583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="1521.7125" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="1516.2583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="502.5625" y="1521.7125" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="525.9375" y="1516.2583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="561" y="1521.7125" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="584.375" y="1516.2583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="619.4375" y="1521.7125" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="642.8125" y="1516.2583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="677.875" y="1521.7125" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="730.46875" y="1516.2583333333332" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="35.0625" y="1581.7083333333335" width="222.0625" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="146.09375" y="1576.2541666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="1581.7083333333335" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="1576.2541666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="1581.7083333333335" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="379.84375" y="1576.2541666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="1581.7083333333335" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="1576.2541666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="502.5625" y="1581.7083333333335" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="525.9375" y="1576.2541666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="561" y="1581.7083333333335" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="584.375" y="1576.2541666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="619.4375" y="1581.7083333333335" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="642.8125" y="1576.2541666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="677.875" y="1581.7083333333335" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="730.46875" y="1576.2541666666666" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="35.0625" y="1641.7041666666669" width="222.0625" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="146.09375" y="1636.25" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="1641.7041666666669" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="1636.25" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="1641.7041666666669" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="379.84375" y="1636.25" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="1641.7041666666669" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="1636.25" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="502.5625" y="1641.7041666666669" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="525.9375" y="1636.25" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="561" y="1641.7041666666669" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="584.375" y="1636.25" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="619.4375" y="1641.7041666666669" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="642.8125" y="1636.25" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="677.875" y="1641.7041666666669" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="730.46875" y="1636.25" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="35.0625" y="1701.7000000000003" width="222.0625" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="146.09375" y="1696.2458333333334" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="268.8125" y="1701.7000000000003" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="292.1875" y="1696.2458333333334" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="327.25" y="1701.7000000000003" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="379.84375" y="1696.2458333333334" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="444.125" y="1701.7000000000003" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="467.5" y="1696.2458333333334" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="502.5625" y="1701.7000000000003" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="525.9375" y="1696.2458333333334" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="561" y="1701.7000000000003" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="584.375" y="1696.2458333333334" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="619.4375" y="1701.7000000000003" width="46.75" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="642.8125" y="1696.2458333333334" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="677.875" y="1701.7000000000003" width="105.1875" height="43.633333333333326" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="730.46875" y="1696.2458333333334" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="29.21875" y="1767.1499999999996" width="730.46875" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="394.453125" y="1788.9666666666662" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Languages</text>
+      <text x="394.453125" y="1802.6020833333328" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="35.0625" y="1821.6916666666664" width="718.78125" height="98.17499999999998" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="394.453125" y="1816.2374999999995" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="attr_grp">
+      <rect x="818.125" y="409.06249999999994" width="555.15625" height="43.633333333333326" style="fill: rgb(224, 224, 224); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="1095.703125" y="430.8791666666666" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">SKILLS</text>
+      <text x="1095.703125" y="444.5145833333333" style="text-anchor: middle; font-family: Khand; font-size: 9.8175pt; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="501.7833333333333" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="507.23749999999995" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Acrobatics &#164;</text>
+      <rect x="1063.5625" y="490.87499999999994" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1081.09375" y="474.51249999999993" dy="4pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Rnk</text>
+      <text x="1215.5" y="474.51249999999993" dy="4pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">CC</text>
+      <text x="1256.40625" y="474.51249999999993" dy="4pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">ACP</text>
+      <text x="1297.3125" y="474.51249999999993" dy="4pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">MOD</text>
+      <text x="1349.90625" y="474.51249999999993" dy="4pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">VAL</text>
+      <text x="1127.84375" y="507.23749999999995" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">DEX</text>
+      <rect x="1145.375" y="490.87499999999994" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="490.87499999999994" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="490.87499999999994" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="490.87499999999994" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="490.87499999999994" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="537.2354166666667" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="542.6895833333333" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Appraise</text>
+      <rect x="1063.5625" y="526.3270833333333" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="542.6895833333333" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">INT</text>
+      <rect x="1145.375" y="526.3270833333333" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="526.3270833333333" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="526.3270833333333" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="526.3270833333333" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="526.3270833333333" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="572.6875" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="578.1416666666667" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Bluff</text>
+      <rect x="1063.5625" y="561.7791666666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="578.1416666666667" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">CHA</text>
+      <rect x="1145.375" y="561.7791666666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="561.7791666666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="561.7791666666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="561.7791666666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="561.7791666666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="608.1395833333333" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="613.59375" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Climb &#164;</text>
+      <rect x="1063.5625" y="597.23125" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="613.59375" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">STR</text>
+      <rect x="1145.375" y="597.23125" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="597.23125" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="597.23125" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="597.23125" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="597.23125" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="643.5916666666667" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="649.0458333333333" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Craft</text>
+      <rect x="1063.5625" y="632.6833333333334" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="649.0458333333333" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">INT</text>
+      <rect x="1145.375" y="632.6833333333334" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="632.6833333333334" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="632.6833333333334" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="632.6833333333334" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="632.6833333333334" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="679.04375" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="684.4979166666667" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Diplomacy</text>
+      <rect x="1063.5625" y="668.1354166666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="684.4979166666667" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">CHA</text>
+      <rect x="1145.375" y="668.1354166666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="668.1354166666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="668.1354166666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="668.1354166666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="668.1354166666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="714.4958333333334" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="719.95" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Disable Device * &#164;</text>
+      <rect x="1063.5625" y="703.5875000000001" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="719.95" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">DEX</text>
+      <rect x="1145.375" y="703.5875000000001" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="703.5875000000001" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="703.5875000000001" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="703.5875000000001" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="703.5875000000001" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="749.9479166666667" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="755.4020833333334" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Disguise</text>
+      <rect x="1063.5625" y="739.0395833333334" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="755.4020833333334" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">CHA</text>
+      <rect x="1145.375" y="739.0395833333334" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="739.0395833333334" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="739.0395833333334" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="739.0395833333334" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="739.0395833333334" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="785.4000000000001" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="790.8541666666667" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Escape Artist &#164;</text>
+      <rect x="1063.5625" y="774.4916666666668" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="790.8541666666667" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">DEX</text>
+      <rect x="1145.375" y="774.4916666666668" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="774.4916666666668" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="774.4916666666668" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="774.4916666666668" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="774.4916666666668" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="820.8520833333334" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="826.3062500000001" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Fly &#164;</text>
+      <rect x="1063.5625" y="809.9437500000001" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="826.3062500000001" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">DEX</text>
+      <rect x="1145.375" y="809.9437500000001" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="809.9437500000001" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="809.9437500000001" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="809.9437500000001" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="809.9437500000001" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="856.3041666666668" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="861.7583333333334" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Handle Animal *</text>
+      <rect x="1063.5625" y="845.3958333333335" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="861.7583333333334" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">CHA</text>
+      <rect x="1145.375" y="845.3958333333335" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="845.3958333333335" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="845.3958333333335" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="845.3958333333335" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="845.3958333333335" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="891.75625" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="897.2104166666667" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Heal</text>
+      <rect x="1063.5625" y="880.8479166666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="897.2104166666667" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">WIS</text>
+      <rect x="1145.375" y="880.8479166666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="880.8479166666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="880.8479166666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="880.8479166666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="880.8479166666667" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="927.2083333333333" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="932.6624999999999" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Intimidate</text>
+      <rect x="1063.5625" y="916.3" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="932.6624999999999" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">CHA</text>
+      <rect x="1145.375" y="916.3" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="916.3" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="916.3" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="916.3" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="916.3" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="962.6604166666665" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="968.1145833333331" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Knowledge (Arcana) *</text>
+      <rect x="1063.5625" y="951.7520833333332" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="968.1145833333331" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">INT</text>
+      <rect x="1145.375" y="951.7520833333332" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="951.7520833333332" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="951.7520833333332" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="951.7520833333332" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="951.7520833333332" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="998.1124999999997" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1003.5666666666664" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Knowledge (Dungeoneering) *</text>
+      <rect x="1063.5625" y="987.2041666666664" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1003.5666666666664" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">INT</text>
+      <rect x="1145.375" y="987.2041666666664" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="987.2041666666664" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="987.2041666666664" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="987.2041666666664" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="987.2041666666664" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1033.564583333333" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1039.0187499999997" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Knowledge (Engineering) *</text>
+      <rect x="1063.5625" y="1022.6562499999998" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1039.0187499999997" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">INT</text>
+      <rect x="1145.375" y="1022.6562499999998" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1022.6562499999998" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1022.6562499999998" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1022.6562499999998" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1022.6562499999998" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1069.0166666666662" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1074.4708333333328" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Knowledge (Geography) *</text>
+      <rect x="1063.5625" y="1058.108333333333" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1074.4708333333328" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">INT</text>
+      <rect x="1145.375" y="1058.108333333333" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1058.108333333333" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1058.108333333333" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1058.108333333333" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1058.108333333333" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1104.4687499999995" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1109.9229166666662" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Knowledge (History) *</text>
+      <rect x="1063.5625" y="1093.5604166666662" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1109.9229166666662" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">INT</text>
+      <rect x="1145.375" y="1093.5604166666662" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1093.5604166666662" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1093.5604166666662" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1093.5604166666662" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1093.5604166666662" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1139.9208333333327" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1145.3749999999993" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Knowledge (Local) *</text>
+      <rect x="1063.5625" y="1129.0124999999994" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1145.3749999999993" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">INT</text>
+      <rect x="1145.375" y="1129.0124999999994" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1129.0124999999994" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1129.0124999999994" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1129.0124999999994" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1129.0124999999994" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1175.372916666666" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1180.8270833333327" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Knowledge (Nature) *</text>
+      <rect x="1063.5625" y="1164.4645833333327" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1180.8270833333327" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">INT</text>
+      <rect x="1145.375" y="1164.4645833333327" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1164.4645833333327" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1164.4645833333327" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1164.4645833333327" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1164.4645833333327" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1210.8249999999994" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1216.279166666666" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Knowledge (Nobility) *</text>
+      <rect x="1063.5625" y="1199.916666666666" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1216.279166666666" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">INT</text>
+      <rect x="1145.375" y="1199.916666666666" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1199.916666666666" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1199.916666666666" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1199.916666666666" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1199.916666666666" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1246.2770833333325" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1251.7312499999991" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Knowledge (Planes) *</text>
+      <rect x="1063.5625" y="1235.3687499999992" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1251.7312499999991" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">INT</text>
+      <rect x="1145.375" y="1235.3687499999992" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1235.3687499999992" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1235.3687499999992" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1235.3687499999992" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1235.3687499999992" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1281.7291666666658" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1287.1833333333325" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Knowledge (Religion) *</text>
+      <rect x="1063.5625" y="1270.8208333333325" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1287.1833333333325" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">INT</text>
+      <rect x="1145.375" y="1270.8208333333325" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1270.8208333333325" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1270.8208333333325" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1270.8208333333325" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1270.8208333333325" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1317.181249999999" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1322.6354166666656" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Linguistics *</text>
+      <rect x="1063.5625" y="1306.2729166666657" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1322.6354166666656" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">INT</text>
+      <rect x="1145.375" y="1306.2729166666657" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1306.2729166666657" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1306.2729166666657" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1306.2729166666657" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1306.2729166666657" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1352.6333333333323" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1358.087499999999" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Perception</text>
+      <rect x="1063.5625" y="1341.724999999999" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1358.087499999999" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">WIS</text>
+      <rect x="1145.375" y="1341.724999999999" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1341.724999999999" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1341.724999999999" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1341.724999999999" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1341.724999999999" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1388.0854166666654" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1393.539583333332" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Perform</text>
+      <rect x="1063.5625" y="1377.1770833333321" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1393.539583333332" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">CHA</text>
+      <rect x="1145.375" y="1377.1770833333321" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1377.1770833333321" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1377.1770833333321" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1377.1770833333321" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1377.1770833333321" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1423.5374999999988" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1428.9916666666654" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Profession *</text>
+      <rect x="1063.5625" y="1412.6291666666655" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1428.9916666666654" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">WIS</text>
+      <rect x="1145.375" y="1412.6291666666655" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1412.6291666666655" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1412.6291666666655" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1412.6291666666655" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1412.6291666666655" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1458.9895833333321" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1464.4437499999988" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Ride &#164;</text>
+      <rect x="1063.5625" y="1448.0812499999988" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1464.4437499999988" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">DEX</text>
+      <rect x="1145.375" y="1448.0812499999988" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1448.0812499999988" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1448.0812499999988" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1448.0812499999988" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1448.0812499999988" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1494.4416666666652" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1499.895833333332" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Sense motive</text>
+      <rect x="1063.5625" y="1483.533333333332" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1499.895833333332" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">WIS</text>
+      <rect x="1145.375" y="1483.533333333332" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1483.533333333332" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1483.533333333332" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1483.533333333332" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1483.533333333332" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1529.8937499999986" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1535.3479166666652" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Sleight of Hand * &#164;</text>
+      <rect x="1063.5625" y="1518.9854166666653" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1535.3479166666652" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">DEX</text>
+      <rect x="1145.375" y="1518.9854166666653" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1518.9854166666653" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1518.9854166666653" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1518.9854166666653" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1518.9854166666653" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1565.3458333333317" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1570.7999999999984" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Spellcraft *</text>
+      <rect x="1063.5625" y="1554.4374999999984" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1570.7999999999984" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">INT</text>
+      <rect x="1145.375" y="1554.4374999999984" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1554.4374999999984" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1554.4374999999984" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1554.4374999999984" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1554.4374999999984" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1600.797916666665" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1606.2520833333317" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Stealth &#164;</text>
+      <rect x="1063.5625" y="1589.8895833333318" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1606.2520833333317" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">DEX</text>
+      <rect x="1145.375" y="1589.8895833333318" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1589.8895833333318" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1589.8895833333318" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1589.8895833333318" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1589.8895833333318" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1636.2499999999982" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1641.7041666666648" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Survival</text>
+      <rect x="1063.5625" y="1625.3416666666649" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1641.7041666666648" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">WIS</text>
+      <rect x="1145.375" y="1625.3416666666649" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1625.3416666666649" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1625.3416666666649" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1625.3416666666649" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1625.3416666666649" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1671.7020833333315" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1677.1562499999982" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Swim &#164;</text>
+      <rect x="1063.5625" y="1660.7937499999982" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1677.1562499999982" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">STR</text>
+      <rect x="1145.375" y="1660.7937499999982" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1660.7937499999982" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1660.7937499999982" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1660.7937499999982" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1660.7937499999982" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="skill_text_grp">
+      <rect x="818.125" y="1707.1541666666647" width="11.6875" height="10.908333333333331" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <text x="847.34375" y="1712.6083333333313" dy="6pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">Use Magic Device *</text>
+      <rect x="1063.5625" y="1696.2458333333313" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 2pt;">
+      </rect>
+      <text x="1127.84375" y="1712.6083333333313" dy="6pt" style="text-anchor: middle; font-family: Khand; font-size: 14.1808pt; fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 0.5pt;">CHA</text>
+      <rect x="1145.375" y="1696.2458333333313" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1197.96875" y="1696.2458333333313" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1238.875" y="1696.2458333333313" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </rect>
+      <rect x="1279.78125" y="1696.2458333333313" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(170, 170, 170); stroke-dasharray: 2px, 2px; stroke-width: 1pt;">
+      </rect>
+      <rect x="1332.375" y="1696.2458333333313" width="35.0625" height="32.724999999999994" style="fill: transparent; stroke: rgb(0, 0, 0); stroke-width: 1pt;">
+      </rect>
+    </g>
+    <g class="std_field_grp">
+      <line x1="818.125" y1="1854.4166666666663" x2="1081.09375" y2="1854.4166666666663" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="818.125" y="1854.4166666666663" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Total Skill Ranks </text>
+    </g>
+    <g class="std_field_grp">
+      <line x1="1110.3125" y1="1854.4166666666663" x2="1373.28125" y2="1854.4166666666663" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="1110.3125" y="1854.4166666666663" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Favored Class Ranks </text>
+    </g>
+    <g class="std_field_grp">
+      <line x1="818.125" y1="1767.1499999999996" x2="1344.0625" y2="1767.1499999999996" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="818.125" y="1767.1499999999996" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">
+      </text>
+    </g>
+    <g class="std_field_grp">
+      <line x1="818.125" y1="1799.8749999999998" x2="1344.0625" y2="1799.8749999999998" style="fill: rgb(0, 0, 0); stroke: rgb(170, 170, 170); stroke-width: 1pt;">
+      </line>
+      <text x="818.125" y="1799.8749999999998" dy="12pt" style="text-anchor: start; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;">Notes</text>
+    </g>
+  </g>
+  <text x="876.5625" y="1908.958333333333" dy="0" style="font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;" opacity="1">* cannot be used untrained</text>
+  <text x="1110.3125" y="1908.958333333333" dy="0" style="font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;" opacity="1">&#164; armor check penalty</text>
+  <text x="233.75" y="190.89583333333331" dy="0" style="text-anchor: middle; font-family: Khand; font-size: 21.8167px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;" opacity="1">Character Sheet</text>
+  <text x="701.25" y="1936.2291666666663" dy="5" style="text-anchor: middle; font-family: Khand; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;" opacity="1">Zaffarelli's Pathfinder 1st Edition Character Sheet (Version:1.0) Generated with Pathfinder Workshop [November 2022]</text>
+  <text x="87.65625" y="1952.5916666666662" dy="-16" style="text-anchor: start; font-family: Philosopher; font-size: 14.1808px; fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0.5pt;" opacity="1">
+  </text>
+  <line x1="29.21875" x2="1373.28125" y1="231.8020833333333" y2="231.8020833333333" style="fill: transparent; stroke: rgb(187, 187, 187); stroke-width: 3pt; stroke-linecap: round;">
+  </line>
+  <line x1="29.21875" x2="29.21875" y1="27.27083333333333" y2="54.54166666666666" style="fill: transparent; stroke: rgb(187, 187, 187); stroke-width: 3pt; stroke-linecap: round;">
+  </line>
+  <line x1="29.21875" x2="58.4375" y1="27.27083333333333" y2="27.27083333333333" style="fill: transparent; stroke: rgb(187, 187, 187); stroke-width: 3pt; stroke-linecap: round;">
+  </line>
+  <line x1="1373.28125" x2="1373.28125" y1="1936.2291666666663" y2="1908.958333333333" style="fill: transparent; stroke: rgb(187, 187, 187); stroke-width: 3pt; stroke-linecap: round;">
+  </line>
+  <line x1="1344.0625" x2="1373.28125" y1="1936.2291666666663" y2="1936.2291666666663" style="fill: transparent; stroke: rgb(187, 187, 187); stroke-width: 3pt; stroke-linecap: round;">
+  </line>
+  <line x1="1373.28125" x2="1373.28125" y1="27.27083333333333" y2="54.54166666666666" style="fill: transparent; stroke: rgb(187, 187, 187); stroke-width: 3pt; stroke-linecap: round;">
+  </line>
+  <line x1="1344.0625" x2="1373.28125" y1="27.27083333333333" y2="27.27083333333333" style="fill: transparent; stroke: rgb(187, 187, 187); stroke-width: 3pt; stroke-linecap: round;">
+  </line>
+  <line x1="29.21875" x2="29.21875" y1="1908.958333333333" y2="1936.2291666666663" style="fill: transparent; stroke: rgb(187, 187, 187); stroke-width: 3pt; stroke-linecap: round;">
+  </line>
+  <line x1="29.21875" x2="58.4375" y1="1936.2291666666663" y2="1936.2291666666663" style="fill: transparent; stroke: rgb(187, 187, 187); stroke-width: 3pt; stroke-linecap: round;">
+  </line>
+  <image class="linked_svg" stored_filename="pathfinder_vn_dark.svg" xlink:href="pathfinder_vn_dark.svg" width="10cm" x="43.828125" y="68.17708333333331">
+  </image>
+  <g class="do_not_print" opacity="0">
+    <rect id="button0" x="1480.4166666666665" y="87.26666666666665" width="93.5" height="43.633333333333326" style="fill: rgb(204, 204, 204); stroke: rgb(170, 34, 34); stroke-width: 1pt; cursor: pointer;" opacity="1">
+    </rect>
+    <text x="1527.1666666666665" y="109.08333333333331" dy="5" style="font-family: Khand; text-anchor: middle; font-size: 21.8167px; fill: rgb(0, 0, 0); cursor: pointer; stroke: rgb(51, 51, 51); stroke-width: 0.5pt;" opacity="1">Save SVG</text>
+  </g>
+  <g class="do_not_print" opacity="0">
+    <rect id="button1" x="1480.4166666666665" y="141.8083333333333" width="93.5" height="43.633333333333326" style="fill: rgb(204, 204, 204); stroke: rgb(17, 17, 17); stroke-width: 1pt; cursor: pointer;" opacity="1">
+    </rect>
+    <text x="1527.1666666666665" y="163.62499999999997" dy="5" style="font-family: Khand; text-anchor: middle; font-size: 21.8167px; fill: rgb(0, 0, 0); cursor: pointer; stroke: rgb(51, 51, 51); stroke-width: 0.5pt;" opacity="1">Save PNG</text>
+  </g>
+  <g class="do_not_print" opacity="0">
+    <rect id="button2" x="1480.4166666666665" y="196.34999999999997" width="93.5" height="43.633333333333326" style="fill: rgb(204, 204, 204); stroke: rgb(17, 17, 17); stroke-width: 1pt; cursor: pointer;" opacity="1">
+    </rect>
+    <text x="1527.1666666666665" y="218.16666666666663" dy="5" style="font-family: Khand; text-anchor: middle; font-size: 21.8167px; fill: rgb(0, 0, 0); cursor: pointer; stroke: rgb(51, 51, 51); stroke-width: 0.5pt;" opacity="1">Save PDF</text>
+  </g>
+  <g class="do_not_print" opacity="0">
+    <rect id="button4" x="1480.4166666666665" y="305.4333333333333" width="93.5" height="43.633333333333326" style="fill: rgb(204, 204, 204); stroke: rgb(17, 17, 17); stroke-width: 1pt; cursor: pointer;" opacity="1">
+    </rect>
+    <text x="1527.1666666666665" y="327.24999999999994" dy="5" style="font-family: Khand; text-anchor: middle; font-size: 21.8167px; fill: rgb(0, 0, 0); cursor: pointer; stroke: rgb(51, 51, 51); stroke-width: 0.5pt;" opacity="1">Page 1</text>
+  </g>
+  <g class="do_not_print" opacity="0">
+    <rect id="button5" x="1480.4166666666665" y="359.9749999999999" width="93.5" height="43.633333333333326" style="fill: rgb(204, 204, 204); stroke: rgb(17, 17, 17); stroke-width: 1pt; cursor: pointer;" opacity="1">
+    </rect>
+    <text x="1527.1666666666665" y="381.7916666666666" dy="5" style="font-family: Khand; text-anchor: middle; font-size: 21.8167px; fill: rgb(0, 0, 0); cursor: pointer; stroke: rgb(51, 51, 51); stroke-width: 0.5pt;" opacity="1">Page 2</text>
+  </g>
+  <g class="do_not_print" opacity="0">
+    <rect id="button6" x="1480.4166666666665" y="414.5166666666666" width="93.5" height="43.633333333333326" style="fill: rgb(204, 204, 204); stroke: rgb(17, 17, 17); stroke-width: 1pt; cursor: pointer;" opacity="1">
+    </rect>
+    <text x="1527.1666666666665" y="436.33333333333326" dy="5" style="font-family: Khand; text-anchor: middle; font-size: 21.8167px; fill: rgb(0, 0, 0); cursor: pointer; stroke: rgb(51, 51, 51); stroke-width: 0.5pt;" opacity="1">Page 3</text>
+  </g>
+  <g class="do_not_print" opacity="0">
+    <rect id="button7" x="1480.4166666666665" y="469.0583333333332" width="93.5" height="43.633333333333326" style="fill: rgb(204, 204, 204); stroke: rgb(17, 17, 17); stroke-width: 1pt; cursor: pointer;" opacity="1">
+    </rect>
+    <text x="1527.1666666666665" y="490.87499999999994" dy="5" style="font-family: Khand; text-anchor: middle; font-size: 21.8167px; fill: rgb(0, 0, 0); cursor: pointer; stroke: rgb(51, 51, 51); stroke-width: 0.5pt;" opacity="1">Page 4</text>
+  </g>
+</g>
+<defs>
+  <marker id="arrowhead" viewBox="-0 -5 10 10" refX="0" refY="0" orient="auto-start-reverse" markerWidth="9" markerHeight="9" preserveAspectRatio="xMidYMid meet" xoverflow="visible">
+    <path d="M 1,-1 l 3,1 -3,1 -1,-1 1,-1 M 5,-1 l  3,1 -3,1 -1,-1 1,-1   Z" style="fill: rgb(0, 0, 0); stroke: rgb(136, 136, 136); stroke-width: 0pt;">
+    </path>
+  </marker>
+</defs>
+</g>
+</svg>

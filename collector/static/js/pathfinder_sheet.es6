@@ -14,23 +14,8 @@ class PathfinderSheet extends DnDSheet {
         let me = this
         let lines = me.back.append('g');
         if (me.page === 0) {
-            me.midline(4, 0.5, 23.5);
-            me.crossline(0.5, 0.5, 1.0);
-            me.midline(0.5, 0.5, 1.0);
-            me.crossline(23.5, 35.5, 35.0);
-            me.midline(35.5, 23.0, 23.5);
-
-
-            // Title
-            let txt = me.sheet_type("Pathfinder").toUpperCase();
-
-
             me.daddy = lines;
-
-
             me.characterInfo();
-
-
             me.drawAbilities(0.5, 5)
             me.drawHP(6.7, 5)
             me.drawInit(6.7, 10)
@@ -58,16 +43,10 @@ class PathfinderSheet extends DnDSheet {
 
             me.decorationText(4, 3.5, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, "Character Sheet", me.back);
         } else if (me.page === 1) {
-            me.midline(4, 0.5, 23.5);
-            me.crossline(0.5, 0.5, 1.0);
-            me.midline(0.5, 0.5, 1.0);
-            me.crossline(23.5, 35.5, 35.0);
-            me.midline(35.5, 23.0, 23.5);
-
 
             me.decorationText(4, 3.5, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, "Equipment Sheet", me.back);
             me.daddy = lines;
-            me.characterInfo();
+            me.characterInfoLight();
             me.drawClassData(13.5, 4.75);
             me.drawGear(0.5, 4.75);
             me.drawFeats(13.5, 7.5);
@@ -78,16 +57,9 @@ class PathfinderSheet extends DnDSheet {
             me.drawAlignment(19.5, 30.5);
 
         } else if (me.page === 2) {
-            me.midline(4, 0.5, 23.5);
-            me.crossline(0.5, 0.5, 1.0);
-            me.midline(0.5, 0.5, 1.0);
-            me.crossline(23.5, 35.5, 35.0);
-            me.midline(35.5, 23.0, 23.5);
-
-            me.decorationText(4, 2.75, 0, 'middle', me.title_font, me.big_font_size, me.draw_fill, me.draw_stroke, 0.5, "Role Playing Game", me.back);
             me.decorationText(4, 3.5, 0, 'middle', me.title_font, me.medium_font_size, me.draw_fill, me.draw_stroke, 0.5, "Spells Sheet", me.back);
             me.daddy = lines;
-            me.characterInfo();
+            me.characterInfoLight();
             me.drawSpellbook(0.5, 5, me.data['spellbook'])
 
         }
@@ -96,19 +68,25 @@ class PathfinderSheet extends DnDSheet {
         me.decorationText(12.0, 35.5, 5, 'middle', me.title_font, me.small_font_size, me.draw_fill, me.draw_stroke, 0.5, "Zaffarelli's Pathfinder 1st Edition Character Sheet (Version:" + me.version + ") Generated with Pathfinder Workshop [" + me.date_release + "]", me.back);
         me.decorationText(1.5, 35.8, -16, 'start', me.base_font, me.small_font_size, me.draw_fill, me.draw_stroke, 0.5, me.guideline, me.back);
 
-        // me.decorationText(22.5, 34.8, 0, 'end', me.base_font, me.small_font_size, me.draw_fill, me.draw_stroke, 0.5, 'Challenge:' + me.data['freebies'], me.back);
+        me.midline(4.25, 0.5, 23.5);
+        me.crossline(0.5, 0.5, 1.0);
+        me.midline(0.5, 0.5, 1.0);
+        me.crossline(23.5, 35.5, 35.0);
+        me.midline(35.5, 23.0, 23.5);
+        me.crossline(23.5, 0.5, 1.0);
+        me.midline(0.5, 23.0, 23.5);
+        me.crossline(0.5, 35.0, 35.5);
+        me.midline(35.5, 0.5, 1.0);
 
-        // me.daddy.append('svg')
-        //     .attr('x',10)
-        //     .attr('y',10)
-        //     .attr('width',10)
-        //     .attr('height',10)
-        //     .attr('src','static/collector/pathfinder_vn.svg');
 
-        d3.xml('static/collector/pathfinder_vn.svg')
-            .then(data => {
-                d3.select('body').node().append(data.documentElement)
-            });
+        me.back.append("svg:image")
+            .attr('class','linked_svg')
+            .attr("stored_filename", "pathfinder_vn_dark.svg")
+            .attr("xlink:href", me.linked_svg_path+"pathfinder_vn_dark.svg")
+            .attr("width", "10cm")
+            .attr("x", me.stepx * 0.75)
+            .attr("y", me.stepy * 1.25)
+        ;
 
 
     }
@@ -140,6 +118,16 @@ class PathfinderSheet extends DnDSheet {
         me.stdField("Age", me.data.age, 17.5, 3.5, 1);
         me.stdField("Height", me.data.height_foot + " (" + me.data.height_m + ")", 19, 3.5, 2);
         me.stdField("Weight", me.data.weight_lbs + " (" + me.data.weight_kg + ")", 21.5, 3.5, 2);
+
+    }
+
+    characterInfoLight() {
+        let me = this;
+        me.stdField("Character Name", me.data['name'].toUpperCase(), 8, 1.5, 8.5);
+        // me.stdField("Alignment", me.data['alignment_str'], 14.5, 1.5, 2);
+        me.stdField("Player", me.data['player'], 17, 1.5, 6.5);
+
+
 
     }
 
@@ -197,8 +185,8 @@ class PathfinderSheet extends DnDSheet {
     drawLanguages(ox, oy) {
         let me = this;
         // Languages
-        me.boxField("Languages", "", ox + 3, oy, 10, 0.8, true, "");
-        me.boxField("", "Languages", ox + 3, oy + 1, 10, 1.8);
+        me.boxField("Languages", "", ox + 0.0, oy, 12.5, 0.8, true, "");
+        me.boxField("", "Languages", ox + 0.0, oy + 1, 12.5, 1.8);
 
     }
 
@@ -290,18 +278,29 @@ class PathfinderSheet extends DnDSheet {
         let me = this;
         let oy = y;
         let txt = "", txt2 = "";
-        me.boxField("Money", "", ox, oy, 8, 0.8, true, "1 PP = 10 GP = 100 SP = 1000 CP");
+        me.boxField("Wealth", "", ox, oy, 8, 0.8, true, "1 PP = 10 GP = 100 SP = 1000 CP");
         oy += 0.9
-        _.forEach([{"type": "Platinium Coins"}, {"type": "Gold Coins"}, {"type": "Silver Coins"}, {"type": "Copper Coins"}], function (v, k) {
-            oy += 0.8
-            me.boxField(v["type"], "", ox, oy - 0.6, 3, 0.6, true, "");
-            me.smallField("", ox + 3.5, oy, 2);
-        });
+        _.forEach([
+                {"type": "Platinium Coins", "txt1": "", "txt2": ""},
+                {"type": "Gold Coins", "txt1": "", "txt2": ""},
+                {"type": "Silver Coins", "txt1": "", "txt2": ""},
+                {"type": "Copper Coins", "txt1": "Wallet", "txt2": "Stored"}
+            ],
+
+            function (v, k) {
+                oy += 0.8
+                me.boxField(v["type"], "", ox, oy - 0.6, 3, 0.6, true, "");
+                me.stdField(v["txt1"], "", ox + 3.5, oy - 0.2, 2);
+                me.stdField(v["txt2"], "", ox + 5.5, oy - 0.2, 2);
+            }
+        )
+        ;
+
     }
 
     drawAlignment(ox, oy) {
         let me = this;
-        me.boxField("Alignment", "", ox, oy, 4, 1.4, true, "Old School anti-Huitzy Kawek Release");
+        me.boxField("Alignment", "", ox, oy, 4, 0.8, true, "Old School anti-Huitzy Kawek Release");
         let stepsize = 1.1;
         let item = me.back.append('g')
         _.forEach(["LG", "NG", "CG", "LN", "N", "CN", "LE", "NE", "CE"], function (v, k) {

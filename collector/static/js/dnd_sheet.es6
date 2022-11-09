@@ -64,6 +64,7 @@ class DnDSheet {
         me.version = "1.0";
         me.date_release = "November 2022";
         me.blank = true;
+        me.linked_svg_path = '/static/collector/';
         me.width = parseInt($(me.parent).css("width"), 10) * 0.75;
         me.height = me.width * 1.4;
         me.w = 1.25 * me.width;
@@ -79,10 +80,10 @@ class DnDSheet {
         me.dot_radius = me.stepx / 8;
         me.stat_length = 150;
         me.stat_max = 5;
-        me.shadow_fill = "#B0B0B0";
-        me.shadow_stroke = "#A0A0A0";
-        me.draw_stroke = '#CCC';
-        me.draw_fill = '#222';
+        me.shadow_fill = "#BBB";
+        me.shadow_stroke = "#AAA";
+        me.draw_stroke = '#888';
+        me.draw_fill = '#000';
         me.user_stroke = '#66A';
         me.user_fill = '#224';
         me.user_font = 'Schoolbell';
@@ -107,7 +108,7 @@ class DnDSheet {
             .attr('y1', me.stepy * y)
             .attr('y2', me.stepy * y)
             .style('fill', 'transparent')
-            .style('stroke', me.draw_fill)
+            .style('stroke', me.shadow_fill)
             .style('stroke-width', '3pt')
             .style('stroke-linecap', 'round')
         // .attr('marker-end', "url(#arrowhead)")
@@ -123,7 +124,7 @@ class DnDSheet {
             .attr('y1', me.stepy * starty)
             .attr('y2', me.stepy * stopy)
             .style('fill', 'transparent')
-            .style('stroke', me.draw_fill)
+            .style('stroke', me.shadow_fill)
             .style('stroke-width', '3pt')
             .style('stroke-linecap', 'round')
         // .attr('marker-end', "url(#arrowhead)")
@@ -826,7 +827,8 @@ class DnDSheet {
             })
             .style("fill", function (d) {
                 if (wob) {
-                    return me.draw_fill;
+                    return "#E0E0E0";
+                    //return "transparent";
                 }
                 return "transparent";
             })
@@ -844,8 +846,8 @@ class DnDSheet {
                 .style("text-anchor", 'middle')
                 .style("font-family", me.title_font)
                 .style("font-size", me.medium_font_size + 'px')
-                .style("fill", "#F0F0F0")
-                .style("stroke", "#C0C0C0")
+                .style("fill", me.draw_fill)
+                .style("stroke", me.draw_stroke)
                 .style("stroke-width", '0.5pt')
                 .text(label_full)
             ;
@@ -857,8 +859,8 @@ class DnDSheet {
                 .style("text-anchor", 'middle')
                 .style("font-family", me.title_font)
                 .style("font-size", me.tiny_font_size + 'pt')
-                .style("fill", "#F0F0F0")
-                .style("stroke", "#C0C0C0")
+                .style("fill", me.draw_fill)
+                .style("stroke", me.draw_stroke)
                 .style("stroke-width", '0.5pt')
                 .text(label)
             ;
@@ -2037,6 +2039,11 @@ class DnDSheet {
     saveSVG() {
         let me = this;
         me.svg.selectAll('.do_not_print').attr('opacity', 0);
+        me.svg.selectAll('.linked_svg')
+            .attr("xlink:href",function(){
+                return $(this).attr('stored_filename');
+            }
+        );
         let base_svg = d3.select("#d3area svg").html();
         let flist = '<style>';
         for (let f of me.config['fontset']) {
@@ -2050,12 +2057,20 @@ class DnDSheet {
 xmlns="http://www.w3.org/2000/svg" version="1.1" \
 xmlns:xlink="http://www.w3.org/1999/xlink"> \
 ' + flist + base_svg + '</svg>';
-        let fname = me.data['rid']+"_"+me.page + ".svg"
+        let fname = me.data['rid']+"_"+me.page + ".svg";
+        if (me.blank==true){
+            fname = "pathfinder_character_sheet_"+me.page+".svg"
+        }
         let nuke = document.createElement("a");
         nuke.href = 'data:application/octet-stream;base64,' + btoa(me.formatXml(exportable_svg));
         nuke.setAttribute("download", fname);
         nuke.click();
         me.svg.selectAll('.do_not_print').attr('opacity', 1);
+        me.svg.selectAll('.linked_svg')
+            .attr("xlink:href",function(){
+                return me.linked_svg_path+$(this).attr('stored_filename');
+            }
+        );
     }
 
     createPDF() {
